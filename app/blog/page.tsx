@@ -21,15 +21,15 @@ export default function BlogPage() {
       <section className="content-section dark">
         <div className="content-inner">
           <h2>While You Wait</h2>
-          <p>Our in-depth commodity trading guides are available now — covering iron ore, copper, gold, lithium, and the regulatory landscape driving the future of ethical mining.</p>
+          <p>Our in-depth commodity trading guides are available now , covering iron ore, copper, gold, lithium, and the regulatory landscape driving the future of ethical mining.</p>
           <div className="features-grid" style={{ marginTop: '40px' }}>
             {[
               { href: '/guides/iron-ore', icon: '🏔️', title: 'What Is Iron Ore?', desc: 'Grades, product forms, pricing mechanisms, and how to trade iron ore internationally.' },
               { href: '/guides/copper', icon: '🔩', title: 'Copper Concentrate Grades', desc: 'What copper concentrate is, how TCRC works, and how the copper supply chain operates.' },
               { href: '/guides/gold', icon: '✨', title: 'How Is Gold Traded?', desc: 'Spot, futures, LBMA, doré, and the mechanics of physical gold trading.' },
               { href: '/guides/lithium', icon: '⚡', title: 'Lithium Mining Explained', desc: 'Brine vs hard rock, spodumene, battery-grade specs, and the global lithium supply chain.' },
-              { href: '/traceability', icon: '🔗', title: 'Digital Product Passport', desc: 'The regulatory case for traceability — EU Battery Regulation, OECD, and what it means for your supply chain.' },
-              { href: '/markets', icon: '📊', title: 'All Markets', desc: 'Browse all OreTrade markets — iron ore, copper, gold, nickel, critical minerals, base metals and more.' },
+              { href: '/traceability', icon: '🔗', title: 'Digital Product Passport', desc: 'The regulatory case for traceability , EU Battery Regulation, OECD, and what it means for your supply chain.' },
+              { href: '/markets', icon: '📊', title: 'All Markets', desc: 'Browse all OreTrade markets , iron ore, copper, gold, nickel, critical minerals, base metals and more.' },
             ].map(g => (
               <Link key={g.href} href={g.href} style={{ textDecoration: 'none' }}>
                 <div className="feature-card" style={{ cursor: 'pointer', height: '100%' }}>

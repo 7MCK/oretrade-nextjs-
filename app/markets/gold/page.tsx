@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Precious Metals Trading Platform | Gold, Silver, Platinum — OreTrade',
+  title: 'Precious Metals Trading Platform | Gold, Silver, Platinum , OreTrade',
   description: 'Trade gold, silver, platinum and palladium on OreTrade. LBMA-aligned supply chains, full provenance documentation, and conflict-free certification on every transaction.',
 }
 
@@ -21,12 +21,12 @@ export default function GoldPage() {
       <section className="content-section cream">
         <div className="content-inner">
           <h2>The Precious Metals Market</h2>
-          <p>Gold, silver, platinum, and palladium occupy a unique position in global commodity markets — simultaneously industrial inputs, financial assets, and stores of value. The precious metals complex is worth over $10 trillion in above-ground stock (gold alone accounts for roughly $13 trillion), yet the physical supply chain remains opaque, fragmented, and heavily reliant on relationships and trust.</p>
-          <p>OreTrade&apos;s precious metals market brings structured, documented trading to physical precious metals at the mine and doré level — connecting verified producers with refiners, traders, and industrial buyers who need documented, conflict-free supply.</p>
-          <p>Gold is the most traded precious metal by value. The world produces roughly 3,600 tonnes per year, with China, Russia, Australia, Canada, and Ghana as leading producers. The LBMA (London Bullion Market Association) sets the international standard for good delivery bars (minimum 99.5% purity for gold), and the London fix — conducted twice daily — establishes the global benchmark price.</p>
+          <p>Gold, silver, platinum, and palladium occupy a unique position in global commodity markets , simultaneously industrial inputs, financial assets, and stores of value. The precious metals complex is worth over $10 trillion in above-ground stock (gold alone accounts for roughly $13 trillion), yet the physical supply chain remains opaque, fragmented, and heavily reliant on relationships and trust.</p>
+          <p>OreTrade&apos;s precious metals market brings structured, documented trading to physical precious metals at the mine and doré level , connecting verified producers with refiners, traders, and industrial buyers who need documented, conflict-free supply.</p>
+          <p>Gold is the most traded precious metal by value. The world produces roughly 3,600 tonnes per year, with China, Russia, Australia, Canada, and Ghana as leading producers. The LBMA (London Bullion Market Association) sets the international standard for good delivery bars (minimum 99.5% purity for gold), and the London fix , conducted twice daily , establishes the global benchmark price.</p>
 
           <h3>Purity and Product Forms</h3>
-          <p>Gold trades in multiple forms: doré (unrefined bullion direct from the mine, typically 70–90% gold), good delivery bars (400 troy oz, minimum 99.5% fineness), kilobars (32.15 troy oz, 99.9% fineness), and grain/granule form. Silver, platinum, and palladium similarly trade across multiple purities and physical forms. OreTrade lists the full specification on every cargo, verified by accredited assayers.</p>
+          <p>Gold trades in multiple forms: doré (unrefined bullion direct from the mine, typically 70 to 90% gold), good delivery bars (400 troy oz, minimum 99.5% fineness), kilobars (32.15 troy oz, 99.9% fineness), and grain/granule form. Silver, platinum, and palladium similarly trade across multiple purities and physical forms. OreTrade lists the full specification on every cargo, verified by accredited assayers.</p>
         </div>
       </section>
 
@@ -59,12 +59,12 @@ export default function GoldPage() {
             <div className="info-card">
               <div className="card-icon">🧪</div>
               <h3>Accredited Assay</h3>
-              <p>Every cargo is backed by an assay certificate from a LBMA-approved assayer — SGS, Intertek, Bureau Veritas, or equivalent.</p>
+              <p>Every cargo is backed by an assay certificate from a LBMA-approved assayer , SGS, Intertek, Bureau Veritas, or equivalent.</p>
             </div>
             <div className="info-card">
               <div className="card-icon">🔐</div>
               <h3>Immutable Provenance</h3>
-              <p>Mine of origin documented and verified. Full chain of custody from extraction to refinery to delivery — available on demand.</p>
+              <p>Mine of origin documented and verified. Full chain of custody from extraction to refinery to delivery , available on demand.</p>
             </div>
           </div>
         </div>

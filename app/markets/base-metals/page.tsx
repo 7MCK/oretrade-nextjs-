@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Base Metals Trading Platform | Copper, Aluminium, Zinc — OreTrade',
-  description: 'Trade base metals on OreTrade — copper, aluminium, zinc, lead, nickel and tin. LME-referenced pricing, verified counterparties, full traceability.',
+  title: 'Base Metals Trading Platform | Copper, Aluminium, Zinc , OreTrade',
+  description: 'Trade base metals on OreTrade , copper, aluminium, zinc, lead, nickel and tin. LME-referenced pricing, verified counterparties, full traceability.',
 }
 
 export default function BaseMetalsPage() {
@@ -13,7 +13,7 @@ export default function BaseMetalsPage() {
           <div className="badge-soon">Launching 2026</div>
           <p className="section-label">Base Metals Market</p>
           <h1>Base Metals<br /><span>Trading Platform</span></h1>
-          <p>Copper, aluminium, zinc, lead, nickel and tin — traded with verified counterparties, LME-referenced pricing, and full chain of custody documentation on every transaction.</p>
+          <p>Copper, aluminium, zinc, lead, nickel and tin , traded with verified counterparties, LME-referenced pricing, and full chain of custody documentation on every transaction.</p>
           <a href="/#contact" className="btn-primary">Join the Waitlist</a>
         </div>
       </div>
@@ -23,7 +23,7 @@ export default function BaseMetalsPage() {
           <h2>The Base Metals Market</h2>
           <p>Base metals are the industrial workhorses of the global economy. Copper, aluminium, zinc, lead, nickel, and tin underpin construction, transportation, packaging, electronics, and the entire energy infrastructure. Collectively, they represent hundreds of millions of tonnes of annual production and trillions of dollars in annual trade.</p>
           <p>Unlike precious metals or bulk commodities, base metals are primarily traded through the London Metal Exchange (LME), which provides a global price benchmark and physical delivery mechanism for all six primary base metals. Prices are quoted in US dollars per metric tonne, with both cash (spot) and three-month forward contracts actively traded.</p>
-          <p>OreTrade&apos;s base metals market focuses on the physical supply chain — connecting producers of concentrates, refined metals, and alloys with industrial buyers who need verified supply with full documentation. Whether you&apos;re sourcing copper cathode, aluminium ingot, or zinc concentrate, OreTrade provides the transparency and structure that modern procurement demands.</p>
+          <p>OreTrade&apos;s base metals market focuses on the physical supply chain , connecting producers of concentrates, refined metals, and alloys with industrial buyers who need verified supply with full documentation. Whether you&apos;re sourcing copper cathode, aluminium ingot, or zinc concentrate, OreTrade provides the transparency and structure that modern procurement demands.</p>
         </div>
       </section>
 
@@ -53,7 +53,7 @@ export default function BaseMetalsPage() {
             <div className="info-card">
               <div className="card-icon">📊</div>
               <h3>LME-Referenced Pricing</h3>
-              <p>All base metal listings are priced with reference to LME benchmarks — with clear premium or discount disclosure and transparent quotational periods.</p>
+              <p>All base metal listings are priced with reference to LME benchmarks , with clear premium or discount disclosure and transparent quotational periods.</p>
             </div>
             <div className="info-card">
               <div className="card-icon">✅</div>
@@ -63,7 +63,7 @@ export default function BaseMetalsPage() {
             <div className="info-card">
               <div className="card-icon">🔗</div>
               <h3>Full Traceability</h3>
-              <p>Digital Product Passports on every cargo — mine of origin, assay, chain of custody, and ESG disclosures — available at the point of trade.</p>
+              <p>Digital Product Passports on every cargo , mine of origin, assay, chain of custody, and ESG disclosures , available at the point of trade.</p>
             </div>
           </div>
         </div>

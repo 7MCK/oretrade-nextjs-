@@ -6,7 +6,7 @@ import ContactForm from '../components/ContactForm'
 export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
-  title: 'OreTrade — Global Ore Trading Platform | From Mine to Market',
+  title: 'OreTrade , Global Ore Trading Platform | From Mine to Market',
   description: 'OreTrade is the global marketplace for mining ores, base metals, precious metals and critical minerals. Verified counterparties, full traceability, ethical sourcing.',
 }
 
@@ -79,7 +79,7 @@ export default function Home() {
         <div className="section-inner">
           <p className="section-label">Trade Categories</p>
           <h2 className="section-title">What trades on OreTrade</h2>
-          <p className="section-sub">From bulk ore tonnage to refined precious metals — one platform for the full mining supply chain.</p>
+          <p className="section-sub">From bulk ore tonnage to refined precious metals , one platform for the full mining supply chain.</p>
           <div className="cat-grid">
             {[
               { icon: '⛏️', title: 'Mining Ores', desc: 'Iron ore, bauxite, chromite, manganese and more', href: '/markets/mining-ores' },
@@ -126,10 +126,10 @@ export default function Home() {
         <div className="section-inner">
           <p className="section-label">Digital Product Passport</p>
           <h2 className="section-title">Full traceability, built in</h2>
-          <p className="section-sub">Every commodity traded on OreTrade carries a Digital Product Passport — a permanent, auditable record from extraction to delivery.</p>
+          <p className="section-sub">Every commodity traded on OreTrade carries a Digital Product Passport , a permanent, auditable record from extraction to delivery.</p>
           <div className="passport-inner">
             <div className="passport-card">
-              <h4>Digital Product Passport — Sample Record</h4>
+              <h4>Digital Product Passport , Sample Record</h4>
               <div className="passport-field">
                 <span className="field-label">Mine of Origin</span>
                 <span className="field-value">Katanga Province, DRC <span className="field-verified">✓ Verified</span></span>
@@ -232,7 +232,7 @@ export default function Home() {
           <div className="contact-inner">
             <div className="contact-info">
               <h2>Get in touch</h2>
-              <p>Whether you&apos;re a mining operator, commodity buyer, logistics partner or potential investor — we want to hear from you.</p>
+              <p>Whether you&apos;re a mining operator, commodity buyer, logistics partner or potential investor , we want to hear from you.</p>
               <div className="contact-detail"><span>✉️</span><span>hello@oretrade.com</span></div>
               <div className="contact-detail"><span>🌍</span><span>Global operations</span></div>
               <div className="contact-detail"><span>🚀</span><span>Platform launching 2026</span></div>

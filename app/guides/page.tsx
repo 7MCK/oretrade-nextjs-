@@ -2,14 +2,14 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Commodity Trading Guides | Metals & Mining Education — OreTrade',
+  title: 'Commodity Trading Guides | Metals & Mining Education , OreTrade',
   description: 'Free guides to commodity trading, mining ores, metals markets, and ethical sourcing. Learn about iron ore, copper, gold, lithium and more from the OreTrade team.',
 }
 
 const GUIDES = [
-  { href: '/guides/iron-ore', icon: '🏔️', title: 'What Is Iron Ore?', subtitle: 'Complete Buyer and Seller Guide', desc: 'How iron ore is formed, graded and traded. From the Pilbara to the blast furnace — the definitive guide for buyers and sellers.' },
+  { href: '/guides/iron-ore', icon: '🏔️', title: 'What Is Iron Ore?', subtitle: 'Complete Buyer and Seller Guide', desc: 'How iron ore is formed, graded and traded. From the Pilbara to the blast furnace , the definitive guide for buyers and sellers.' },
   { href: '/guides/copper', icon: '🔩', title: 'Copper Concentrate Grades Explained', subtitle: 'Mining, Processing & Trading', desc: 'What copper concentrate is, how grades are calculated, what TCRC means, and how to read an assay certificate.' },
-  { href: '/guides/gold', icon: '✨', title: 'How Is Gold Traded?', subtitle: 'From Mine to Market', desc: 'Spot, futures, LBMA, and physical — a complete guide to the mechanics of gold trading for buyers, sellers and investors.' },
+  { href: '/guides/gold', icon: '✨', title: 'How Is Gold Traded?', subtitle: 'From Mine to Market', desc: 'Spot, futures, LBMA, and physical , a complete guide to the mechanics of gold trading for buyers, sellers and investors.' },
   { href: '/guides/lithium', icon: '⚡', title: 'Lithium Mining Explained', subtitle: 'From Brine to Battery', desc: 'How lithium is extracted from brine and hard rock, processed into carbonate and hydroxide, and graded for battery use.' },
 ]
 

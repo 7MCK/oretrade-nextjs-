@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Ore & Metals Markets — Global Commodity Trading Platform',
+  title: 'Ore & Metals Markets , Global Commodity Trading Platform',
   description: 'Browse OreTrade markets for iron ore, copper, gold, nickel, critical minerals, base metals and mining ores. Verified listings, full traceability, ethical sourcing.',
 }
 
@@ -11,9 +11,9 @@ const MARKETS = [
   { href: '/markets/copper', icon: '🔩', title: 'Copper', desc: 'The metal of electrification. Source copper concentrate and refined grades from Chile, Peru and the DRC with full assay certification.' },
   { href: '/markets/gold', icon: '✨', title: 'Gold & Precious Metals', desc: 'Gold, silver, platinum and palladium from LBMA-aligned supply chains. Fully documented provenance and conflict-free certification.' },
   { href: '/markets/nickel', icon: '⚙️', title: 'Nickel', desc: 'Battery-grade and industrial nickel from laterite and sulphide deposits. Indonesia, Philippines and key global origins.' },
-  { href: '/markets/critical-minerals', icon: '⚡', title: 'Critical Minerals', desc: 'Lithium, cobalt, rare earths, graphite and manganese. The materials powering the energy transition — traced from mine to market.' },
+  { href: '/markets/critical-minerals', icon: '⚡', title: 'Critical Minerals', desc: 'Lithium, cobalt, rare earths, graphite and manganese. The materials powering the energy transition , traced from mine to market.' },
   { href: '/markets/base-metals', icon: '🔧', title: 'Base Metals', desc: 'Copper, aluminium, zinc, lead, tin and nickel. LME-referenced pricing, verified counterparties, secure settlement.' },
-  { href: '/markets/mining-ores', icon: '⛏️', title: 'Mining Ores', desc: 'Bulk ore for direct shipment — iron ore, bauxite, chromite, manganese. Large-lot transactions with full origin documentation.' },
+  { href: '/markets/mining-ores', icon: '⛏️', title: 'Mining Ores', desc: 'Bulk ore for direct shipment , iron ore, bauxite, chromite, manganese. Large-lot transactions with full origin documentation.' },
 ]
 
 export default function MarketsPage() {

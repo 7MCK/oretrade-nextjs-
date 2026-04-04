@@ -4,7 +4,7 @@ import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 
 export const metadata: Metadata = {
-  title: { default: 'OreTrade — Global Ore Trading Platform | From Mine to Market', template: '%s | OreTrade' },
+  title: { default: 'OreTrade , Global Ore Trading Platform | From Mine to Market', template: '%s | OreTrade' },
   description: 'OreTrade is the global marketplace for mining ores, base metals, precious metals and critical minerals. Verified counterparties, full traceability, ethical sourcing.',
 }
 

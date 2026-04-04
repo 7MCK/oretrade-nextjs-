@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Copper Ore Marketplace | Sell Copper Concentrate — OreTrade',
+  title: 'Copper Ore Marketplace | Sell Copper Concentrate , OreTrade',
   description: 'Buy and sell copper concentrate and copper ore on OreTrade. Verified producers from Chile, Peru and DRC. Full assay certification and traceability.',
 }
 
@@ -21,12 +21,12 @@ export default function CopperPage() {
       <section className="content-section cream">
         <div className="content-inner">
           <h2>The Copper Market</h2>
-          <p>Copper is the metal of electrification. Its unmatched electrical conductivity makes it indispensable in power grids, electric vehicles, renewable energy infrastructure, electronics, and industrial machinery. As the global economy decarbonises, copper demand is projected to nearly double by 2035 — while supply is increasingly constrained by ore grade decline, permitting delays, and geopolitical risk.</p>
-          <p>The global copper supply chain starts with mining. Copper ore is extracted and processed into copper concentrate — a powder containing typically 20–40% copper along with gold, silver, and other by-products. This concentrate is then sold to smelters, which process it into blister copper (98–99% Cu), which is further refined into cathode copper (99.99% Cu) — the exchange-tradeable form settled on the LME and COMEX.</p>
+          <p>Copper is the metal of electrification. Its unmatched electrical conductivity makes it indispensable in power grids, electric vehicles, renewable energy infrastructure, electronics, and industrial machinery. As the global economy decarbonises, copper demand is projected to nearly double by 2035 , while supply is increasingly constrained by ore grade decline, permitting delays, and geopolitical risk.</p>
+          <p>The global copper supply chain starts with mining. Copper ore is extracted and processed into copper concentrate , a powder containing typically 20 to 40% copper along with gold, silver, and other by-products. This concentrate is then sold to smelters, which process it into blister copper (98 to 99% Cu), which is further refined into cathode copper (99.99% Cu) , the exchange-tradeable form settled on the LME and COMEX.</p>
           <p>Chile is the world&apos;s largest copper producer, accounting for around 27% of global mine output, followed by the Democratic Republic of Congo (11%), Peru (10%), China (8%), and the US (6%). Major mining operations include Escondida (BHP), Collahuasi (Glencore/Anglo American), Kamoa-Kakula (Ivanhoe Mines), and Cerro Verde (Freeport-McMoRan).</p>
 
           <h3>Treatment and Refining Charges (TCRC)</h3>
-          <p>When a miner sells copper concentrate to a smelter, the price is not simply the spot price of copper. The smelter deducts Treatment Charges (TC, expressed in $/dry metric tonne of concentrate) and Refining Charges (RC, expressed in cents/lb of payable copper) to cover processing costs. TCRC levels are negotiated annually in benchmark deals between major miners and smelters. Understanding TCRC is essential for any participant in the copper concentrate market — and OreTrade&apos;s platform provides full TCRC transparency on all concentrate listings.</p>
+          <p>When a miner sells copper concentrate to a smelter, the price is not simply the spot price of copper. The smelter deducts Treatment Charges (TC, expressed in $/dry metric tonne of concentrate) and Refining Charges (RC, expressed in cents/lb of payable copper) to cover processing costs. TCRC levels are negotiated annually in benchmark deals between major miners and smelters. Understanding TCRC is essential for any participant in the copper concentrate market , and OreTrade&apos;s platform provides full TCRC transparency on all concentrate listings.</p>
         </div>
       </section>
 
@@ -39,9 +39,9 @@ export default function CopperPage() {
             </thead>
             <tbody>
               <tr><td>Product Forms</td><td>Copper Concentrate, Blister Copper, Copper Cathode (Grade A), Copper Ore</td></tr>
-              <tr><td>Concentrate Grade Range</td><td>20% – 40% Cu (typical commercial grade)</td></tr>
+              <tr><td>Concentrate Grade Range</td><td>20%  to  40% Cu (typical commercial grade)</td></tr>
               <tr><td>Trading Unit</td><td>Dry Metric Tonne (DMT) for concentrate; Metric Tonne for refined</td></tr>
-              <tr><td>Typical Cargo Size</td><td>10,000 – 80,000 DMT (concentrate); 1,000 – 25,000 MT (cathode)</td></tr>
+              <tr><td>Typical Cargo Size</td><td>10,000  to  80,000 DMT (concentrate); 1,000  to  25,000 MT (cathode)</td></tr>
               <tr><td>Major Origins</td><td>Chile, Peru, DRC, Zambia, Australia, Mexico</td></tr>
               <tr><td>Benchmark</td><td>LME Grade A Copper (cash and 3-month)</td></tr>
               <tr><td>Settlement</td><td>CIF, CFR, FOB, CIP</td></tr>
@@ -63,7 +63,7 @@ export default function CopperPage() {
             <div className="info-card">
               <div className="card-icon">🔗</div>
               <h3>TCRC Transparency</h3>
-              <p>Full treatment and refining charge disclosure on every concentrate listing — no hidden deductions, no ambiguity.</p>
+              <p>Full treatment and refining charge disclosure on every concentrate listing , no hidden deductions, no ambiguity.</p>
             </div>
             <div className="info-card">
               <div className="card-icon">🌱</div>

@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Buy Iron Ore Online | Iron Ore Marketplace — OreTrade',
-  description: 'Buy and sell iron ore on OreTrade — the verified global iron ore marketplace. Fines, lump and pellets from Australia, Brazil and South Africa. Full traceability.',
+  title: 'Buy Iron Ore Online | Iron Ore Marketplace , OreTrade',
+  description: 'Buy and sell iron ore on OreTrade , the verified global iron ore marketplace. Fines, lump and pellets from Australia, Brazil and South Africa. Full traceability.',
 }
 
 export default function IronOrePage() {
@@ -13,7 +13,7 @@ export default function IronOrePage() {
           <div className="badge-soon">Launching 2026</div>
           <p className="section-label">Iron Ore Market</p>
           <h1>Buy and Sell <span>Iron Ore</span> on OreTrade</h1>
-          <p>Connect with verified iron ore producers and buyers worldwide. Fines, lump and pellets across all grades — with full origin documentation, assay certification and secure settlement.</p>
+          <p>Connect with verified iron ore producers and buyers worldwide. Fines, lump and pellets across all grades , with full origin documentation, assay certification and secure settlement.</p>
           <a href="/#contact" className="btn-primary">Join the Waitlist</a>
         </div>
       </div>
@@ -21,7 +21,7 @@ export default function IronOrePage() {
       <section className="content-section cream">
         <div className="content-inner">
           <h2>The Iron Ore Market</h2>
-          <p>Iron ore is the primary raw material for global steel production, and steel is the foundation of modern infrastructure — from buildings and bridges to vehicles and machinery. With over 2.5 billion tonnes traded internationally each year, iron ore is one of the highest-volume commodities in the world.</p>
+          <p>Iron ore is the primary raw material for global steel production, and steel is the foundation of modern infrastructure , from buildings and bridges to vehicles and machinery. With over 2.5 billion tonnes traded internationally each year, iron ore is one of the highest-volume commodities in the world.</p>
           <p>The vast majority of global iron ore supply comes from three countries: Australia (which accounts for around 53% of global seaborne exports), Brazil (roughly 20%, primarily from Vale&apos;s operations in Minas Gerais and Pará), and South Africa (a growing exporter of both fines and lump). China is by far the world&apos;s largest importer, consuming over 70% of seaborne iron ore to feed its massive steel industry.</p>
           <p>Iron ore is typically traded in three physical forms: fines (particles under 6.3mm, the most common form), lump (coarser material that can be charged directly into a blast furnace), and pellets (processed and balled material used in direct reduction steelmaking). Each has its own price premium or discount relative to the benchmark grade.</p>
 
@@ -42,7 +42,7 @@ export default function IronOrePage() {
               <tr><td>Standard Grades</td><td>57% Fe, 60% Fe, 62% Fe, 65% Fe (benchmark), 67% Fe</td></tr>
               <tr><td>Product Forms</td><td>Fines, Lump, Pellets, Concentrate, DSO</td></tr>
               <tr><td>Trading Unit</td><td>Dry Metric Tonne (DMT)</td></tr>
-              <tr><td>Typical Cargo Size</td><td>50,000 – 200,000 DMT</td></tr>
+              <tr><td>Typical Cargo Size</td><td>50,000  to  200,000 DMT</td></tr>
               <tr><td>Major Origins</td><td>Australia (Pilbara, SA), Brazil (Minas Gerais, Pará), South Africa, India, Ukraine</td></tr>
               <tr><td>Benchmark</td><td>Platts IODEX 62% Fe CFR China</td></tr>
               <tr><td>Settlement</td><td>CFR, FOB, CIF</td></tr>
@@ -59,7 +59,7 @@ export default function IronOrePage() {
             <div className="info-card">
               <div className="card-icon">✅</div>
               <h3>Verified Listings</h3>
-              <p>Every iron ore listing on OreTrade is backed by verified documentation — mining licence, assay certificate, and producer KYC — before it goes live.</p>
+              <p>Every iron ore listing on OreTrade is backed by verified documentation , mining licence, assay certificate, and producer KYC , before it goes live.</p>
             </div>
             <div className="info-card">
               <div className="card-icon">🔗</div>
@@ -69,7 +69,7 @@ export default function IronOrePage() {
             <div className="info-card">
               <div className="card-icon">🔒</div>
               <h3>Secure Settlement</h3>
-              <p>Structured payment terms including letters of credit, escrow and wire transfer — with full digital documentation handled on-platform.</p>
+              <p>Structured payment terms including letters of credit, escrow and wire transfer , with full digital documentation handled on-platform.</p>
             </div>
           </div>
         </div>
