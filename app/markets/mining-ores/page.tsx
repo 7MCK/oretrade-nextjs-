@@ -1,5 +1,63 @@
 import type { Metadata } from 'next'
 
+import SchemaMarkup from '../../../components/SchemaMarkup'
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Bulk Mining Ores Marketplace — Iron Ore, Bauxite, Chromite 2026',
+  author: { '@type': 'Organization', name: 'OreTrade', url: 'https://www.oretrade.com' },
+  publisher: { '@type': 'Organization', name: 'OreTrade', logo: { '@type': 'ImageObject', url: 'https://www.oretrade.com/logo.png' } },
+  datePublished: '2026-04-05',
+  dateModified: '2026-04-05',
+  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://www.oretrade.com/markets/mining-ores/' },
+  about: { '@type': 'Thing', name: 'Mining', sameAs: 'https://en.wikipedia.org/wiki/Mining' },
+  keywords: ['bulk ore marketplace','buy iron ore','bauxite supplier','chromite trading','manganese ore marketplace','bulk ore trading platform'],
+}
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What is bulk ore trading?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Bulk ore trading involves the buying and selling of raw or lightly processed mining materials in large volumes, typically 50,000 to 250,000 metric tonnes per cargo on Capesize or Panamax vessels. Iron ore, bauxite, chromite, and manganese are the primary bulk ores traded globally. Grade verification via independent assay, moisture management, and vessel chartering are key elements of every transaction.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'What ores does OreTrade cover?',
+      acceptedAnswer: { '@type': 'Answer', text: 'OreTrade covers iron ore (fines, lump, pellets), bauxite (for alumina and aluminium production), chromite (for ferrochrome and stainless steel), manganese ore (for steel alloys and batteries), phosphate rock, and titanium minerals. Each listing includes full grade specification, moisture content, mine of origin, and independent assay documentation.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'How is bulk ore quality verified?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Bulk ore quality is verified by independent inspection companies at both the loading port and discharge port. Sampling follows internationally recognised standards (ASTM, ISO, CIMPC). Analysis covers iron content (for iron ore), alumina and silica (for bauxite), Cr2O3 (for chromite), and other grade parameters. OreTrade requires third party assay on all listings.' },
+    }
+  ],
+}
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Bulk Mining Ores Marketplace',
+  description: 'B2B marketplace for bulk mining ores including iron ore, bauxite, chromite and manganese. Large lot transactions with verified producers and full origin documentation.',
+  provider: { '@type': 'Organization', name: 'OreTrade', url: 'https://www.oretrade.com' },
+  serviceType: 'B2B Commodity Marketplace',
+  areaServed: ['GB', 'EU', 'AU', 'CA', 'ZA', 'US', 'JP', 'KR'],
+  url: 'https://www.oretrade.com/markets/mining-ores/',
+}
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'OreTrade', item: 'https://www.oretrade.com' },
+    { '@type': 'ListItem', position: 2, name: 'Markets', item: 'https://www.oretrade.com/markets/' },
+    { '@type': 'ListItem', position: 3, name: 'Mining Ores', item: 'https://www.oretrade.com/markets/mining-ores/' }
+  ],
+}
+
 export const metadata: Metadata = {
   alternates: { canonical: 'https://www.oretrade.com/markets/mining-ores/' },
   title: 'Mining Ore Buyers & Sellers | Bulk Ore Marketplace , OreTrade',
@@ -9,6 +67,7 @@ export const metadata: Metadata = {
 export default function MiningOresPage() {
   return (
     <>
+      <SchemaMarkup schemas={[articleSchema, faqSchema, serviceSchema, breadcrumbSchema]} />
       <div className="page-hero">
         <div className="page-hero-inner">
           <div className="badge-soon">Launching 2026</div>

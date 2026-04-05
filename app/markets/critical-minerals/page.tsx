@@ -1,5 +1,68 @@
 import type { Metadata } from 'next'
 
+import SchemaMarkup from '../../../components/SchemaMarkup'
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Critical Minerals Marketplace — Lithium, Cobalt, Rare Earths 2026',
+  author: { '@type': 'Organization', name: 'OreTrade', url: 'https://www.oretrade.com' },
+  publisher: { '@type': 'Organization', name: 'OreTrade', logo: { '@type': 'ImageObject', url: 'https://www.oretrade.com/logo.png' } },
+  datePublished: '2026-04-05',
+  dateModified: '2026-04-05',
+  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://www.oretrade.com/markets/critical-minerals/' },
+  about: { '@type': 'Thing', name: 'Critical mineral', sameAs: 'https://en.wikipedia.org/wiki/Critical_mineral' },
+  keywords: ['critical minerals marketplace','buy lithium carbonate','cobalt supplier','graphite trading','rare earth elements supplier','energy transition minerals'],
+}
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What are critical minerals?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Critical minerals are raw materials that are economically and strategically essential, with geographically concentrated supply chains that create disruption risk. The EU designates 34 critical raw materials including lithium, cobalt, nickel, graphite, rare earth elements, and platinum group metals. They are the building blocks of electric vehicles, wind turbines, solar panels, and defence systems.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Why is cobalt considered critical?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Cobalt is critical because over 70% of global production comes from the Democratic Republic of Congo, creating significant supply concentration risk. It is an essential component of lithium-ion battery cathodes (NMC and NCA chemistries) used in most electric vehicles. Ethical sourcing and full traceability are essential requirements for cobalt procurement given artisanal mining conditions in the DRC.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is battery grade lithium?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Battery grade lithium (lithium carbonate or lithium hydroxide at minimum 99.5% purity) is the primary chemical input for lithium-ion battery cathodes. It is distinct from technical grade lithium used in ceramics and glass. Battery manufacturers set strict impurity limits. OreTrade lists battery grade lithium with full specification documentation and origin certificates.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'How does OreTrade support EU Battery Regulation compliance?',
+      acceptedAnswer: { '@type': 'Answer', text: 'The EU Battery Regulation requires documented due diligence on critical mineral supply chains including cobalt, lithium, nickel, and natural graphite. OreTrades Digital Product Passport provides mine of origin, third party assay certification, conflict free status, chain of custody, and ESG disclosures for every cargo, meeting the regulations traceability requirements.' },
+    }
+  ],
+}
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Critical Minerals Marketplace',
+  description: 'B2B marketplace for lithium, cobalt, rare earth elements, graphite and other critical minerals. Verified suppliers with Digital Product Passport traceability on every cargo.',
+  provider: { '@type': 'Organization', name: 'OreTrade', url: 'https://www.oretrade.com' },
+  serviceType: 'B2B Commodity Marketplace',
+  areaServed: ['GB', 'EU', 'AU', 'CA', 'ZA', 'US', 'JP', 'KR'],
+  url: 'https://www.oretrade.com/markets/critical-minerals/',
+}
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'OreTrade', item: 'https://www.oretrade.com' },
+    { '@type': 'ListItem', position: 2, name: 'Markets', item: 'https://www.oretrade.com/markets/' },
+    { '@type': 'ListItem', position: 3, name: 'Critical Minerals', item: 'https://www.oretrade.com/markets/critical-minerals/' }
+  ],
+}
+
 export const metadata: Metadata = {
   alternates: { canonical: 'https://www.oretrade.com/markets/critical-minerals/' },
   title: 'Critical Minerals Broker | Lithium, Cobalt, Rare Earths , OreTrade',
@@ -9,12 +72,13 @@ export const metadata: Metadata = {
 export default function CriticalMineralsPage() {
   return (
     <>
+      <SchemaMarkup schemas={[articleSchema, faqSchema, serviceSchema, breadcrumbSchema]} />
       <div className="page-hero">
         <div className="page-hero-inner">
           <div className="badge-soon">Launching 2026</div>
           <p className="section-label">Critical Minerals Market</p>
           <h1>Lithium, Cobalt &amp;<br /><span>Critical Minerals</span></h1>
-          <p>The materials powering the energy transition , sourced from verified producers with full traceability, conflict-free certification, and ESG compliance built in.</p>
+          <p>The materials powering the energy transition , sourced from verified producers with full traceability, conflict free certification, and ESG compliance built in.</p>
           <a href="/#contact" className="btn-primary">Join the Waitlist</a>
         </div>
       </div>
@@ -26,10 +90,10 @@ export default function CriticalMineralsPage() {
           <p>The EU designates 34 critical raw materials, including lithium, cobalt, nickel, manganese, graphite, rare earth elements, platinum group metals, tungsten, and titanium. The US, UK, Canada, and Australia publish similar lists. For companies in battery manufacturing, automotive, aerospace, and clean energy, securing transparent, verified supply of these materials is a strategic imperative , not just a procurement task.</p>
 
           <h3>Lithium</h3>
-          <p>Lithium is the cornerstone of rechargeable battery technology. It is extracted either from brine deposits (concentrated lithium-rich waters in salt flats, primarily in Chile, Argentina, and Bolivia , the &quot;Lithium Triangle&quot;) or from hard-rock spodumene deposits (primarily in Australia, with significant production in China and Portugal). It is processed into lithium carbonate (Li₂CO₃) or lithium hydroxide (LiOH), with battery-grade material requiring minimum 99.5% purity. Demand is projected to grow 5 to 10x by 2030 driven by EV adoption.</p>
+          <p>Lithium is the cornerstone of rechargeable battery technology. It is extracted either from brine deposits (concentrated lithium-rich waters in salt flats, primarily in Chile, Argentina, and Bolivia , the &quot;Lithium Triangle&quot;) or from hard-rock spodumene deposits (primarily in Australia, with significant production in China and Portugal). It is processed into lithium carbonate (Li₂CO₃) or lithium hydroxide (LiOH), with battery grade material requiring minimum 99.5% purity. Demand is projected to grow 5 to 10x by 2030 driven by EV adoption.</p>
 
           <h3>Cobalt</h3>
-          <p>Cobalt is critical for NMC and NCA battery cathode chemistries. Over 70% of the world&apos;s cobalt supply comes from the Democratic Republic of Congo , a concentration that creates significant supply chain risk and drives intense demand for verified, conflict-free sourcing. OreTrade&apos;s OECD-aligned Digital Product Passport is specifically designed for cobalt , providing the chain of custody documentation that EU Battery Regulation and OECD due diligence requirements demand.</p>
+          <p>Cobalt is critical for NMC and NCA battery cathode chemistries. Over 70% of the world&apos;s cobalt supply comes from the Democratic Republic of Congo , a concentration that creates significant supply chain risk and drives intense demand for verified, conflict free sourcing. OreTrade&apos;s OECD-aligned Digital Product Passport is specifically designed for cobalt , providing the chain of custody documentation that EU Battery Regulation and OECD due diligence requirements demand.</p>
 
           <h3>Rare Earth Elements</h3>
           <p>The rare earth elements (REEs) , a group of 17 metals including neodymium, praseodymium, dysprosium, and terbium , are essential for permanent magnets used in EV motors and wind turbines. China controls over 60% of global rare earth production and over 85% of processing capacity, making supply chain diversification one of the most urgent geopolitical imperatives in the critical minerals space.</p>
@@ -62,7 +126,7 @@ export default function CriticalMineralsPage() {
             <div className="info-card">
               <div className="card-icon">🕊️</div>
               <h3>Conflict-Free Verified</h3>
-              <p>Cobalt and other high-risk minerals are sourced only from OECD-compliant supply chains. Every cargo carries documented conflict-free certification.</p>
+              <p>Cobalt and other high-risk minerals are sourced only from OECD-compliant supply chains. Every cargo carries documented conflict free certification.</p>
             </div>
             <div className="info-card">
               <div className="card-icon">⚡</div>

@@ -1,20 +1,79 @@
 import type { Metadata } from 'next'
 
+import SchemaMarkup from '../../../components/SchemaMarkup'
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Base Metals Trading Platform — Copper, Aluminium, Zinc 2026',
+  author: { '@type': 'Organization', name: 'OreTrade', url: 'https://www.oretrade.com' },
+  publisher: { '@type': 'Organization', name: 'OreTrade', logo: { '@type': 'ImageObject', url: 'https://www.oretrade.com/logo.png' } },
+  datePublished: '2026-04-05',
+  dateModified: '2026-04-05',
+  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://www.oretrade.com/markets/base-metals/' },
+  about: { '@type': 'Thing', name: 'Base metal', sameAs: 'https://en.wikipedia.org/wiki/Base_metal' },
+  keywords: ['base metals trading platform','buy copper concentrate','aluminium ingot supplier','zinc concentrate marketplace','LME metals trading'],
+}
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What are base metals?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Base metals are industrial metals traded on the London Metal Exchange: copper, aluminium, zinc, lead, nickel, and tin. They are distinct from precious metals in that they are used primarily as industrial inputs rather than stores of value. Base metals underpin construction, transportation, packaging, electronics, and energy infrastructure globally.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'How are base metals priced?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Base metals are priced in US dollars per metric tonne on the London Metal Exchange (LME), which provides a global benchmark and physical delivery mechanism. Both cash (spot) and three month forward contracts are actively traded. Physical premiums or discounts apply depending on product form, delivery location, and regional supply and demand conditions.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is the difference between concentrate and refined metal?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Metal concentrate is the product of crushing and flotation processing of ore, containing 20 to 40% of the target metal along with impurities. Refined metal (cathode, ingot, billet) is produced after smelting and electrolytic refining and is 99.9%+ pure. Concentrate is traded between miners and smelters; refined metal is traded between smelters and industrial end users.' },
+    }
+  ],
+}
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Base Metals Marketplace',
+  description: 'B2B marketplace for copper, aluminium, zinc, lead, nickel and tin. LME referenced pricing, verified counterparties, full traceability on every transaction.',
+  provider: { '@type': 'Organization', name: 'OreTrade', url: 'https://www.oretrade.com' },
+  serviceType: 'B2B Commodity Marketplace',
+  areaServed: ['GB', 'EU', 'AU', 'CA', 'ZA', 'US', 'JP', 'KR'],
+  url: 'https://www.oretrade.com/markets/base-metals/',
+}
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'OreTrade', item: 'https://www.oretrade.com' },
+    { '@type': 'ListItem', position: 2, name: 'Markets', item: 'https://www.oretrade.com/markets/' },
+    { '@type': 'ListItem', position: 3, name: 'Base Metals', item: 'https://www.oretrade.com/markets/base-metals/' }
+  ],
+}
+
 export const metadata: Metadata = {
   alternates: { canonical: 'https://www.oretrade.com/markets/base-metals/' },
   title: 'Base Metals Trading Platform | Copper, Aluminium, Zinc , OreTrade',
-  description: 'Trade base metals on OreTrade , copper, aluminium, zinc, lead, nickel and tin. LME-referenced pricing, verified counterparties, full traceability.',
+  description: 'Trade base metals on OreTrade , copper, aluminium, zinc, lead, nickel and tin. LME referenced pricing, verified counterparties, full traceability.',
 }
 
 export default function BaseMetalsPage() {
   return (
     <>
+      <SchemaMarkup schemas={[articleSchema, faqSchema, serviceSchema, breadcrumbSchema]} />
       <div className="page-hero">
         <div className="page-hero-inner">
           <div className="badge-soon">Launching 2026</div>
           <p className="section-label">Base Metals Market</p>
           <h1>Base Metals<br /><span>Trading Platform</span></h1>
-          <p>Copper, aluminium, zinc, lead, nickel and tin , traded with verified counterparties, LME-referenced pricing, and full chain of custody documentation on every transaction.</p>
+          <p>Copper, aluminium, zinc, lead, nickel and tin , traded with verified counterparties, LME referenced pricing, and full chain of custody documentation on every transaction.</p>
           <a href="/#contact" className="btn-primary">Join the Waitlist</a>
         </div>
       </div>

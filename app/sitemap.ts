@@ -30,5 +30,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/blog`, lastModified: now, changeFrequency: 'weekly', priority: 0.8 },
     { url: `${base}/blog/china-rare-earth-export-controls`, lastModified: now, changeFrequency: 'weekly', priority: 0.9 },
     { url: `${base}/blog/rare-earth-shortage-2026`, lastModified: now, changeFrequency: 'weekly', priority: 0.85 },
+    { url: `${base}/about`, lastModified: now, changeFrequency: 'monthly', priority: 0.75 },
   ]
 }

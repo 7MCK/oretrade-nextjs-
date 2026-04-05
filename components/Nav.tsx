@@ -21,6 +21,7 @@ export default function Nav() {
           <li><Link href="/markets">Markets</Link></li>
           <li><Link href="/traceability">Traceability</Link></li>
           <li><Link href="/guides">Guides</Link></li>
+          <li><Link href="/about">About</Link></li>
           <li><Link href="/#investors">Investors</Link></li>
           <li><Link href="/#contact">Contact</Link></li>
           <li><a href="#" className="nav-cta" onClick={(e) => { e.preventDefault(); setModalOpen(true) }}>Join Waitlist</a></li>

@@ -136,6 +136,20 @@ export default function SamariumPage() {
         </div>
       </section>
 
+
+      <section className="content-section dark">
+        <div className="content-inner">
+          <h2>Further Reading</h2>
+          <p>Learn more about the rare earth supply chain and China export controls:</p>
+          <ul style={{ marginTop: '16px', lineHeight: '2' }}>
+            <li><a href="/blog/china-rare-earth-export-controls">China Rare Earth Export Controls 2025 to 2026 — What Buyers Need to Know</a></li>
+            <li><a href="/blog/rare-earth-shortage-2026">Rare Earth Shortage 2026 — Where to Find Supply Outside China</a></li>
+            <li><a href="/markets/rare-earths">All Rare Earth Markets on OreTrade</a></li>
+            <li><a href="/traceability">How the OreTrade Digital Product Passport Works</a></li>
+          </ul>
+        </div>
+      </section>
+
       <div className="cta-section">
         <h2>Source Samarium Outside China</h2>
         <p>Join the OreTrade waitlist for early access to verified samarium and SmCo material listings.</p>
