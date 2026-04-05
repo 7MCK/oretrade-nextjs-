@@ -33,7 +33,7 @@ const faqSchema = {
       name: 'What is the current terbium oxide price?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Terbium oxide (Tb4O7, 99.5% purity) traded at approximately $840/kg ex-China as of April 2026, rising from around $600/kg before China\'s export controls were introduced in April 2025. Terbium is one of the rarest and most expensive commercially traded rare earth elements, with China holding over 90% of global production.',
+        text: 'Terbium oxide (Tb4O7, 99.5% purity) traded at approximately $840/kg outside China as of April 2026, rising from around $600/kg before China\'s export controls were introduced in April 2025. Terbium is one of the rarest and most expensive commercially traded rare earth elements, with China holding over 90% of global production.',
       },
     },
     {
@@ -41,7 +41,7 @@ const faqSchema = {
       name: 'Where can I source terbium oxide outside China?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Non-China terbium sources include Lynas Rare Earths (Australia/Malaysia, which separates and processes HREE concentrate from Mount Weld), and early-stage projects from Arafura Resources (Australia) and Mkango Resources (Malawi). OreTrade connects buyers with verified ex-China suppliers with full product documentation and conflict-free certification.',
+        text: 'Outside China terbium sources include Lynas Rare Earths (Australia/Malaysia, which separates and processes HREE concentrate from Mount Weld), and early-stage projects from Arafura Resources (Australia) and Mkango Resources (Malawi). OreTrade connects buyers with verified outside China suppliers with full product documentation and conflict free certification.',
       },
     },
     {
@@ -80,7 +80,7 @@ const breadcrumbSchema = {
 export const metadata: Metadata = {
   alternates: { canonical: 'https://www.oretrade.com/markets/rare-earths/terbium/' },
   title: 'Terbium Oxide — Prices, Suppliers and Trading | OreTrade',
-  description: 'Source terbium oxide from verified suppliers. Terbium at ~$840/kg, under China export controls since April 2025. Verified ex-China supply with full traceability on OreTrade.',
+  description: 'Source terbium oxide from verified suppliers. Terbium at ~$840/kg, under China export controls since April 2025. Verified outside China supply with full traceability on OreTrade.',
 }
 
 export default function TerbiumPage() {
@@ -92,7 +92,7 @@ export default function TerbiumPage() {
           <div className="badge-soon" style={{ background: '#ef4444', color: 'white' }}>Export Controlled</div>
           <p className="section-label">Terbium Market</p>
           <h1>Terbium Oxide<br /><span>Prices, Suppliers and Trading</span></h1>
-          <p>Terbium is one of the rarest and most valuable rare earth elements, trading at approximately $840 per kilogram. Under China export controls since April 2025, verified ex-China supply is critically scarce. OreTrade connects buyers with documented, traceable terbium sources.</p>
+          <p>Terbium is one of the rarest and most valuable rare earth elements, trading at approximately $840 per kilogram. Under China export controls since April 2025, verified outside China supply is critically scarce. OreTrade connects buyers with documented, traceable terbium sources.</p>
           <a href="/#contact" className="btn-primary">Request Supply</a>
         </div>
       </div>
@@ -109,8 +109,8 @@ export default function TerbiumPage() {
               <tr><td>Current Price</td><td style={{ color: '#f87171' }}>~$840/kg (Tb oxide, 99.9%)</td></tr>
               <tr><td>Price vs NdPr</td><td style={{ color: '#f87171' }}>Approximately 14x the price of NdPr oxide</td></tr>
               <tr><td>Export Control Status</td><td style={{ color: '#f87171' }}>Controlled — China Announcement 18 (April 2025)</td></tr>
-              <tr><td>Key Applications</td><td>NdFeB high-temperature magnets, green phosphors, LEDs, solid-state devices</td></tr>
-              <tr><td>Major Non-China Sources</td><td>Australia (Lynas), Canada, Sweden (LKAB), Brazil</td></tr>
+              <tr><td>Key Applications</td><td>NdFeB high temperature magnets, green phosphors, LEDs, solid state devices</td></tr>
+              <tr><td>Major Outside China Sources</td><td>Australia (Lynas), Canada, Sweden (LKAB), Brazil</td></tr>
               <tr><td>Typical Purity</td><td>99.9% Tb oxide (Tb4O7)</td></tr>
               <tr><td>Annual Global Production</td><td>Approximately 700 to 800 tonnes — the rarest commercially traded REE</td></tr>
             </tbody>
@@ -123,15 +123,15 @@ export default function TerbiumPage() {
         <div className="content-inner">
           <h2>What Is Terbium Used For?</h2>
           <p>Terbium is a heavy rare earth element with atomic number 65. It is produced in tiny quantities relative to other rare earths and commands a price roughly 14 times that of the neodymium-praseodymium (NdPr) basket — making it one of the most valuable rare earth elements traded commercially.</p>
-          <p>The primary use of terbium is alongside dysprosium as an additive in NdFeB permanent magnets for applications requiring performance at extreme temperatures. While dysprosium is used in larger proportions, terbium provides superior coercivity improvement per kilogram added, making it the preferred additive in the most demanding high-temperature applications — including advanced EV motors, aerospace actuators, and military hardware operating in extreme thermal environments.</p>
-          <p>Beyond magnets, terbium is used in green phosphors for LED lighting and flat panel displays (its intense green fluorescence is irreplaceable in tri-phosphor lamps and display backlights), in solid-state devices and sensors, and in magneto-optical data storage materials. The compound terbium iron garnet is used in optical isolators for fibre optic communications.</p>
+          <p>The primary use of terbium is alongside dysprosium as an additive in NdFeB permanent magnets for applications requiring performance at extreme temperatures. While dysprosium is used in larger proportions, terbium provides superior coercivity improvement per kilogram added, making it the preferred additive in the most demanding high temperature applications — including advanced EV motors, aerospace actuators, and military hardware operating in extreme thermal environments.</p>
+          <p>Beyond magnets, terbium is used in green phosphors for LED lighting and flat panel displays (its intense green fluorescence is irreplaceable in tri-phosphor lamps and display backlights), in solid state devices and sensors, and in magneto-optical data storage materials. The compound terbium iron garnet is used in optical isolators for fibre optic communications.</p>
 
           <h3>Why Terbium Is So Scarce</h3>
           <p>Unlike the more abundant light rare earths such as cerium and lanthanum, terbium is a heavy rare earth element with an extremely low crustal abundance. Global annual production is estimated at just 700 to 800 tonnes per year, almost entirely from China. The combination of very low natural abundance, concentration of production in China, and the addition of export controls in April 2025 has created a severe and sustained supply shortage for buyers outside China.</p>
           <p>The US, EU, Japan and South Korea are all actively investing in rare earth processing capacity to reduce dependence on Chinese terbium supply. The EU Critical Raw Materials Act designates terbium as a strategic material with binding domestic production targets. However, building alternative supply chains for heavy rare earths takes years — meaning the supply crunch will persist well into the 2030s.</p>
 
           <h3>Terbium Demand Outlook</h3>
-          <p>Demand for terbium is projected to grow significantly as EV adoption accelerates globally. Each high-performance EV motor requires 0.1 to 0.5 kg of terbium oxide in its magnets. With global EV sales approaching 50 million units per year by 2030, even a conservative estimate points to terbium demand growing 4 to 6 times from current levels by the end of the decade — while supply is constrained by geology, processing capacity, and geopolitical risk.</p>
+          <p>Demand for terbium is projected to grow significantly as EV adoption accelerates globally. Each high performance EV motor requires 0.1 to 0.5 kg of terbium oxide in its magnets. With global EV sales approaching 50 million units per year by 2030, even a conservative estimate points to terbium demand growing 4 to 6 times from current levels by the end of the decade — while supply is constrained by geology, processing capacity, and geopolitical risk.</p>
         </div>
       </section>
 
@@ -148,7 +148,7 @@ export default function TerbiumPage() {
             <div className="info-card">
               <div className="card-icon">🔗</div>
               <h3>Full Traceability</h3>
-              <p>Every Tb cargo carries an OreTrade Digital Product Passport including assay certification (99.9% Tb4O7), chain of custody, conflict-free verification and ESG disclosures.</p>
+              <p>Every Tb cargo carries an OreTrade Digital Product Passport including assay certification (99.9% Tb4O7), chain of custody, conflict free verification and ESG disclosures.</p>
             </div>
             <div className="info-card">
               <div className="card-icon">📊</div>

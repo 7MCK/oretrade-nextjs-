@@ -41,7 +41,7 @@ const faqSchema = {
       name: 'What is NdPr oxide?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'NdPr oxide (Nd2Pr2O3) is a mixed oxide of neodymium and praseodymium, typically in a ratio of approximately 75% Nd to 25% Pr. It is the standard commercial form used in NdFeB magnet production because it is more cost-effective to process as a mixed product than to separate individual oxides. NdPr oxide is the most commercially important rare earth product by volume.',
+        text: 'NdPr oxide (Nd2Pr2O3) is a mixed oxide of neodymium and praseodymium, typically in a ratio of approximately 75% Nd to 25% Pr. It is the standard commercial form used in NdFeB magnet production because it is more cost effective to process as a mixed product than to separate individual oxides. NdPr oxide is the most commercially important rare earth product by volume.',
       },
     },
     {
@@ -49,7 +49,7 @@ const faqSchema = {
       name: 'Where can I source neodymium oxide outside China?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'The primary non-China neodymium source is Lynas Rare Earths, which mines at Mount Weld in Australia and processes in Malaysia — the only commercial-scale NdPr separation facility outside China. Additional sources include Energy Fuels (Utah, USA) and early-stage projects in Canada, Greenland and Africa. OreTrade lists verified non-Chinese NdPr suppliers with full product documentation.',
+        text: 'The primary outside China neodymium source is Lynas Rare Earths, which mines at Mount Weld in Australia and processes in Malaysia — the only commercial scale NdPr separation facility outside China. Additional sources include Energy Fuels (Utah, USA) and early-stage projects in Canada, Greenland and Africa. OreTrade lists verified non-Chinese NdPr suppliers with full product documentation.',
       },
     },
   ],
@@ -104,11 +104,11 @@ export default function NeodymiumPage() {
               <tr><th>Indicator</th><th>Value</th></tr>
             </thead>
             <tbody>
-              <tr><td>Nd2O3 Price (ex-China)</td><td style={{ color: '#4ade80' }}>~$149/kg (99.5% purity)</td></tr>
+              <tr><td>Nd2O3 Price (outside China)</td><td style={{ color: '#4ade80' }}>~$149/kg (99.5% purity)</td></tr>
               <tr><td>NdPr Oxide Price</td><td style={{ color: '#4ade80' }}>~$144/kg (commercial magnet grade)</td></tr>
               <tr><td>Export Control Status</td><td>Not currently controlled (Nd not in Announcement 18)</td></tr>
               <tr><td>Key Applications</td><td>NdFeB permanent magnets, EV motors, wind turbines, HDDs, MRI</td></tr>
-              <tr><td>Major Non-China Sources</td><td>Australia (Lynas), USA (Energy Fuels, MP Materials)</td></tr>
+              <tr><td>Major Outside China Sources</td><td>Australia (Lynas), USA (Energy Fuels, MP Materials)</td></tr>
               <tr><td>Typical Purity</td><td>99.5% Nd2O3, NdPr mixed oxide (~75% Nd, 25% Pr)</td></tr>
               <tr><td>Units</td><td>Kilograms, metric tonnes (min. order typically 1 MT)</td></tr>
             </tbody>
@@ -120,14 +120,14 @@ export default function NeodymiumPage() {
         <div className="content-inner">
           <h2>What Is Neodymium Used For?</h2>
           <p>Neodymium is the primary ingredient in neodymium-iron-boron (NdFeB) permanent magnets — the strongest commercially available permanent magnets and the foundational material behind the global clean energy transition. A typical NdFeB magnet is approximately 30% neodymium by weight.</p>
-          <p>NdFeB magnets containing neodymium are found in every electric vehicle drive motor, direct-drive offshore wind turbine generator, hard disk drive, MRI scanner, and an increasingly broad range of industrial servo motors, pumps and robotics. The IEA projects that demand for neodymium in clean energy applications alone could increase 3 to 5 times by 2040 under net zero scenarios.</p>
+          <p>NdFeB magnets containing neodymium are found in every electric vehicle drive motor, direct drive offshore wind turbine generator, hard disk drive, MRI scanner, and an increasingly broad range of industrial servo motors, pumps and robotics. The IEA projects that demand for neodymium in clean energy applications alone could increase 3 to 5 times by 2040 under net zero scenarios.</p>
           <p>Unlike dysprosium and terbium, neodymium is not currently subject to China export controls under Announcement 18. However, China still processes approximately 85 to 90% of global rare earth supply including neodymium, and Western supply chains remain vulnerable to future policy changes. The urgency to diversify supply is high across automotive, wind and defence sectors.</p>
 
           <h3>What is NdPr Oxide?</h3>
-          <p>In commercial practice, neodymium is most commonly traded as NdPr oxide — a mixed oxide of neodymium and praseodymium in a ratio of approximately 75% Nd to 25% Pr. This mixed form is more cost-effective to produce than separated neodymium oxide, and is fully suitable for standard NdFeB magnet production. The NdPr price typically tracks closely to the blended value of the two constituent oxides.</p>
+          <p>In commercial practice, neodymium is most commonly traded as NdPr oxide — a mixed oxide of neodymium and praseodymium in a ratio of approximately 75% Nd to 25% Pr. This mixed form is more cost effective to produce than separated neodymium oxide, and is fully suitable for standard NdFeB magnet production. The NdPr price typically tracks closely to the blended value of the two constituent oxides.</p>
 
-          <h3>Non-China Neodymium Supply</h3>
-          <p>The most significant non-China neodymium source is Lynas Rare Earths, which mines rare earth ore at Mount Weld in Western Australia — one of the highest-grade rare earth deposits in the world — and processes it at its facility in Kuantan, Malaysia. Lynas is the only commercial-scale producer of separated NdPr oxide outside China, producing approximately 6,000 tonnes per year of NdPr. MP Materials in the United States and Energy Fuels in Utah are building out domestic US separation capacity with government support.</p>
+          <h3>Outside China Neodymium Supply</h3>
+          <p>The most significant outside China neodymium source is Lynas Rare Earths, which mines rare earth ore at Mount Weld in Western Australia — one of the highest grade rare earth deposits in the world — and processes it at its facility in Kuantan, Malaysia. Lynas is the only commercial scale producer of separated NdPr oxide outside China, producing approximately 6,000 tonnes per year of NdPr. MP Materials in the United States and Energy Fuels in Utah are building out domestic US separation capacity with government support.</p>
         </div>
       </section>
 
@@ -143,7 +143,7 @@ export default function NeodymiumPage() {
             <div className="info-card">
               <div className="card-icon">🔗</div>
               <h3>Digital Product Passport</h3>
-              <p>Every neodymium cargo carries a Digital Product Passport with assay certification, chain of custody, conflict-free status and EU Battery Regulation compliance documentation.</p>
+              <p>Every neodymium cargo carries a Digital Product Passport with assay certification, chain of custody, conflict free status and EU Battery Regulation compliance documentation.</p>
             </div>
             <div className="info-card">
               <div className="card-icon">📦</div>
@@ -169,10 +169,10 @@ export default function NeodymiumPage() {
           <p>Neodymium oxide (Nd2O3, min. 99.5% purity) traded at approximately $149/kg as of early 2026. Neodymium is typically traded as NdPr oxide for magnet applications, which traded at approximately $144/kg. Prices are influenced by EV production volumes, Chinese export policy, and Western rare earth processing capacity.</p>
 
           <h3>What is NdPr oxide?</h3>
-          <p>NdPr oxide is a mixed oxide of neodymium and praseodymium, typically around 75% Nd to 25% Pr. It is the standard commercial form used in NdFeB magnet production because it is more cost-effective to process as a mixed product than to separate individual oxides. NdPr oxide is the most commercially important rare earth product by volume.</p>
+          <p>NdPr oxide is a mixed oxide of neodymium and praseodymium, typically around 75% Nd to 25% Pr. It is the standard commercial form used in NdFeB magnet production because it is more cost effective to process as a mixed product than to separate individual oxides. NdPr oxide is the most commercially important rare earth product by volume.</p>
 
           <h3>Where can I source neodymium oxide outside China?</h3>
-          <p>The primary non-China neodymium source is Lynas Rare Earths, which mines at Mount Weld in Australia and processes in Malaysia — the only commercial-scale NdPr separation facility outside China. Additional sources include Energy Fuels (Utah, USA) and early-stage projects in Canada and Greenland. OreTrade lists verified non-Chinese NdPr suppliers with full product documentation.</p>
+          <p>The primary outside China neodymium source is Lynas Rare Earths, which mines at Mount Weld in Australia and processes in Malaysia — the only commercial scale NdPr separation facility outside China. Additional sources include Energy Fuels (Utah, USA) and early stage projects in Canada and Greenland. OreTrade lists verified non-Chinese NdPr suppliers with full product documentation.</p>
         </div>
       </section>
 

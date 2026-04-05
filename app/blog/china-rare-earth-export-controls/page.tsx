@@ -33,7 +33,7 @@ const faqSchema = {
       name: 'Which rare earths are affected by China export controls?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'China export controls under Announcement 18 affect dysprosium (Dy), terbium (Tb), samarium (Sm), and yttrium (Y) — all elements where China holds over 80% of global supply. All four are critical for NdFeB permanent magnets used in EV motors, wind turbines and defence systems. No short-term substitutes exist.',
+        text: 'China export controls under Announcement 18 affect dysprosium (Dy), terbium (Tb), samarium (Sm), and yttrium (Y) — all elements where China holds over 80% of global supply. All four are critical for NdFeB permanent magnets used in EV motors, wind turbines and defence systems. No short term substitutes exist.',
       },
     },
     {
@@ -41,7 +41,7 @@ const faqSchema = {
       name: 'How much have rare earth prices risen due to China export controls?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Since Announcement 18 in April 2025, dysprosium oxide prices have more than doubled from approximately $90/kg to $189/kg by April 2026. Terbium has risen from around $600/kg to approximately $840/kg. Samarium and yttrium have also seen significant premiums in ex-China markets, where supply is limited.',
+        text: 'Since Announcement 18 in April 2025, dysprosium oxide prices have more than doubled from approximately $90/kg to $189/kg by April 2026. Terbium has risen from around $600/kg to approximately $840/kg. Samarium and yttrium have also seen significant premiums in outside China markets, where supply is limited.',
       },
     },
     {
@@ -49,7 +49,7 @@ const faqSchema = {
       name: 'Where can manufacturers source rare earths outside China?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Key ex-China rare earth sources include Lynas Rare Earths and Arafura Resources in Australia, Vital Metals in Canada, LKAB in Sweden, and Energy Fuels and MP Materials in the United States. OreTrade connects buyers with verified non-Chinese producers with full documentation, mine of origin certificates, and OECD-compliant due diligence on every cargo.',
+        text: 'Key outside China rare earth sources include Lynas Rare Earths and Arafura Resources in Australia, Vital Metals in Canada, LKAB in Sweden, and Energy Fuels and MP Materials in the United States. OreTrade connects buyers with verified non-Chinese producers with full documentation, mine of origin certificates, and OECD-compliant due diligence on every cargo.',
       },
     },
   ],
@@ -103,7 +103,7 @@ export default function ChinaExportControlsPage() {
           <p>In practice, the licensing requirement has resulted in a significant reduction in Chinese rare earth exports for the controlled elements. While China has not issued a blanket export ban, licences have been granted selectively and in limited quantities, effectively throttling supply to Western manufacturers.</p>
 
           <h2 id="which-elements">Which Elements Are Affected?</h2>
-          <p>Announcement 18 specifically targeted elements with critical applications in defence, clean energy and advanced electronics where China holds near-monopoly supply positions:</p>
+          <p>Announcement 18 specifically targeted elements with critical applications in defence, clean energy and advanced electronics where China holds near monopoly supply positions:</p>
 
           <table className="specs-table" style={{ marginTop: '20px' }}>
             <thead>
@@ -111,28 +111,28 @@ export default function ChinaExportControlsPage() {
             </thead>
             <tbody>
               <tr><td>Dysprosium</td><td>Dy</td><td>NdFeB magnet heat resistance (EV, wind, defence)</td><td>Over 90%</td></tr>
-              <tr><td>Terbium</td><td>Tb</td><td>High-temperature NdFeB magnets, green phosphors</td><td>Over 90%</td></tr>
+              <tr><td>Terbium</td><td>Tb</td><td>High temperature NdFeB magnets, green phosphors</td><td>Over 90%</td></tr>
               <tr><td>Samarium</td><td>Sm</td><td>SmCo magnets for aerospace and extreme temperatures</td><td>Over 85%</td></tr>
               <tr><td>Yttrium</td><td>Y</td><td>LED phosphors, jet engine coatings, laser materials</td><td>Over 80%</td></tr>
             </tbody>
           </table>
 
-          <p style={{ marginTop: '20px' }}>All four are used in permanent magnets, defence systems, or advanced electronics where there is no short-term substitution option. The controlled elements are not interchangeable with cheaper, more abundant rare earths — the performance requirements of the applications they serve demand these specific materials.</p>
+          <p style={{ marginTop: '20px' }}>All four are used in permanent magnets, defence systems, or advanced electronics where there is no short term substitution option. The controlled elements are not interchangeable with cheaper, more abundant rare earths — the performance requirements of the applications they serve demand these specific materials.</p>
 
           <h2 id="price-impact">Price Impact in 2026</h2>
-          <p>The price impact of Announcement 18 has been severe and sustained. Dysprosium oxide (ex-China) has risen from approximately $90 per kilogram in early 2025 to over $189 per kilogram by early 2026 — a increase of more than 100% in under twelve months. Terbium, already the most expensive of the heavy rare earths at around $600 per kilogram pre-controls, has risen to approximately $840 per kilogram.</p>
-          <p>Samarium and yttrium, previously considered lower-value rare earths, have also seen significant price increases as buyers scramble to secure forward supply. The price volatility has been compounded by thin liquidity in ex-China markets — relatively few verified non-Chinese suppliers exist for these elements at commercial scale, meaning even modest additional demand moves prices sharply.</p>
-          <p>For manufacturers of EV motors, wind turbines, defence systems and advanced electronics, the cost impact is significant. A permanent magnet for a high-performance EV motor might contain 0.3 to 0.5 kg of dysprosium oxide. At $189/kg, that represents approximately $57 to $95 per motor in dysprosium cost alone — compared to $27 to $45 before the controls. Multiplied across millions of vehicles, the cumulative impact is substantial.</p>
+          <p>The price impact of Announcement 18 has been severe and sustained. Dysprosium oxide (outside China) has risen from approximately $90 per kilogram in early 2025 to over $189 per kilogram by early 2026 — a increase of more than 100% in under twelve months. Terbium, already the most expensive of the heavy rare earths at around $600 per kilogram before controls, has risen to approximately $840 per kilogram.</p>
+          <p>Samarium and yttrium, previously considered lower value rare earths, have also seen significant price increases as buyers scramble to secure forward supply. The price volatility has been compounded by thin liquidity in outside China markets — relatively few verified non-Chinese suppliers exist for these elements at commercial scale, meaning even modest additional demand moves prices sharply.</p>
+          <p>For manufacturers of EV motors, wind turbines, defence systems and advanced electronics, the cost impact is significant. A permanent magnet for a high performance EV motor might contain 0.3 to 0.5 kg of dysprosium oxide. At $189/kg, that represents approximately $57 to $95 per motor in dysprosium cost alone — compared to $27 to $45 before the controls. Multiplied across millions of vehicles, the cumulative impact is substantial.</p>
 
           <h2 id="why-now">Why Did China Act in April 2025?</h2>
-          <p>Announcement 18 did not emerge in isolation. It followed escalating US trade restrictions targeting Chinese semiconductor, battery and EV industries — including expanded export controls on advanced chips, manufacturing equipment, and battery technology. The rare earth controls are widely interpreted as a targeted response: China leveraging its near-monopoly position in critical materials as a counter in an ongoing technology and trade war.</p>
+          <p>Announcement 18 did not emerge in isolation. It followed escalating US trade restrictions targeting Chinese semiconductor, battery and EV industries — including expanded export controls on advanced chips, manufacturing equipment, and battery technology. The rare earth controls are widely interpreted as a targeted response: China leveraging its near monopoly position in critical materials as a counter in an ongoing technology and trade war.</p>
           <p>The specific timing coincided with the anniversary of earlier US chip export restrictions and followed a period of intensified diplomatic tension. The choice of dysprosium, terbium, samarium and yttrium was deliberate — these are the elements most critical to Western defence procurement and clean energy manufacturing, where dependency on Chinese supply is hardest to replace quickly.</p>
           <p>Analysts broadly expect China to maintain or extend the controls as long as US technology restrictions remain in place. Some scenario analyses suggest additional rare earth elements could be added to the controlled list in future announcements.</p>
 
           <h2 id="supply-alternatives">Alternative Supply Sources</h2>
           <p>The good news for buyers is that rare earth deposits containing dysprosium, terbium, samarium and yttrium do exist outside China — though developing them at scale takes years and significant capital investment.</p>
-          <p><strong>Australia</strong> is the most advanced non-Chinese source, primarily through Lynas Rare Earths — the only large-scale rare earth producer and processor outside China. Lynas operates the Mount Weld mine in Western Australia (one of the highest-grade rare earth deposits in the world) and a processing plant in Malaysia. Lynas also has a heavy rare earth separation facility under development in Australia and a cracking and leaching facility in Texas under a US DoD contract.</p>
-          <p><strong>Sweden</strong> is emerging as a significant European source. LKAB, the state-owned mining company, has confirmed rare earth deposits at its iron ore operations in Kiruna — estimated to contain around 1 million tonnes of rare earth oxides including heavy rare earths. LKAB is targeting first production in the 2030s.</p>
+          <p><strong>Australia</strong> is the most advanced non-Chinese source, primarily through Lynas Rare Earths — the only large scale rare earth producer and processor outside China. Lynas operates the Mount Weld mine in Western Australia (one of the highest grade rare earth deposits in the world) and a processing plant in Malaysia. Lynas also has a heavy rare earth separation facility under development in Australia and a cracking and leaching facility in Texas under a US DoD contract.</p>
+          <p><strong>Sweden</strong> is emerging as a significant European source. LKAB, the state owned mining company, has confirmed rare earth deposits at its iron ore operations in Kiruna — estimated to contain around 1 million tonnes of rare earth oxides including heavy rare earths. LKAB is targeting first production in the 2030s.</p>
           <p><strong>Canada</strong> has multiple rare earth projects at various stages of development, including Vital Metals (Nechalacho, Northwest Territories) and Energy Fuels (processing mixed rare earth carbonate at its White Mesa facility in Utah from Canadian feedstock).</p>
           <p><strong>The United States</strong> produces neodymium and praseodymium at Mountain Pass (MP Materials) but has limited heavy rare earth production. The DoD is funding multiple projects to address the gap, including investments in processing facilities and extraction technology for ionic clay deposits in the US Southeast, which contain significant heavy rare earth concentrations.</p>
 
@@ -140,7 +140,7 @@ export default function ChinaExportControlsPage() {
           <p>For procurement teams managing rare earth supply chains, the practical response to Announcement 18 requires action across several fronts:</p>
           <p><strong>Audit your exposure.</strong> Map which of your products contain dysprosium, terbium, samarium or yttrium — directly or in components purchased from suppliers. Quantify your annual consumption and current inventory position.</p>
           <p><strong>Qualify alternative suppliers now.</strong> The qualification process for new rare earth suppliers takes months. Starting now rather than when stocks run low is essential. Look beyond China to Australian, Canadian and emerging European sources.</p>
-          <p><strong>Document your supply chain.</strong> Regulators in the EU and US are increasingly requiring documented proof of rare earth provenance, particularly for defence-related applications and battery supply chains under the EU Battery Regulation. Suppliers who cannot provide a clear chain of custody from mine to delivered product are increasingly difficult to use for compliant procurement.</p>
+          <p><strong>Document your supply chain.</strong> Regulators in the EU and US are increasingly requiring documented proof of rare earth provenance, particularly for defence related applications and battery supply chains under the EU Battery Regulation. Suppliers who cannot provide a clear chain of custody from mine to delivered product are increasingly difficult to use for compliant procurement.</p>
           <p><strong>Consider strategic stocking.</strong> Given price volatility and supply uncertainty, holding additional inventory of controlled rare earths has become a standard risk management practice for major manufacturers. The US government&apos;s own Project Vault initiative (announced February 2026) is building a $12 billion strategic stockpile of critical minerals including rare earths.</p>
           <p>OreTrade is building the infrastructure for verified, traceable rare earth procurement outside China — connecting qualified buyers with documented producers through a platform designed for the documentation and compliance requirements of modern supply chain management.</p>
         </div>

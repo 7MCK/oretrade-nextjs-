@@ -7,7 +7,7 @@ const serviceSchema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   name: 'Rare Earth Elements Marketplace',
-  description: 'B2B marketplace for rare earth elements including dysprosium, terbium, neodymium, praseodymium, samarium and yttrium. Verified ex-China suppliers with Digital Product Passport on every cargo.',
+  description: 'B2B marketplace for rare earth elements including dysprosium, terbium, neodymium, praseodymium, samarium and yttrium. Verified outside China suppliers with Digital Product Passport on every cargo.',
   provider: { '@type': 'Organization', name: 'OreTrade', url: 'https://www.oretrade.com' },
   serviceType: 'B2B Commodity Marketplace',
   areaServed: ['GB', 'EU', 'AU', 'CA', 'ZA', 'US', 'JP', 'KR'],
@@ -17,11 +17,11 @@ const serviceSchema = {
 export const metadata: Metadata = {
   alternates: { canonical: 'https://www.oretrade.com/markets/rare-earths/' },
   title: 'Rare Earth Marketplace | Buy and Sell Verified REE — OreTrade',
-  description: 'Source rare earth elements from verified suppliers on OreTrade. Dysprosium, terbium, neodymium, NdPr, cerium, lanthanum and more. Full traceability, conflict-free certified, ex-China supply available.',
+  description: 'Source rare earth elements from verified suppliers on OreTrade. Dysprosium, terbium, neodymium, NdPr, cerium, lanthanum and more. Full traceability, conflict free certified, outside China supply available.',
 }
 
 const ELEMENTS = [
-  { href: '/markets/rare-earths/dysprosium', symbol: 'Dy', name: 'Dysprosium', price: '~$189/kg', change: 'up', note: 'Export controlled — ex-China supply available', hot: true },
+  { href: '/markets/rare-earths/dysprosium', symbol: 'Dy', name: 'Dysprosium', price: '~$189/kg', change: 'up', note: 'Export controlled — outside China supply available', hot: true },
   { href: '/markets/rare-earths/terbium', symbol: 'Tb', name: 'Terbium', price: '~$840/kg', change: 'up', note: 'Export controlled — severe shortage', hot: true },
   { href: '/markets/rare-earths/ndpr', symbol: 'NdPr', name: 'Neodymium / Praseodymium', price: '~$97/kg', change: 'stable', note: 'Core magnet input — EV and wind turbine demand', hot: true },
   { href: '/markets/rare-earths/neodymium', symbol: 'Nd', name: 'Neodymium', price: '~$97/kg', change: 'stable', note: 'Highest-demand REE globally', hot: false },
@@ -47,7 +47,7 @@ export default function RareEarthsPage() {
       <div style={{ background: '#7B3A10', padding: '20px 40px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', alignItems: 'center', gap: '16px', fontFamily: 'Arial, sans-serif', fontSize: '14px', color: '#e8ddd0', flexWrap: 'wrap' }}>
           <span style={{ fontWeight: 'bold', color: 'var(--amber)' }}>Market Alert:</span>
-          <span>China export controls on Dy, Tb, Sm and Y (Announcement 18, April 2025) have driven significant price increases. Dysprosium is up over 100% year to date in 2026. OreTrade connects buyers with verified ex-China supply.</span>
+          <span>China export controls on Dy, Tb, Sm and Y (Announcement 18, April 2025) have driven significant price increases. Dysprosium is up over 100% year to date in 2026. OreTrade connects buyers with verified outside China supply.</span>
           <Link href="/blog/china-rare-earth-export-controls" style={{ color: 'var(--amber)', textDecoration: 'none', whiteSpace: 'nowrap' }}>Read the analysis</Link>
         </div>
       </div>
@@ -84,13 +84,13 @@ export default function RareEarthsPage() {
           <div className="info-grid">
             <div className="info-card">
               <div className="card-icon">🌍</div>
-              <h3>Verified Ex-China Supply</h3>
+              <h3>Verified outside China Supply</h3>
               <p>Access verified rare earth producers in Australia, Canada, the US, Sweden and Africa. Every supplier is KYC verified and documentation checked before listing. Reduce your China exposure with confidence.</p>
             </div>
             <div className="info-card">
               <div className="card-icon">🔗</div>
               <h3>Digital Product Passport</h3>
-              <p>Every cargo carries an OreTrade Product Passport with mine of origin, assay certification, conflict-free status and chain of custody. OECD due diligence and EU Battery Regulation compliant by design.</p>
+              <p>Every cargo carries an OreTrade Product Passport with mine of origin, assay certification, conflict free status and chain of custody. OECD due diligence and EU Battery Regulation compliant by design.</p>
             </div>
             <div className="info-card">
               <div className="card-icon">⚡</div>
@@ -106,7 +106,7 @@ export default function RareEarthsPage() {
         <div className="content-inner">
           <h2>The Rare Earth Market in 2026</h2>
           <p>China produces approximately 60% of the world&apos;s rare earth elements and processes over 85% of global supply. In April 2025, China introduced Announcement 18 — export controls on dysprosium, terbium, samarium and yttrium — the four rare earths most critical for defence, EV and clean energy applications.</p>
-          <p>The result has been a significant price surge, supply disruption for Western manufacturers, and an urgent search for alternative sources. Dysprosium, used as a heat-resistance additive in NdFeB permanent magnets for EV motors and wind turbines, has risen over 100% year to date in 2026. Terbium, trading at approximately $840 per kilogram, is in even shorter supply.</p>
+          <p>The result has been a significant price surge, supply disruption for Western manufacturers, and an urgent search for alternative sources. Dysprosium, used as a heat resistance additive in NdFeB permanent magnets for EV motors and wind turbines, has risen over 100% year to date in 2026. Terbium, trading at approximately $840 per kilogram, is in even shorter supply.</p>
           <p>The US Department of Defense has committed $400 million to MP Materials to accelerate domestic REE production. The EU Critical Raw Materials Act designates rare earths as strategic materials and sets binding targets for European supply chain diversification by 2030. The geopolitical case for supply chain diversification has never been stronger.</p>
           <p>OreTrade connects buyers with verified producers of rare earth elements outside China, with the documentation and traceability infrastructure that modern procurement requires.</p>
           <div style={{ marginTop: '28px', display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
