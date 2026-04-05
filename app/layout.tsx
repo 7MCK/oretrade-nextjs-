@@ -12,12 +12,6 @@ export const metadata: Metadata = {
     siteName: 'OreTrade',
     type: 'website',
   },
-  verification: {
-    google: undefined,
-    other: {
-      'msvalidate.01': 'AA472FDD82CB5EFEF13F2D1F5A2B846E',
-    },
-  },
 }
 
 const organizationSchema = {
@@ -59,6 +53,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <head>
+        {/* Bing Webmaster Verification */}
+        <meta name="msvalidate.01" content="AA472FDD82CB5EFEF13F2D1F5A2B846E" />
         {/* Organization Schema — AI entity anchor */}
         <script
           type="application/ld+json"
