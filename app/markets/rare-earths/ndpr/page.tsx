@@ -81,6 +81,7 @@ const breadcrumbSchema = {
 }
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://www.oretrade.com/markets/rare-earths/ndpr/' },
   title: 'NdPr Oxide — Neodymium Praseodymium Prices and Supply | OreTrade',
   description: 'NdPr oxide price, supply and trading guide for 2026. The benchmark magnet rare earth at ~$144/kg. Source verified NdPr from non-Chinese producers on OreTrade.',
 }

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://www.oretrade.com/markets/base-metals/' },
   title: 'Base Metals Trading Platform | Copper, Aluminium, Zinc , OreTrade',
   description: 'Trade base metals on OreTrade , copper, aluminium, zinc, lead, nickel and tin. LME-referenced pricing, verified counterparties, full traceability.',
 }

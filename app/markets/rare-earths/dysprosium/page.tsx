@@ -3,6 +3,7 @@ import Link from 'next/link'
 import SchemaMarkup from '../../../../components/SchemaMarkup'
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://www.oretrade.com/markets/rare-earths/dysprosium/' },
   title: 'Dysprosium Oxide — Prices, Suppliers and Trading | OreTrade',
   description: 'Buy dysprosium oxide from verified suppliers outside China. Dy prices up 100%+ in 2026 following export controls. Full traceability, conflict-free certification, ex-China supply.',
 }

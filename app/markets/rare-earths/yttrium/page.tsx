@@ -67,6 +67,7 @@ const breadcrumbSchema = {
 }
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://www.oretrade.com/markets/rare-earths/yttrium/' },
   title: 'Yttrium Oxide — Prices, Suppliers and Trading | OreTrade',
   description: 'Yttrium supply and price guide for 2026. Critical for LED phosphors, jet engine thermal coatings and lasers. Under China export controls. Source verified yttrium on OreTrade.',
 }

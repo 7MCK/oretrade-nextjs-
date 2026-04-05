@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://www.oretrade.com/markets/mining-ores/' },
   title: 'Mining Ore Buyers & Sellers | Bulk Ore Marketplace , OreTrade',
   description: 'Buy and sell bulk mining ores on OreTrade , iron ore, bauxite, chromite, manganese and more. Large-lot transactions with verified producers and full origin documentation.',
 }

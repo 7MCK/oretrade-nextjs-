@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://www.oretrade.com/markets/critical-minerals/' },
   title: 'Critical Minerals Broker | Lithium, Cobalt, Rare Earths , OreTrade',
   description: 'Source lithium, cobalt, rare earths and graphite from verified suppliers on OreTrade. The critical minerals marketplace for the energy transition.',
 }

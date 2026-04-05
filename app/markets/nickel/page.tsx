@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://www.oretrade.com/markets/nickel/' },
   title: 'Nickel Ore Suppliers | Nickel Trading Platform , OreTrade',
   description: 'Source nickel ore and nickel products from verified suppliers on OreTrade. Battery-grade and industrial nickel from Indonesia, Philippines and key global origins.',
 }

@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://www.oretrade.com/guides/lithium/' },
   title: 'Lithium Mining Process Explained | From Brine to Battery , OreTrade',
   description: 'How lithium is mined from brine and hard rock, processed into carbonate and hydroxide, graded for battery use, and traded globally. Complete guide to lithium supply chains.',
 }

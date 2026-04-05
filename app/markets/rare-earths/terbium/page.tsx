@@ -78,6 +78,7 @@ const breadcrumbSchema = {
 }
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://www.oretrade.com/markets/rare-earths/terbium/' },
   title: 'Terbium Oxide — Prices, Suppliers and Trading | OreTrade',
   description: 'Source terbium oxide from verified suppliers. Terbium at ~$840/kg, under China export controls since April 2025. Verified ex-China supply with full traceability on OreTrade.',
 }

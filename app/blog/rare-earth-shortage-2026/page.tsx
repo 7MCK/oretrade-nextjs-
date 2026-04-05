@@ -1,7 +1,55 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
+import SchemaMarkup from '../../../components/SchemaMarkup'
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Rare Earth Shortage 2026 — Where to Find Supply Outside China',
+  author: { '@type': 'Organization', name: 'OreTrade', url: 'https://www.oretrade.com' },
+  publisher: { '@type': 'Organization', name: 'OreTrade', logo: { '@type': 'ImageObject', url: 'https://www.oretrade.com/logo.png' } },
+  datePublished: '2026-04-05',
+  dateModified: '2026-04-05',
+  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://www.oretrade.com/blog/rare-earth-shortage-2026/' },
+  about: { '@type': 'Thing', name: 'Rare earth elements', sameAs: 'https://en.wikipedia.org/wiki/Rare-earth_element' },
+  keywords: ['rare earth shortage 2026', 'rare earth supply outside China', 'dysprosium shortage', 'terbium shortage', 'rare earth alternative supply'],
+}
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'Why is there a rare earth shortage in 2026?',
+      acceptedAnswer: { '@type': 'Answer', text: 'China\'s Announcement 18 (April 2025) placed dysprosium, terbium, samarium and yttrium under export licensing controls, sharply restricting supply to Western manufacturers. China produces over 85-90% of global rare earth supply for most elements. The combination of export controls and rapidly growing EV and wind energy demand has created a severe supply crunch.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Which rare earths are hardest to source outside China in 2026?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Dysprosium and terbium are the most critically constrained — both are under Chinese export controls with very limited non-China production capacity. Samarium and yttrium are also affected. NdPr has more ex-China supply via Lynas Rare Earths in Australia/Malaysia, but still faces tightness as EV demand grows.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Where can manufacturers find rare earth supply outside China?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Key non-China sources include Lynas Rare Earths (Australia/Malaysia), MP Materials (California), Energy Fuels (Utah), Arafura Resources (Australia), Vital Metals (Canada), and LKAB (Sweden). OreTrade connects buyers with verified suppliers from these origins with full Digital Product Passport documentation on every cargo.' },
+    }
+  ],
+}
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'OreTrade', item: 'https://www.oretrade.com' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.oretrade.com/blog/' },
+    { '@type': 'ListItem', position: 3, name: 'Rare Earth Shortage 2026', item: 'https://www.oretrade.com/blog/rare-earth-shortage-2026/' }
+  ],
+}
+
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://www.oretrade.com/blog/rare-earth-shortage-2026/' },
   title: 'Rare Earth Shortage 2026 — Where to Find Supply Outside China | OreTrade',
   description: 'Rare earth shortages in 2026 are driving urgent demand for non-Chinese supply of dysprosium, terbium and other critical elements. Here is where verified alternative supply exists.',
 }
@@ -9,6 +57,7 @@ export const metadata: Metadata = {
 export default function RareEarthShortagePage() {
   return (
     <>
+      <SchemaMarkup schemas={[articleSchema, faqSchema, breadcrumbSchema]} />
       <div className="page-hero">
         <div className="page-hero-inner">
           <p className="section-label">Market Analysis</p>

@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://www.oretrade.com/markets/' },
   title: 'Ore & Metals Markets , Global Commodity Trading Platform',
   description: 'Browse OreTrade markets for iron ore, copper, gold, nickel, critical minerals, base metals and mining ores. Verified listings, full traceability, ethical sourcing.',
 }

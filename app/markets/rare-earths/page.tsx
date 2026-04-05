@@ -1,7 +1,21 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
+import SchemaMarkup from '../../../components/SchemaMarkup'
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Rare Earth Elements Marketplace',
+  description: 'B2B marketplace for rare earth elements including dysprosium, terbium, neodymium, praseodymium, samarium and yttrium. Verified ex-China suppliers with Digital Product Passport on every cargo.',
+  provider: { '@type': 'Organization', name: 'OreTrade', url: 'https://www.oretrade.com' },
+  serviceType: 'B2B Commodity Marketplace',
+  areaServed: ['GB', 'EU', 'AU', 'CA', 'ZA', 'US', 'JP', 'KR'],
+  url: 'https://www.oretrade.com/markets/rare-earths/',
+}
+
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://www.oretrade.com/markets/rare-earths/' },
   title: 'Rare Earth Marketplace | Buy and Sell Verified REE — OreTrade',
   description: 'Source rare earth elements from verified suppliers on OreTrade. Dysprosium, terbium, neodymium, NdPr, cerium, lanthanum and more. Full traceability, conflict-free certified, ex-China supply available.',
 }
@@ -18,6 +32,7 @@ const ELEMENTS = [
 export default function RareEarthsPage() {
   return (
     <>
+      <SchemaMarkup schema={serviceSchema} />
       <div className="page-hero">
         <div className="page-hero-inner">
           <div className="badge-soon">Launching 2026</div>

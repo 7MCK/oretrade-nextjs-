@@ -1,6 +1,20 @@
 import type { Metadata } from 'next'
 
+import SchemaMarkup from '../../components/SchemaMarkup'
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Digital Product Passport — OreTrade Traceability',
+  description: 'OreTrade issues a Digital Product Passport for every commodity cargo — verifying mine of origin, assay certification, conflict-free status, chain of custody, and ESG disclosures. OECD compliant and EU Battery Regulation ready.',
+  provider: { '@type': 'Organization', name: 'OreTrade', url: 'https://www.oretrade.com' },
+  serviceType: 'Commodity Traceability Service',
+  areaServed: ['GB', 'EU', 'AU', 'CA', 'ZA', 'US', 'JP', 'KR'],
+  url: 'https://www.oretrade.com/traceability/',
+}
+
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://www.oretrade.com/traceability/' },
   title: 'Digital Product Passport for Minerals & Metals | OreTrade Traceability',
   description: "OreTrade's Digital Product Passport gives every tonne of ore a permanent, auditable record from mine to market. OECD compliant. Conflict-free verified. ESG disclosed.",
 }
@@ -8,6 +22,7 @@ export const metadata: Metadata = {
 export default function TraceabilityPage() {
   return (
     <>
+      <SchemaMarkup schema={serviceSchema} />
       {/* HERO */}
       <div className="page-hero">
         <div className="page-hero-inner">

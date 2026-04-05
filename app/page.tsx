@@ -6,7 +6,8 @@ import ContactForm from '../components/ContactForm'
 export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
-  title: 'OreTrade , Global Ore Trading Platform | From Mine to Market',
+  alternates: { canonical: 'https://www.oretrade.com/' },
+  title: 'OreTrade — Global Ore Trading Platform | From Mine to Market',
   description: 'OreTrade is the global marketplace for mining ores, base metals, precious metals and critical minerals. Verified counterparties, full traceability, ethical sourcing.',
 }
 

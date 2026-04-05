@@ -1,6 +1,20 @@
 import type { Metadata } from 'next'
 
+import SchemaMarkup from '../../../components/SchemaMarkup'
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Iron Ore Marketplace',
+  description: 'B2B marketplace for iron ore fines, lump and pellets. Verified producers from Australia, Brazil and South Africa. Full traceability and chain of custody on every cargo.',
+  provider: { '@type': 'Organization', name: 'OreTrade', url: 'https://www.oretrade.com' },
+  serviceType: 'B2B Commodity Marketplace',
+  areaServed: ['GB', 'EU', 'AU', 'CA', 'ZA', 'US', 'JP', 'KR'],
+  url: 'https://www.oretrade.com/markets/iron-ore/',
+}
+
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://www.oretrade.com/markets/iron-ore/' },
   title: 'Buy Iron Ore Online | Iron Ore Marketplace , OreTrade',
   description: 'Buy and sell iron ore on OreTrade , the verified global iron ore marketplace. Fines, lump and pellets from Australia, Brazil and South Africa. Full traceability.',
 }
@@ -8,6 +22,7 @@ export const metadata: Metadata = {
 export default function IronOrePage() {
   return (
     <>
+      <SchemaMarkup schema={serviceSchema} />
       <div className="page-hero">
         <div className="page-hero-inner">
           <div className="badge-soon">Launching 2026</div>

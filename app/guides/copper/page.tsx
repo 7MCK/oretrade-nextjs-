@@ -1,7 +1,60 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
+import SchemaMarkup from '../../../components/SchemaMarkup'
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Copper — Complete Buyer and Seller Guide 2026',
+  author: { '@type': 'Organization', name: 'OreTrade', url: 'https://www.oretrade.com' },
+  publisher: { '@type': 'Organization', name: 'OreTrade', logo: { '@type': 'ImageObject', url: 'https://www.oretrade.com/logo.png' } },
+  datePublished: '2026-04-05',
+  dateModified: '2026-04-05',
+  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://www.oretrade.com/guides/copper/' },
+  about: { '@type': 'Thing', name: 'Copper', sameAs: 'https://en.wikipedia.org/wiki/Copper' },
+  keywords: ['copper concentrate buyer guide', 'copper price per tonne', 'buy copper concentrate', 'copper TCRC', 'copper trading platform'],
+}
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What is copper concentrate?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Copper concentrate is the primary product of copper mining — a powder containing 20-30% copper along with iron sulfides and by-products including gold and silver. It is produced by crushing and flotation of copper ore and is the feedstock for copper smelters. The alternative is copper cathode (99.99% pure Cu), produced after smelting and electrolytic refining.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is the current copper price?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Copper (Grade A cathode, LME) has traded in the range of $8,000-$11,000 per metric tonne in recent years. Prices are driven by Chinese manufacturing demand, EV and renewable energy growth, and supply disruptions from major producing countries. OreTrade provides reference pricing for copper concentrate and cathode.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is TCRC in copper trading?',
+      acceptedAnswer: { '@type': 'Answer', text: 'TCRC stands for Treatment Charge / Refining Charge — the fee smelters charge to process copper concentrate into refined copper. TC is quoted in $/dry metric tonne of concentrate; RC in cents per pound of payable copper. TCRC rates are negotiated annually between miners and smelters and are a key margin driver for both parties.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Who are the major copper producing countries?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Chile is the largest copper producer at approximately 25% of global mine output, followed by Peru (10%), China (8%), the DRC (8%), and the USA (6%). Major mining companies include Codelco, BHP, Glencore, Freeport-McMoRan, Anglo American, and First Quantum Minerals.' },
+    }
+  ],
+}
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'OreTrade', item: 'https://www.oretrade.com' },
+    { '@type': 'ListItem', position: 2, name: 'Guides', item: 'https://www.oretrade.com/guides/' },
+    { '@type': 'ListItem', position: 3, name: 'Copper Guide', item: 'https://www.oretrade.com/guides/copper/' }
+  ],
+}
+
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://www.oretrade.com/guides/copper/' },
   title: 'Copper Concentrate Grades Explained | Mining, Processing & Trading , OreTrade',
   description: 'What is copper concentrate? How are grades calculated? What is TCRC? A complete guide to copper concentrate for miners, traders and industrial buyers.',
 }
@@ -9,6 +62,7 @@ export const metadata: Metadata = {
 export default function CopperGuide() {
   return (
     <>
+      <SchemaMarkup schemas={[articleSchema, faqSchema, breadcrumbSchema]} />
       <div className="page-hero">
         <div className="page-hero-inner">
           <p className="section-label">OreTrade Guide</p>

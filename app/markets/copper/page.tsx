@@ -1,6 +1,20 @@
 import type { Metadata } from 'next'
 
+import SchemaMarkup from '../../../components/SchemaMarkup'
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Copper Concentrate Marketplace',
+  description: 'B2B marketplace for copper concentrate and cathode. Verified producers from Chile, Peru, DRC and Canada. Full TCRC transparency and chain of custody documentation.',
+  provider: { '@type': 'Organization', name: 'OreTrade', url: 'https://www.oretrade.com' },
+  serviceType: 'B2B Commodity Marketplace',
+  areaServed: ['GB', 'EU', 'AU', 'CA', 'ZA', 'US', 'JP', 'KR'],
+  url: 'https://www.oretrade.com/markets/copper/',
+}
+
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://www.oretrade.com/markets/copper/' },
   title: 'Copper Ore Marketplace | Sell Copper Concentrate , OreTrade',
   description: 'Buy and sell copper concentrate and copper ore on OreTrade. Verified producers from Chile, Peru and DRC. Full assay certification and traceability.',
 }
@@ -8,6 +22,7 @@ export const metadata: Metadata = {
 export default function CopperPage() {
   return (
     <>
+      <SchemaMarkup schema={serviceSchema} />
       <div className="page-hero">
         <div className="page-hero-inner">
           <div className="badge-soon">Launching 2026</div>

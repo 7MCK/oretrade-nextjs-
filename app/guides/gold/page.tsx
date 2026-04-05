@@ -1,7 +1,55 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
+import SchemaMarkup from '../../../components/SchemaMarkup'
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Gold — Complete B2B Buyer and Seller Guide 2026',
+  author: { '@type': 'Organization', name: 'OreTrade', url: 'https://www.oretrade.com' },
+  publisher: { '@type': 'Organization', name: 'OreTrade', logo: { '@type': 'ImageObject', url: 'https://www.oretrade.com/logo.png' } },
+  datePublished: '2026-04-05',
+  dateModified: '2026-04-05',
+  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://www.oretrade.com/guides/gold/' },
+  about: { '@type': 'Thing', name: 'Gold', sameAs: 'https://en.wikipedia.org/wiki/Gold' },
+  keywords: ['gold dore buyer guide', 'buy gold dore bars', 'gold bullion trading', 'gold price per troy ounce', 'sell gold concentrate', 'gold B2B trading'],
+}
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What is gold dore?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Gold dore is an unrefined alloy of gold and silver produced at mine sites, typically 60-90% gold with silver and trace impurities. Dore bars are the primary product form for artisanal and junior gold miners, shipped to refineries for processing into LBMA-certified Good Delivery bars (99.5%+ purity). OreTrade facilitates B2B dore trading with full provenance documentation.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is the gold price per troy ounce?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Gold traded above $2,000/oz in early 2026, near historically elevated levels. Prices are primarily driven by US real interest rates, the US dollar, central bank buying, and safe-haven demand. OreTrade provides reference gold pricing on its gold market page.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'What documentation is required to trade gold internationally?',
+      acceptedAnswer: { '@type': 'Answer', text: 'International gold trading requires: mine of origin certificate, third-party assay report, export licence, Kimberley Process certification for artisanal production in conflict-affected regions, chain of custody documentation, and LBMA responsible sourcing compliance. OreTrade\'s Digital Product Passport covers all required documentation fields.' },
+    }
+  ],
+}
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'OreTrade', item: 'https://www.oretrade.com' },
+    { '@type': 'ListItem', position: 2, name: 'Guides', item: 'https://www.oretrade.com/guides/' },
+    { '@type': 'ListItem', position: 3, name: 'Gold Guide', item: 'https://www.oretrade.com/guides/gold/' }
+  ],
+}
+
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://www.oretrade.com/guides/gold/' },
   title: 'How Is Gold Traded? Complete Market Guide , OreTrade',
   description: 'How gold is traded globally , spot, futures, LBMA, physical bars, and doré. Purity grades, pricing mechanisms, major producers, and how to source physical gold.',
 }
@@ -9,6 +57,7 @@ export const metadata: Metadata = {
 export default function GoldGuide() {
   return (
     <>
+      <SchemaMarkup schemas={[articleSchema, faqSchema, breadcrumbSchema]} />
       <div className="page-hero">
         <div className="page-hero-inner">
           <p className="section-label">OreTrade Guide</p>

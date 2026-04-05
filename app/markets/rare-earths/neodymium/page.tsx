@@ -78,6 +78,7 @@ const breadcrumbSchema = {
 }
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://www.oretrade.com/markets/rare-earths/neodymium/' },
   title: 'Neodymium Oxide and NdPr — Prices, Suppliers and Trading | OreTrade',
   description: 'Neodymium oxide and NdPr price data, supply sources, and trading guide for 2026. Nd2O3 at ~$149/kg. Source verified neodymium outside China on OreTrade.',
 }

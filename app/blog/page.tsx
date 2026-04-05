@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://www.oretrade.com/blog/' },
   title: 'OreTrade Insights | Mining, Metals and Rare Earth Market Analysis',
   description: 'Market analysis, regulatory updates and industry intelligence from OreTrade. China rare earth export controls, shortage analysis, and supply chain insights.',
 }

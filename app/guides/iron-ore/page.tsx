@@ -1,7 +1,60 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
+import SchemaMarkup from '../../../components/SchemaMarkup'
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Iron Ore — Complete Buyer and Seller Guide 2026',
+  author: { '@type': 'Organization', name: 'OreTrade', url: 'https://www.oretrade.com' },
+  publisher: { '@type': 'Organization', name: 'OreTrade', logo: { '@type': 'ImageObject', url: 'https://www.oretrade.com/logo.png' } },
+  datePublished: '2026-04-05',
+  dateModified: '2026-04-05',
+  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://www.oretrade.com/guides/iron-ore/' },
+  about: { '@type': 'Thing', name: 'Iron ore', sameAs: 'https://en.wikipedia.org/wiki/Iron_ore' },
+  keywords: ['iron ore buyer guide', 'iron ore price', 'buy iron ore online', 'iron ore grades', 'iron ore fines lump pellets', 'iron ore trading'],
+}
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What are the main grades of iron ore?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Iron ore is traded in three main product forms: fines (under 6.3mm, most common), lump ore (6.3-30mm, commands a premium), and pellets (9-16mm spheres, highest premium). Iron ore is also graded by Fe content — standard export ore is 58-62% Fe, with high-grade ore at 65%+ Fe attracting premiums of several dollars per tonne.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is the iron ore price per tonne?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Iron ore (62% Fe CFR Qingdao) has historically traded between $80 and $130 per dry metric tonne, with volatility tied to Chinese steel demand. Premium high-grade (65% Fe) and lump ore commands a price premium. OreTrade provides reference pricing for buyers and sellers on its iron ore market page.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Who are the major iron ore producers?',
+      acceptedAnswer: { '@type': 'Answer', text: 'The three largest producers globally are BHP and Rio Tinto (Australia, Pilbara region) and Vale (Brazil, Carajas). Together they account for approximately 60% of global seaborne supply. Other significant producers include Fortescue Metals (Australia), Anglo American, and ArcelorMittal Mines (Canada).' },
+    },
+    {
+      '@type': 'Question',
+      name: 'How is iron ore traded internationally?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Iron ore is primarily traded on long-term supply contracts between miners and steel mills, with a significant spot market priced against benchmark indices including SGX TSI and Platts IODEX. Typical delivery terms are CFR to Chinese and Asian ports. OreTrade enables direct B2B trading with full documentation on every cargo.' },
+    }
+  ],
+}
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'OreTrade', item: 'https://www.oretrade.com' },
+    { '@type': 'ListItem', position: 2, name: 'Guides', item: 'https://www.oretrade.com/guides/' },
+    { '@type': 'ListItem', position: 3, name: 'Iron Ore Guide', item: 'https://www.oretrade.com/guides/iron-ore/' }
+  ],
+}
+
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://www.oretrade.com/guides/iron-ore/' },
   title: 'What Is Iron Ore? Complete Buyer and Seller Guide , OreTrade',
   description: 'Everything you need to know about iron ore: grades, product forms, pricing mechanisms, major producers, and how to buy and sell iron ore internationally.',
 }
@@ -9,6 +62,7 @@ export const metadata: Metadata = {
 export default function IronOreGuide() {
   return (
     <>
+      <SchemaMarkup schemas={[articleSchema, faqSchema, breadcrumbSchema]} />
       <div className="page-hero">
         <div className="page-hero-inner">
           <p className="section-label">OreTrade Guide</p>

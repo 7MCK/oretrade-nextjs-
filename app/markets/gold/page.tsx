@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://www.oretrade.com/markets/gold/' },
   title: 'Precious Metals Trading Platform | Gold, Silver, Platinum , OreTrade',
   description: 'Trade gold, silver, platinum and palladium on OreTrade. LBMA-aligned supply chains, full provenance documentation, and conflict-free certification on every transaction.',
 }

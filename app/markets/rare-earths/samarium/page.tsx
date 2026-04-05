@@ -67,6 +67,7 @@ const breadcrumbSchema = {
 }
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://www.oretrade.com/markets/rare-earths/samarium/' },
   title: 'Samarium — Prices, SmCo Magnet Supply and Trading | OreTrade',
   description: 'Samarium supply and price guide for 2026. SmCo magnets for aerospace, defence and extreme temperature use. Under China export controls. Source verified samarium on OreTrade.',
 }

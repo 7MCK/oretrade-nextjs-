@@ -66,6 +66,7 @@ const breadcrumbSchema = {
 }
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://www.oretrade.com/blog/china-rare-earth-export-controls/' },
   title: 'China Rare Earth Export Controls 2025 to 2026 — What Buyers Need to Know | OreTrade',
   description: "China's Announcement 18 placed dysprosium, terbium, samarium and yttrium under export controls in April 2025. Here is what happened, why it matters, and where buyers can find alternative supply.",
 }
