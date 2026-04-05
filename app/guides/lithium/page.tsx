@@ -1,5 +1,68 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import SchemaMarkup from '../../../components/SchemaMarkup'
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Lithium Mining Explained — From Brine to Battery 2026',
+  author: { '@type': 'Organization', name: 'OreTrade', url: 'https://www.oretrade.com' },
+  publisher: { '@type': 'Organization', name: 'OreTrade', logo: { '@type': 'ImageObject', url: 'https://www.oretrade.com/logo.png' } },
+  datePublished: '2026-04-05',
+  dateModified: '2026-04-05',
+  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://www.oretrade.com/guides/lithium/' },
+  about: { '@type': 'Thing', name: 'Lithium', sameAs: 'https://en.wikipedia.org/wiki/Lithium' },
+  keywords: ['lithium mining guide', 'lithium carbonate vs hydroxide', 'lithium brine vs spodumene', 'lithium price 2026', 'buy lithium carbonate', 'battery grade lithium'],
+}
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What is the difference between lithium carbonate and lithium hydroxide?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Lithium carbonate (Li2CO3) and lithium hydroxide (LiOH) are the two primary battery-grade lithium products. Lithium carbonate is used in LFP (lithium iron phosphate) batteries common in lower-cost EVs and energy storage. Lithium hydroxide is required for NMC and NCA batteries used in higher-energy-density EV applications. Hydroxide commands a price premium. Both require 99.5%+ purity for battery use.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is the difference between brine and hard rock lithium?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Brine lithium is extracted by pumping lithium-rich underground brine into evaporation ponds, primarily in Chile, Argentina and Bolivia (the Lithium Triangle). It is lower cost to produce but slow — 12-18 months per cycle. Hard rock lithium (primarily spodumene, mined in Australia) is faster to produce and has a smaller environmental footprint per tonne, but higher operating costs. Australia is the world\'s largest lithium producer by volume.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is the current lithium price?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Lithium carbonate (battery grade, 99.5% min, CIF China) traded at approximately $10,000-$14,000 per metric tonne in early 2026, well below the peak of over $80,000/tonne seen in late 2022. Prices collapsed due to oversupply from Australian spodumene projects and reduced Chinese EV demand growth. Lithium hydroxide monohydrate traded at a premium over carbonate, typically $1,000-$3,000/tonne higher.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Who are the major lithium producing countries?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "Australia is the world's largest lithium producer by volume, mining spodumene hard rock primarily at Pilgangoora, Greenbushes and Wodgina. Chile is the second largest, extracting from Atacama brine. China is third and also dominates lithium refining and processing globally. Argentina, Zimbabwe and Portugal are growing producers. The 'Lithium Triangle' of Chile, Argentina and Bolivia holds over 50% of global lithium reserves.",
+      },
+    },
+  ],
+}
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'OreTrade', item: 'https://www.oretrade.com' },
+    { '@type': 'ListItem', position: 2, name: 'Guides', item: 'https://www.oretrade.com/guides/' },
+    { '@type': 'ListItem', position: 3, name: 'Lithium Guide', item: 'https://www.oretrade.com/guides/lithium/' },
+  ],
+}
 
 export const metadata: Metadata = {
   alternates: { canonical: 'https://www.oretrade.com/guides/lithium/' },
@@ -10,6 +73,7 @@ export const metadata: Metadata = {
 export default function LithiumGuide() {
   return (
     <>
+      <SchemaMarkup schemas={[articleSchema, faqSchema, breadcrumbSchema]} />
       <div className="page-hero">
         <div className="page-hero-inner">
           <p className="section-label">OreTrade Guide</p>
