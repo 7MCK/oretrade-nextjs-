@@ -12,6 +12,12 @@ export const metadata: Metadata = {
     siteName: 'OreTrade',
     type: 'website',
   },
+  verification: {
+    google: undefined,
+    other: {
+      'msvalidate.01': 'AA472FDD82CB5EFEF13F2D1F5A2B846E',
+    },
+  },
 }
 
 const organizationSchema = {
