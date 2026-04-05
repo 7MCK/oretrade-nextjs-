@@ -1,5 +1,81 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import SchemaMarkup from '../../../../components/SchemaMarkup'
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Terbium Oxide — Prices, Suppliers and Trading 2026',
+  description: 'Source terbium oxide from verified suppliers outside China. Terbium at approximately $840/kg under China export controls since April 2025. Full traceability on OreTrade.',
+  author: { '@type': 'Organization', name: 'OreTrade', url: 'https://www.oretrade.com' },
+  publisher: { '@type': 'Organization', name: 'OreTrade', logo: { '@type': 'ImageObject', url: 'https://www.oretrade.com/logo.png' } },
+  datePublished: '2026-04-04',
+  dateModified: '2026-04-05',
+  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://www.oretrade.com/markets/rare-earths/terbium/' },
+  about: { '@type': 'Thing', name: 'Terbium', sameAs: 'https://en.wikipedia.org/wiki/Terbium' },
+  keywords: ['terbium price', 'terbium oxide supplier', 'buy terbium outside China', 'Tb4O7 price 2026', 'heavy rare earth supplier', 'ex-China terbium'],
+}
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What is terbium used for?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Terbium is used in high-performance neodymium-iron-boron (NdFeB) permanent magnets, where it improves thermal stability beyond what dysprosium alone can achieve. Key applications include premium EV motors, offshore wind turbines, military-grade permanent magnet systems, and green phosphors in LED lighting and displays. Terbium enables NdFeB magnets to operate reliably above 150°C.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is the current terbium oxide price?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Terbium oxide (Tb4O7, 99.5% purity) traded at approximately $840/kg ex-China as of April 2026, rising from around $600/kg before China\'s export controls were introduced in April 2025. Terbium is one of the rarest and most expensive commercially traded rare earth elements, with China holding over 90% of global production.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Where can I source terbium oxide outside China?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Non-China terbium sources include Lynas Rare Earths (Australia/Malaysia, which separates and processes HREE concentrate from Mount Weld), and early-stage projects from Arafura Resources (Australia) and Mkango Resources (Malawi). OreTrade connects buyers with verified ex-China suppliers with full product documentation and conflict-free certification.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is the difference between terbium and dysprosium in magnets?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Both terbium and dysprosium are added to NdFeB magnets to improve coercivity (resistance to demagnetisation at high temperatures). Terbium is roughly twice as effective per kilogram as dysprosium but costs approximately four times more. Manufacturers typically use a combination of both, or substitute between them based on relative pricing and availability.',
+      },
+    },
+  ],
+}
+
+const datasetSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Dataset',
+  name: 'Terbium Oxide Spot Price — Reference Data 2026',
+  description: 'Reference price data for terbium oxide (Tb4O7, min. 99.5% purity) in USD/kg. Ex-China market. Updated monthly by OreTrade from industrial market data.',
+  url: 'https://www.oretrade.com/markets/rare-earths/terbium/',
+  provider: { '@type': 'Organization', name: 'OreTrade', url: 'https://www.oretrade.com' },
+  variableMeasured: 'USD per kilogram',
+  keywords: ['terbium price', 'Tb4O7 price', 'rare earth prices', 'terbium oxide cost'],
+}
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'OreTrade', item: 'https://www.oretrade.com' },
+    { '@type': 'ListItem', position: 2, name: 'Markets', item: 'https://www.oretrade.com/markets/' },
+    { '@type': 'ListItem', position: 3, name: 'Rare Earths', item: 'https://www.oretrade.com/markets/rare-earths/' },
+    { '@type': 'ListItem', position: 4, name: 'Terbium', item: 'https://www.oretrade.com/markets/rare-earths/terbium/' },
+  ],
+}
 
 export const metadata: Metadata = {
   title: 'Terbium Oxide — Prices, Suppliers and Trading | OreTrade',
@@ -11,6 +87,7 @@ export default function TerbiumPage() {
     <>
       <div className="page-hero">
         <div className="page-hero-inner">
+      <SchemaMarkup schemas={[articleSchema, faqSchema, datasetSchema, breadcrumbSchema]} />
           <div className="badge-soon" style={{ background: '#ef4444', color: 'white' }}>Export Controlled</div>
           <p className="section-label">Terbium Market</p>
           <h1>Terbium Oxide<br /><span>Prices, Suppliers and Trading</span></h1>

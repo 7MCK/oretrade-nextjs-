@@ -1,5 +1,69 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import SchemaMarkup from '../../../components/SchemaMarkup'
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'China Rare Earth Export Controls 2025 to 2026 — What Buyers Need to Know',
+  description: "China's Announcement 18 placed dysprosium, terbium, samarium and yttrium under export controls in April 2025. Analysis of price impact, affected elements, and alternative supply sources.",
+  author: { '@type': 'Organization', name: 'OreTrade', url: 'https://www.oretrade.com' },
+  publisher: { '@type': 'Organization', name: 'OreTrade', logo: { '@type': 'ImageObject', url: 'https://www.oretrade.com/logo.png' } },
+  datePublished: '2026-04-04',
+  dateModified: '2026-04-05',
+  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://www.oretrade.com/blog/china-rare-earth-export-controls/' },
+  about: { '@type': 'Thing', name: 'Rare earth element export controls', sameAs: 'https://en.wikipedia.org/wiki/Rare-earth_element' },
+  keywords: ['China rare earth export controls', 'Announcement 18', 'dysprosium export ban', 'terbium export controls', 'rare earth supply chain', 'non-China rare earth supply'],
+}
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What is China Announcement 18?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "China's Announcement 18, issued by the Ministry of Commerce on 4 April 2025, placed seven rare earth elements and their compounds under export licensing controls. It requires Chinese exporters to obtain individual government licences for each shipment of dysprosium, terbium, samarium, yttrium and related materials — effectively giving China direct control over supply flows to Western manufacturers.",
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Which rare earths are affected by China export controls?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'China export controls under Announcement 18 affect dysprosium (Dy), terbium (Tb), samarium (Sm), and yttrium (Y) — all elements where China holds over 80% of global supply. All four are critical for NdFeB permanent magnets used in EV motors, wind turbines and defence systems. No short-term substitutes exist.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How much have rare earth prices risen due to China export controls?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Since Announcement 18 in April 2025, dysprosium oxide prices have more than doubled from approximately $90/kg to $189/kg by April 2026. Terbium has risen from around $600/kg to approximately $840/kg. Samarium and yttrium have also seen significant premiums in ex-China markets, where supply is limited.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Where can manufacturers source rare earths outside China?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Key ex-China rare earth sources include Lynas Rare Earths and Arafura Resources in Australia, Vital Metals in Canada, LKAB in Sweden, and Energy Fuels and MP Materials in the United States. OreTrade connects buyers with verified non-Chinese producers with full documentation, mine of origin certificates, and OECD-compliant due diligence on every cargo.',
+      },
+    },
+  ],
+}
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'OreTrade', item: 'https://www.oretrade.com' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.oretrade.com/blog/' },
+    { '@type': 'ListItem', position: 3, name: 'China Rare Earth Export Controls', item: 'https://www.oretrade.com/blog/china-rare-earth-export-controls/' },
+  ],
+}
 
 export const metadata: Metadata = {
   title: 'China Rare Earth Export Controls 2025 to 2026 — What Buyers Need to Know | OreTrade',
@@ -9,6 +73,7 @@ export const metadata: Metadata = {
 export default function ChinaExportControlsPage() {
   return (
     <>
+      <SchemaMarkup schemas={[articleSchema, faqSchema, breadcrumbSchema]} />
       <div className="page-hero">
         <div className="page-hero-inner">
           <p className="section-label">Market Analysis</p>

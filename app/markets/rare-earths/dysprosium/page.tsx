@@ -1,14 +1,100 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import SchemaMarkup from '../../../../components/SchemaMarkup'
 
 export const metadata: Metadata = {
   title: 'Dysprosium Oxide — Prices, Suppliers and Trading | OreTrade',
   description: 'Buy dysprosium oxide from verified suppliers outside China. Dy prices up 100%+ in 2026 following export controls. Full traceability, conflict-free certification, ex-China supply.',
 }
 
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Dysprosium Oxide — Prices, Suppliers and Trading 2026',
+  description: 'Buy dysprosium oxide from verified suppliers outside China. Dy prices up 100%+ in 2026 following export controls. Full traceability and conflict-free certification on every cargo.',
+  author: { '@type': 'Organization', name: 'OreTrade', url: 'https://www.oretrade.com' },
+  publisher: { '@type': 'Organization', name: 'OreTrade', logo: { '@type': 'ImageObject', url: 'https://www.oretrade.com/logo.png' } },
+  datePublished: '2026-04-04',
+  dateModified: '2026-04-05',
+  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://www.oretrade.com/markets/rare-earths/dysprosium/' },
+  about: { '@type': 'Thing', name: 'Dysprosium', sameAs: 'https://en.wikipedia.org/wiki/Dysprosium' },
+  keywords: ['dysprosium price', 'dysprosium oxide supplier', 'buy dysprosium outside China', 'Dy2O3 price 2026', 'heavy rare earth supplier', 'ex-China dysprosium'],
+}
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What is dysprosium used for?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Dysprosium is used as an additive in neodymium-iron-boron (NdFeB) permanent magnets, significantly improving thermal stability and resistance to demagnetisation at elevated temperatures. It is essential in electric vehicle drivetrains, wind turbine generators, and defence and aerospace systems. Global EV and wind energy growth has driven demand up sharply, with IEA projecting a 7x increase by 2040.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is the current dysprosium oxide price?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Dysprosium oxide (Dy2O3, 99.5% purity) traded at approximately $189/kg ex-China as of April 2026, more than doubling from roughly $90/kg in early 2025. Dysprosium is under China export controls (Announcement 18, April 2025), which have sharply restricted Western supply and driven prices higher. See OreTrade\'s live Dy price data for current reference.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Where can I buy dysprosium oxide outside China?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Verified non-China dysprosium suppliers include Lynas Rare Earths (Australia/Malaysia), Arafura Resources (Australia), Vital Metals (Canada), and LKAB (Sweden). OreTrade\'s marketplace connects buyers with these and other verified ex-China producers, with every cargo carrying a Digital Product Passport confirming mine of origin, assay certification, and conflict-free status.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Why is dysprosium under export controls?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "China issued Announcement 18 in April 2025, placing dysprosium, terbium, samarium and yttrium under export licensing controls. China produces over 90% of global dysprosium supply. The controls reflect China's use of critical mineral supply chains as a geopolitical tool, particularly in response to US and EU trade restrictions on Chinese technology exports.",
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What purity grades of dysprosium oxide are available?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Dysprosium oxide (Dy2O3) is commercially traded in 99.0%, 99.5%, and 99.9% purity grades. Magnet-grade applications typically require 99.5% minimum. Higher purities command a price premium and are used in precision defence and aerospace applications. All OreTrade Dy listings include third-party assay certification.',
+      },
+    },
+  ],
+}
+
+const datasetSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Dataset',
+  name: 'Dysprosium Oxide Spot Price — Reference Data 2026',
+  description: 'Reference price data for dysprosium oxide (Dy2O3, min. 99.5% purity) in USD/kg. Ex-China market. Updated monthly by OreTrade from industrial market data.',
+  url: 'https://www.oretrade.com/markets/rare-earths/dysprosium/',
+  provider: { '@type': 'Organization', name: 'OreTrade', url: 'https://www.oretrade.com' },
+  variableMeasured: 'USD per kilogram',
+  temporalCoverage: '2025/..',
+  keywords: ['dysprosium price', 'Dy2O3 price', 'rare earth prices', 'dysprosium oxide cost'],
+}
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'OreTrade', item: 'https://www.oretrade.com' },
+    { '@type': 'ListItem', position: 2, name: 'Markets', item: 'https://www.oretrade.com/markets/' },
+    { '@type': 'ListItem', position: 3, name: 'Rare Earths', item: 'https://www.oretrade.com/markets/rare-earths/' },
+    { '@type': 'ListItem', position: 4, name: 'Dysprosium', item: 'https://www.oretrade.com/markets/rare-earths/dysprosium/' },
+  ],
+}
+
 export default function DysprosiumPage() {
   return (
     <>
+      <SchemaMarkup schemas={[articleSchema, faqSchema, datasetSchema, breadcrumbSchema]} />
       <div className="page-hero">
         <div className="page-hero-inner">
           <div className="badge-soon" style={{ background: '#ef4444', color: 'white' }}>Export Controlled</div>
@@ -82,6 +168,28 @@ export default function DysprosiumPage() {
             <Link href="/guides/dysprosium" className="btn-primary">Dysprosium Buyer Guide</Link>
             <Link href="/markets/rare-earths" className="btn-secondary">All Rare Earth Markets</Link>
           </div>
+        </div>
+      </section>
+
+      {/* FAQ SECTION — mirrors FAQPage schema for AI extraction */}
+      <section className="content-section dark2">
+        <div className="content-inner">
+          <h2>Dysprosium — Frequently Asked Questions</h2>
+
+          <h3>What is dysprosium used for?</h3>
+          <p>Dysprosium is used as an additive in neodymium-iron-boron (NdFeB) permanent magnets, significantly improving thermal stability and resistance to demagnetisation at elevated temperatures. It is essential in electric vehicle drivetrains, wind turbine generators, and defence and aerospace systems. Global EV and wind energy growth has driven demand up sharply, with the IEA projecting a 7x increase by 2040.</p>
+
+          <h3>What is the current dysprosium oxide price?</h3>
+          <p>Dysprosium oxide (Dy2O3, 99.5% purity) traded at approximately $189/kg ex-China as of April 2026, more than doubling from roughly $90/kg in early 2025. Dysprosium is under China export controls (Announcement 18, April 2025), which have sharply restricted Western supply and driven prices higher. See OreTrade&apos;s live Dy price data for current reference.</p>
+
+          <h3>Where can I buy dysprosium oxide outside China?</h3>
+          <p>Verified non-China dysprosium suppliers include Lynas Rare Earths (Australia/Malaysia), Arafura Resources (Australia), Vital Metals (Canada), and LKAB (Sweden). OreTrade&apos;s marketplace connects buyers with these and other verified ex-China producers, with every cargo carrying a Digital Product Passport confirming mine of origin, assay certification, and conflict-free status.</p>
+
+          <h3>Why is dysprosium under export controls?</h3>
+          <p>China issued Announcement 18 in April 2025, placing dysprosium, terbium, samarium and yttrium under export licensing controls. China produces over 90% of global dysprosium supply. The controls reflect China&apos;s use of critical mineral supply chains as a geopolitical tool, particularly in response to US and EU trade restrictions on Chinese technology exports.</p>
+
+          <h3>What purity grades of dysprosium oxide are available?</h3>
+          <p>Dysprosium oxide (Dy2O3) is commercially traded in 99.0%, 99.5%, and 99.9% purity grades. Magnet-grade applications typically require 99.5% minimum. Higher purities command a price premium and are used in precision defence and aerospace applications. All OreTrade Dy listings include third-party assay certification.</p>
         </div>
       </section>
 
