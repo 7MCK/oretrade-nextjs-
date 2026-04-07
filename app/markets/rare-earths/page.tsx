@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 import SchemaMarkup from '../../../components/SchemaMarkup'
+import ReePriceWidget from '../../../components/ReePriceWidget'
 
 const serviceSchema = {
   '@context': 'https://schema.org',
@@ -21,6 +22,7 @@ export const metadata: Metadata = {
 }
 
 const ELEMENTS = [
+  { href: '/markets/rare-earths/prices', symbol: '📈', name: 'REE Prices', price: 'All elements', change: 'stable', note: 'OTC reference price dashboard', hot: false },
   { href: '/markets/rare-earths/dysprosium', symbol: 'Dy', name: 'Dysprosium', price: '~$189/kg', change: 'up', note: 'Export controlled — outside China supply available', hot: true },
   { href: '/markets/rare-earths/terbium', symbol: 'Tb', name: 'Terbium', price: '~$840/kg', change: 'up', note: 'Export controlled — severe shortage', hot: true },
   { href: '/markets/rare-earths/ndpr', symbol: 'NdPr', name: 'Neodymium / Praseodymium', price: '~$97/kg', change: 'stable', note: 'Core magnet input — EV and wind turbine demand', hot: true },
@@ -52,8 +54,17 @@ export default function RareEarthsPage() {
         </div>
       </div>
 
-      {/* ELEMENT GRID */}
+      {/* REE PRICE WIDGET */}
       <section className="content-section dark">
+        <div className="content-inner">
+          <h2>Rare Earth Reference Prices</h2>
+          <p style={{ marginBottom: '24px' }}>OTC indicative prices sourced from Fastmarkets and Metal Pages. Rare earths are not exchange-traded — see our <a href="/markets/rare-earths/prices/" style={{ color: 'var(--amber)' }}>full price guide</a> for methodology.</p>
+          <ReePriceWidget noLinks />
+        </div>
+      </section>
+
+      {/* ELEMENT GRID */}
+      <section className="content-section dark2">
         <div className="content-inner">
           <h2>Elements Available on OreTrade</h2>
           <div className="features-grid" style={{ marginTop: '32px' }}>

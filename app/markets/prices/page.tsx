@@ -36,6 +36,7 @@ const MARKETS = [
   { href: '/markets/copper', icon: '🔩', name: 'Copper', note: 'COMEX Grade A futures' },
   { href: '/markets/gold', icon: '✨', name: 'Gold', note: 'COMEX spot + futures' },
   { href: '/markets/nickel', icon: '⚙️', name: 'Nickel', note: 'LME Grade A reference' },
+  { href: '/markets/rare-earths/prices', icon: '⚛️', name: 'Rare Earth Prices', note: 'Dy, Tb, NdPr, Sm, Y — OTC reference' },
   { href: '/markets/critical-minerals', icon: '⚡', name: 'Critical Minerals', note: 'Lithium, cobalt, graphite' },
   { href: '/markets/base-metals', icon: '🔧', name: 'Base Metals', note: 'Aluminium, zinc, lead, tin' },
 ]

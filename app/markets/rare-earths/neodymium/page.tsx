@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import SchemaMarkup from '../../../../components/SchemaMarkup'
+import ReePriceWidget from '../../../../components/ReePriceWidget'
 
 const articleSchema = {
   '@context': 'https://schema.org',
@@ -97,6 +98,17 @@ export default function NeodymiumPage() {
       </div>
 
       <section className="content-section dark">
+        <div className="content-inner">
+          <h2>Neodymium Price — 2026</h2>
+          <p style={{ marginBottom: '24px' }}>OTC reference prices for neodymium oxide (Nd₂O₃, 99.5%) and NdPr mixed oxide, sourced from Fastmarkets and Metal Pages.</p>
+          <ReePriceWidget filter={['neodymium', 'ndpr']} compact />
+          <p style={{ marginTop: '16px', fontSize: '13px', color: '#5a4030', fontFamily: 'Arial, sans-serif' }}>
+            See all rare earth prices: <a href="/markets/rare-earths/prices/" style={{ color: 'var(--amber)' }}>REE price dashboard</a>
+          </p>
+        </div>
+      </section>
+
+      <section className="content-section dark2">
         <div className="content-inner">
           <h2>Neodymium Price Overview — 2026</h2>
           <table className="specs-table">
