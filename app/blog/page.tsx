@@ -9,9 +9,23 @@ export const metadata: Metadata = {
 
 const POSTS = [
   {
+    href: '/blog/us-tariffs-metals-2025',
+    label: 'Market Analysis',
+    title: 'US Tariffs and the Metals Market — What Happened and What Comes Next',
+    desc: 'How US tariff policy in 2025 reshaped global metals trade flows, drove copper premiums to historic highs, and accelerated the push for supply chain independence. What buyers need to understand.',
+    urgent: false,
+  },
+  {
+    href: '/blog/critical-minerals-race',
+    label: 'Market Analysis',
+    title: 'The Critical Minerals Race — Why Every Major Economy Is Scrambling for the Same Materials',
+    desc: 'Lithium, cobalt, nickel, rare earths, graphite. The energy transition runs on a specific set of materials, and competition for them is intensifying. Where the race stands in 2026.',
+    urgent: false,
+  },
+  {
     href: '/blog/china-rare-earth-export-controls',
     label: 'Market Analysis',
-    title: "China Rare Earth Export Controls 2025 to 2026 — What Buyers Need to Know",
+    title: 'China Rare Earth Export Controls 2025 to 2026 — What Buyers Need to Know',
     desc: "China's Announcement 18 placed dysprosium, terbium, samarium and yttrium under export controls. Prices have doubled. Here is what happened and where to find alternative supply.",
     urgent: true,
   },
