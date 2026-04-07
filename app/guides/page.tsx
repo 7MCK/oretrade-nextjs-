@@ -12,6 +12,7 @@ const GUIDES = [
   { href: '/guides/copper-concentrate', icon: '🔩', title: 'How to Buy Copper Concentrate', subtitle: 'Buyer and Smelter Guide', desc: 'TCRC explained, how to read an assay, payability formulas, penalty elements and everything else you need to transact with confidence.' },
   { href: '/guides/copper', icon: '🔧', title: 'Copper Concentrate Grades Explained', subtitle: 'Mining, Processing and Trading', desc: 'What copper concentrate is, how grades are calculated, what TCRC means, and how to read an assay certificate.' },
   { href: '/guides/nickel', icon: '⚙️', title: 'Nickel Explained', subtitle: 'From Mine to Battery to Market', desc: 'Laterite vs sulphide, NPI, Class 1 vs Class 2, battery grade nickel sulphate and HPAL. Everything you need to understand the nickel market.' },
+  { href: '/guides/cobalt', icon: '🔋', title: 'Cobalt Explained', subtitle: 'From the DRC to Your EV Battery', desc: 'Where cobalt comes from, how it gets into batteries, why the DRC dominates supply, what responsible sourcing actually requires, and how to buy it compliantly.' },
   { href: '/guides/gold', icon: '✨', title: 'How Is Gold Traded?', subtitle: 'From Mine to Market', desc: 'Spot, futures, LBMA, and physical. A complete guide to the mechanics of gold trading for buyers, sellers and investors.' },
   { href: '/guides/lithium', icon: '⚡', title: 'Lithium Mining Explained', subtitle: 'From Brine to Battery', desc: 'How lithium is extracted from brine and hard rock, processed into carbonate and hydroxide, and graded for battery use.' },
 ]

@@ -9,6 +9,20 @@ export const metadata: Metadata = {
 
 const POSTS = [
   {
+    href: '/blog/iron-ore-price-2026',
+    label: 'Market Analysis',
+    title: 'Iron Ore Price 2026 — Analysis, Outlook and Key Drivers',
+    desc: 'Iron ore has traded between $90 and $120 per tonne this year. What is driving the range, what the China steel picture looks like, and where the price goes from here.',
+    urgent: false,
+  },
+  {
+    href: '/blog/eu-critical-raw-materials-act',
+    label: 'Regulation',
+    title: 'EU Critical Raw Materials Act — What It Means for Miners, Buyers and Supply Chains',
+    desc: 'The CRMA sets binding 2030 targets for domestic extraction, processing and supply chain diversification. Most European industry is not currently close to meeting them. Here is what the law actually requires.',
+    urgent: false,
+  },
+  {
     href: '/blog/us-tariffs-metals-2025',
     label: 'Market Analysis',
     title: 'US Tariffs and the Metals Market — What Happened and What Comes Next',
