@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 
 import SchemaMarkup from '../../../components/SchemaMarkup'
+import PriceWidget from '../../../components/PriceWidget'
 
 const articleSchema = {
   '@context': 'https://schema.org',
@@ -82,6 +83,18 @@ export default function GoldPage() {
           <a href="/#contact" className="btn-primary">Join the Waitlist</a>
         </div>
       </div>
+
+      <section className="content-section dark">
+        <div className="content-inner">
+          <h2>Live Precious Metals Prices</h2>
+          <p style={{ marginBottom: '24px' }}>COMEX gold and silver futures, NYMEX platinum and palladium — updated every minute.</p>
+          <PriceWidget filter={['gold', 'silver', 'platinum', 'palladium']} />
+          <p style={{ marginTop: '16px', fontSize: '13px', color: '#5a4030', fontFamily: 'Arial, sans-serif' }}>
+            Full commodity dashboard including base metals and iron ore:{' '}
+            <a href="/markets/prices/" style={{ color: 'var(--amber)' }}>live prices page</a>.
+          </p>
+        </div>
+      </section>
 
       <section className="content-section cream">
         <div className="content-inner">

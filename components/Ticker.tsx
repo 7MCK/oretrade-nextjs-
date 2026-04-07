@@ -1,27 +1,69 @@
 'use client'
 
-const PRICES = [
-  { name: 'Gold (XAU)', value: '$3,082.40', change: '▲ +0.8%', up: true },
-  { name: 'Silver (XAG)', value: '$34.12', change: '▲ +1.2%', up: true },
-  { name: 'Copper (HG)', value: '$4.89/lb', change: '▼ -0.3%', up: false },
-  { name: 'Iron Ore (62% Fe)', value: '$108.50/t', change: '▲ +0.5%', up: true },
-  { name: 'Nickel', value: '$15,840/t', change: '▼ -0.6%', up: false },
-  { name: 'Platinum', value: '$984.00', change: '▲ +0.4%', up: true },
-  { name: 'Lithium Carbonate', value: '$12,400/t', change: '▼ -1.1%', up: false },
-  { name: 'Cobalt', value: '$26,500/t', change: '▲ +0.2%', up: true },
+import { useEffect, useState } from 'react'
+
+type PriceEntry = {
+  id: string
+  name: string
+  price: number
+  changePct: number
+  unit: string
+}
+
+// Fallback static prices shown before live data loads
+const FALLBACK = [
+  { id: 'gold',      name: 'Gold',            price: 3082.40, changePct:  0.8,  unit: 'per troy oz' },
+  { id: 'silver',    name: 'Silver',          price: 34.12,   changePct:  1.2,  unit: 'per troy oz' },
+  { id: 'copper',    name: 'Copper',          price: 4.89,    changePct: -0.3,  unit: 'per lb' },
+  { id: 'ironore',   name: 'Iron Ore 62% Fe', price: 108.50,  changePct:  0.5,  unit: 'per tonne' },
+  { id: 'nickel',    name: 'Nickel',          price: 15840,   changePct: -0.6,  unit: 'per tonne' },
+  { id: 'platinum',  name: 'Platinum',        price: 984.00,  changePct:  0.4,  unit: 'per troy oz' },
+  { id: 'aluminium', name: 'Aluminium',       price: 2640,    changePct: -0.2,  unit: 'per tonne' },
+  { id: 'palladium', name: 'Palladium',       price: 1050,    changePct:  0.3,  unit: 'per troy oz' },
 ]
 
+function fmtTicker(price: number, unit: string): string {
+  if (unit === 'per lb') return `$${price.toFixed(3)}/lb`
+  if (price < 100) return `$${price.toFixed(2)}`
+  return `$${price.toLocaleString('en-US', { maximumFractionDigits: 2 })}`
+}
+
 export default function Ticker() {
-  const items = [...PRICES, ...PRICES]
+  const [items, setItems] = useState<PriceEntry[]>(FALLBACK)
+
+  useEffect(() => {
+    const load = async () => {
+      try {
+        const res = await fetch('/api/prices')
+        if (!res.ok) return
+        const json = await res.json()
+        if (json?.prices?.length) setItems(json.prices)
+      } catch {
+        // keep fallback
+      }
+    }
+    load()
+    const interval = setInterval(load, 60_000)
+    return () => clearInterval(interval)
+  }, [])
+
+  const doubled = [...items, ...items]
+
   return (
     <div className="ticker">
       <div className="ticker-inner">
-        {items.map((p, i) => (
-          <span key={i} className="tick-item">
-            {p.name} <strong>{p.value}</strong>{' '}
-            <span className={p.up ? 'tick-up' : 'tick-down'}>{p.change}</span>
-          </span>
-        ))}
+        {doubled.map((p, i) => {
+          const up = p.changePct >= 0
+          return (
+            <span key={i} className="tick-item">
+              {p.name}{' '}
+              <strong>{fmtTicker(p.price, p.unit)}</strong>{' '}
+              <span className={up ? 'tick-up' : 'tick-down'}>
+                {up ? '▲' : '▼'} {Math.abs(p.changePct).toFixed(2)}%
+              </span>
+            </span>
+          )
+        })}
       </div>
     </div>
   )

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 
 import SchemaMarkup from '../../../components/SchemaMarkup'
+import PriceWidget from '../../../components/PriceWidget'
 
 const serviceSchema = {
   '@context': 'https://schema.org',
@@ -32,6 +33,18 @@ export default function CopperPage() {
           <a href="/#contact" className="btn-primary">Join the Waitlist</a>
         </div>
       </div>
+
+      <section className="content-section dark">
+        <div className="content-inner">
+          <h2>Live Copper Price</h2>
+          <p style={{ marginBottom: '24px' }}>COMEX High Grade Copper futures price (USD per lb), updated every minute.</p>
+          <PriceWidget filter={['copper']} compact />
+          <p style={{ marginTop: '16px', fontSize: '13px', color: '#5a4030', fontFamily: 'Arial, sans-serif' }}>
+            For the full metals dashboard, see our{' '}
+            <a href="/markets/prices/" style={{ color: 'var(--amber)' }}>live prices page</a>.
+          </p>
+        </div>
+      </section>
 
       <section className="content-section cream">
         <div className="content-inner">

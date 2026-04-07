@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 
 import SchemaMarkup from '../../../components/SchemaMarkup'
+import PriceWidget from '../../../components/PriceWidget'
 
 const articleSchema = {
   '@context': 'https://schema.org',
@@ -82,6 +83,18 @@ export default function NickelPage() {
           <a href="/#contact" className="btn-primary">Join the Waitlist</a>
         </div>
       </div>
+
+      <section className="content-section dark">
+        <div className="content-inner">
+          <h2>Live Nickel Price</h2>
+          <p style={{ marginBottom: '24px' }}>LME Grade A nickel reference price, updated every minute from futures market data.</p>
+          <PriceWidget filter={['nickel']} compact />
+          <p style={{ marginTop: '16px', fontSize: '13px', color: '#5a4030', fontFamily: 'Arial, sans-serif' }}>
+            Full commodity dashboard:{' '}
+            <a href="/markets/prices/" style={{ color: 'var(--amber)' }}>live prices page</a>.
+          </p>
+        </div>
+      </section>
 
       <section className="content-section cream">
         <div className="content-inner">

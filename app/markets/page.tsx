@@ -8,6 +8,7 @@ export const metadata: Metadata = {
 }
 
 const MARKETS = [
+  { href: '/markets/prices', icon: '📈', title: 'Live Prices', desc: 'Real-time reference prices for iron ore, copper, gold, silver, platinum, palladium and aluminium from global futures markets.' },
   { href: '/markets/iron-ore', icon: '🏔️', title: 'Iron Ore', desc: 'The backbone of global steel production. Trade fines, lump and pellets from verified producers in Australia, Brazil and South Africa.' },
   { href: '/markets/copper', icon: '🔩', title: 'Copper', desc: 'The metal of electrification. Source copper concentrate and refined grades from Chile, Peru and the DRC with full assay certification.' },
   { href: '/markets/gold', icon: '✨', title: 'Gold & Precious Metals', desc: 'Gold, silver, platinum and palladium from LBMA-aligned supply chains. Fully documented provenance and conflict-free certification.' },
