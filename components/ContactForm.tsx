@@ -1,8 +1,32 @@
 'use client'
+import { useEffect } from 'react'
 import { useForm, ValidationError } from '@formspree/react'
+
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void
+  }
+}
 
 export default function ContactForm() {
   const [state, handleSubmit] = useForm('xwvwwepq')
+
+  useEffect(() => {
+    if (state.succeeded && typeof window !== 'undefined' && window.gtag) {
+      // GA4 / Google Ads conversion event
+      window.gtag('event', 'generate_lead', {
+        event_category: 'contact_form',
+        event_label: 'waitlist_signup',
+        value: 1,
+      })
+      // Google Ads conversion
+      window.gtag('event', 'conversion', {
+        send_to: 'AW-18063866280',
+        event_category: 'contact_form',
+        event_label: 'waitlist_signup',
+      })
+    }
+  }, [state.succeeded])
 
   if (state.succeeded) {
     return (
