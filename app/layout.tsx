@@ -60,6 +60,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
+        {/* CookieYes Consent Management */}
+        <Script id="cookieyes" src="https://cdn-cookieyes.com/client_data/68668c68f19b9316b80d8348/script.js" strategy="beforeInteractive" />
         {/* Google Ads + GA4 */}
         <Script async src="https://www.googletagmanager.com/gtag/js?id=G-FJ89WR34BY" strategy="afterInteractive" />
         <Script id="google-analytics" strategy="afterInteractive">{`
