@@ -61,11 +61,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
         {/* Google Ads + GA4 */}
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-18063866280" strategy="afterInteractive" />
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-FJ89WR34BY" strategy="afterInteractive" />
         <Script id="google-analytics" strategy="afterInteractive">{`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
+          gtag('config', 'G-FJ89WR34BY');
           gtag('config', 'AW-18063866280');
           // AI Search referral channel grouping
           gtag('set', 'traffic_type', 'external');
