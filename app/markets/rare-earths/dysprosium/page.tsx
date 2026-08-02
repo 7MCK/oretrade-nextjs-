@@ -5,14 +5,14 @@ import ReePriceWidget from '../../../../components/ReePriceWidget'
 
 export const metadata: Metadata = {
   alternates: { canonical: 'https://www.oretrade.com/markets/rare-earths/dysprosium/' },
-  title: 'Dysprosium Oxide — Prices, Suppliers and Trading | OreTrade',
+  title: 'Dysprosium Oxide: Prices, Suppliers and Trading',
   description: 'Buy dysprosium oxide from verified suppliers outside China. Dy prices up 100%+ in 2026 following export controls. Full traceability, conflict free certification, outside China supply.',
 }
 
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Dysprosium Oxide — Prices, Suppliers and Trading 2026',
+  headline: 'Dysprosium Oxide: Prices, Suppliers and Trading 2026',
   description: 'Buy dysprosium oxide from verified suppliers outside China. Dy prices up 100%+ in 2026 following export controls. Full traceability and conflict free certification on every cargo.',
   author: { '@type': 'Organization', name: 'OreTrade', url: 'https://www.oretrade.com' },
   publisher: { '@type': 'Organization', name: 'OreTrade', logo: { '@type': 'ImageObject', url: 'https://www.oretrade.com/logo.png' } },
@@ -73,7 +73,7 @@ const faqSchema = {
 const datasetSchema = {
   '@context': 'https://schema.org',
   '@type': 'Dataset',
-  name: 'Dysprosium Oxide Spot Price — Reference Data 2026',
+  name: 'Dysprosium Oxide Spot Price: Reference Data 2026',
   description: 'Reference price data for dysprosium oxide (Dy2O3, min. 99.5% purity) in USD/kg. Ex-China market. Updated monthly by OreTrade from industrial market data.',
   url: 'https://www.oretrade.com/markets/rare-earths/dysprosium/',
   provider: { '@type': 'Organization', name: 'OreTrade', url: 'https://www.oretrade.com' },
@@ -110,7 +110,7 @@ export default function DysprosiumPage() {
       {/* PRICE WIDGET */}
       <section className="content-section dark">
         <div className="content-inner">
-          <h2>Dysprosium Price — 2026</h2>
+          <h2>Dysprosium Price: 2026</h2>
           <p style={{ marginBottom: '24px' }}>OTC reference price for dysprosium oxide (Dy₂O₃, 99.5%), sourced from Fastmarkets and Metal Pages. Rare earths are not exchange-traded.</p>
           <ReePriceWidget filter={['dysprosium']} compact />
           <p style={{ marginTop: '16px', fontSize: '13px', color: '#5a4030', fontFamily: 'Arial, sans-serif' }}>
@@ -122,7 +122,7 @@ export default function DysprosiumPage() {
       {/* PRICE DETAIL TABLE */}
       <section className="content-section dark2">
         <div className="content-inner">
-          <h2>Dysprosium Price Overview — 2026</h2>
+          <h2>Dysprosium Price Overview: 2026</h2>
           <table className="specs-table">
             <thead>
               <tr><th>Indicator</th><th>Value</th></tr>
@@ -130,7 +130,7 @@ export default function DysprosiumPage() {
             <tbody>
               <tr><td>Current Price (outside China)</td><td style={{ color: '#4ade80' }}>~$189/kg (Dy oxide, 99.5%)</td></tr>
               <tr><td>Year to Date Change</td><td style={{ color: '#4ade80' }}>+100%+</td></tr>
-              <tr><td>Export Control Status</td><td style={{ color: '#f87171' }}>Controlled — China Announcement 18 (April 2025)</td></tr>
+              <tr><td>Export Control Status</td><td style={{ color: '#f87171' }}>Controlled: China Announcement 18 (April 2025)</td></tr>
               <tr><td>Key Applications</td><td>NdFeB magnet heat resistance additive, EV motors, wind turbines, defence</td></tr>
               <tr><td>Major Outside China Sources</td><td>Australia (Lynas, Arafura), Canada (Vital Metals), Sweden (LKAB)</td></tr>
               <tr><td>Typical Purity</td><td>99.0%, 99.5%, 99.9% Dy oxide</td></tr>
@@ -144,15 +144,15 @@ export default function DysprosiumPage() {
       <section className="content-section cream">
         <div className="content-inner">
           <h2>What Is Dysprosium Used For?</h2>
-          <p>Dysprosium is a heavy rare earth element (HREE) with atomic number 66. Its primary commercial use is as an additive in neodymium iron boron (NdFeB) permanent magnets — the most powerful type of permanent magnet and the foundational technology behind electric vehicle motors, wind turbine generators, and an increasingly wide range of defence and industrial applications.</p>
-          <p>The critical role of dysprosium in NdFeB magnets is not as a primary ingredient but as a performance enhancer. Adding 2 to 4% dysprosium to a NdFeB magnet significantly increases its coercivity — its resistance to demagnetisation at elevated temperatures. Without dysprosium, NdFeB magnets lose their magnetic properties above approximately 80 degrees Celsius, making them unsuitable for EV motors and wind turbines, which regularly operate at higher temperatures under load.</p>
-          <p>As the global fleet of electric vehicles grows and offshore wind capacity expands rapidly, demand for dysprosium has surged. The International Energy Agency projects that dysprosium demand for clean energy applications alone could increase 7x by 2040 under a net zero scenario. At the same time, China, which produces over 90% of global dysprosium supply, introduced export controls in April 2025 — creating a severe supply crunch for manufacturers outside China.</p>
+          <p>Dysprosium is a heavy rare earth element (HREE) with atomic number 66. Its primary commercial use is as an additive in neodymium iron boron (NdFeB) permanent magnets, the most powerful type of permanent magnet and the foundational technology behind electric vehicle motors, wind turbine generators, and an increasingly wide range of defence and industrial applications.</p>
+          <p>The critical role of dysprosium in NdFeB magnets is not as a primary ingredient but as a performance enhancer. Adding 2 to 4% dysprosium to a NdFeB magnet significantly increases its coercivity: its resistance to demagnetisation at elevated temperatures. Without dysprosium, NdFeB magnets lose their magnetic properties above approximately 80 degrees Celsius, making them unsuitable for EV motors and wind turbines, which regularly operate at higher temperatures under load.</p>
+          <p>As the global fleet of electric vehicles grows and offshore wind capacity expands rapidly, demand for dysprosium has surged. The International Energy Agency projects that dysprosium demand for clean energy applications alone could increase 7x by 2040 under a net zero scenario. At the same time, China, which produces over 90% of global dysprosium supply, introduced export controls in April 2025, creating a severe supply crunch for manufacturers outside China.</p>
 
           <h3>Dysprosium in Defence</h3>
           <p>Beyond clean energy, dysprosium is critical for defence applications. NdFeB magnets containing dysprosium are used in guided missile actuators, radar systems, submarine sonar, fighter jet components, and a wide range of precision guided munitions. The US Department of Defense has designated dysprosium a critical material and is actively funding domestic production through investments in MP Materials, Lynas USA, and Energy Fuels.</p>
 
           <h3>Impact of China Export Controls</h3>
-          <p>China&apos;s Announcement 18 (April 2025) placed dysprosium, terbium, samarium and yttrium under export licensing controls — effectively requiring Chinese producers to obtain government approval before exporting these elements. In practice, approvals have been limited, resulting in a sharp reduction in Chinese Dy exports to Western markets and a corresponding price surge. The outside China price for dysprosium oxide has more than doubled since the controls were announced.</p>
+          <p>China&apos;s Announcement 18 (April 2025) placed dysprosium, terbium, samarium and yttrium under export licensing controls, effectively requiring Chinese producers to obtain government approval before exporting these elements. In practice, approvals have been limited, resulting in a sharp reduction in Chinese Dy exports to Western markets and a corresponding price surge. The outside China price for dysprosium oxide has more than doubled since the controls were announced.</p>
           <p>For manufacturers in the EU, US, Japan and South Korea who depend on dysprosium for magnet production, the controls have accelerated the urgent search for verified, documented supply from alternative sources. OreTrade is built to serve exactly this need.</p>
         </div>
       </section>
@@ -185,10 +185,10 @@ export default function DysprosiumPage() {
         </div>
       </section>
 
-      {/* FAQ SECTION — mirrors FAQPage schema for AI extraction */}
+      {/* FAQ SECTION: mirrors FAQPage schema for AI extraction */}
       <section className="content-section dark2">
         <div className="content-inner">
-          <h2>Dysprosium — Frequently Asked Questions</h2>
+          <h2>Dysprosium: Frequently Asked Questions</h2>
 
           <h3>What is dysprosium used for?</h3>
           <p>Dysprosium is used as an additive in neodymium-iron-boron (NdFeB) permanent magnets, significantly improving thermal stability and resistance to demagnetisation at elevated temperatures. It is essential in electric vehicle drivetrains, wind turbine generators, and defence and aerospace systems. Global EV and wind energy growth has driven demand up sharply, with the IEA projecting a 7x increase by 2040.</p>
@@ -213,8 +213,8 @@ export default function DysprosiumPage() {
           <h2>Further Reading</h2>
           <p>Learn more about the rare earth supply chain and China export controls:</p>
           <ul style={{ marginTop: '16px', lineHeight: '2' }}>
-            <li><a href="/blog/china-rare-earth-export-controls">China Rare Earth Export Controls 2025 to 2026 — What Buyers Need to Know</a></li>
-            <li><a href="/blog/rare-earth-shortage-2026">Rare Earth Shortage 2026 — Where to Find Supply Outside China</a></li>
+            <li><a href="/blog/china-rare-earth-export-controls">China Rare Earth Export Controls 2025 to 2026: What Buyers Need to Know</a></li>
+            <li><a href="/blog/rare-earth-shortage-2026">Rare Earth Shortage 2026: Where to Find Supply Outside China</a></li>
             <li><a href="/markets/rare-earths">All Rare Earth Markets on OreTrade</a></li>
             <li><a href="/traceability">How the OreTrade Digital Product Passport Works</a></li>
           </ul>

@@ -5,7 +5,7 @@ import SchemaMarkup from '../../../components/SchemaMarkup'
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Bulk Mining Ores Marketplace — Iron Ore, Bauxite, Chromite 2026',
+  headline: 'Bulk Mining Ores Marketplace: Iron Ore, Bauxite, Chromite 2026',
   author: { '@type': 'Organization', name: 'OreTrade', url: 'https://www.oretrade.com' },
   publisher: { '@type': 'Organization', name: 'OreTrade', logo: { '@type': 'ImageObject', url: 'https://www.oretrade.com/logo.png' } },
   datePublished: '2026-04-05',
@@ -60,7 +60,7 @@ const breadcrumbSchema = {
 
 export const metadata: Metadata = {
   alternates: { canonical: 'https://www.oretrade.com/markets/mining-ores/' },
-  title: 'Mining Ore Buyers & Sellers | Bulk Ore Marketplace , OreTrade',
+  title: 'Mining Ore Buyers & Sellers | Bulk Ore Marketplace',
   description: 'Buy and sell bulk mining ores on OreTrade , iron ore, bauxite, chromite, manganese and more. Large-lot transactions with verified producers and full origin documentation.',
 }
 

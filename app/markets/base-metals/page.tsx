@@ -5,7 +5,7 @@ import SchemaMarkup from '../../../components/SchemaMarkup'
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Base Metals Trading Platform — Copper, Aluminium, Zinc 2026',
+  headline: 'Base Metals Trading Platform: Copper, Aluminium, Zinc 2026',
   author: { '@type': 'Organization', name: 'OreTrade', url: 'https://www.oretrade.com' },
   publisher: { '@type': 'Organization', name: 'OreTrade', logo: { '@type': 'ImageObject', url: 'https://www.oretrade.com/logo.png' } },
   datePublished: '2026-04-05',
@@ -60,7 +60,7 @@ const breadcrumbSchema = {
 
 export const metadata: Metadata = {
   alternates: { canonical: 'https://www.oretrade.com/markets/base-metals/' },
-  title: 'Base Metals Trading Platform | Copper, Aluminium, Zinc , OreTrade',
+  title: 'Base Metals Trading Platform | Copper, Aluminium, Zinc',
   description: 'Trade base metals on OreTrade , copper, aluminium, zinc, lead, nickel and tin. LME referenced pricing, verified counterparties, full traceability.',
 }
 
@@ -83,7 +83,7 @@ export default function BaseMetalsPage() {
           <h2>The Base Metals Market</h2>
           <p>Base metals are the industrial workhorses of the global economy. Copper, aluminium, zinc, lead, nickel, and tin underpin construction, transportation, packaging, electronics, and the entire energy infrastructure. Collectively, they represent hundreds of millions of tonnes of annual production and trillions of dollars in annual trade.</p>
           <p>Unlike precious metals or bulk commodities, base metals are primarily traded through the London Metal Exchange (LME), which provides a global price benchmark and physical delivery mechanism for all six primary base metals. Prices are quoted in US dollars per metric tonne, with both cash (spot) and three-month forward contracts actively traded.</p>
-          <p>OreTrade&apos;s base metals market focuses on the physical supply chain , connecting producers of concentrates, refined metals, and alloys with industrial buyers who need verified supply with full documentation. Whether you&apos;re sourcing copper cathode, aluminium ingot, or zinc concentrate, OreTrade provides the transparency and structure that modern procurement demands.</p>
+          <p>OreTrade&apos;s base metals market focuses on the physical supply chain, connecting producers of concentrates, refined metals, and alloys with industrial buyers who need verified supply with full documentation. Whether you&apos;re sourcing copper cathode, aluminium ingot, or zinc concentrate, OreTrade provides the transparency and structure that modern procurement demands.</p>
         </div>
       </section>
 

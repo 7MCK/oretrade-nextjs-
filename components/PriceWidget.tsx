@@ -21,7 +21,7 @@ type PricesData = {
 }
 
 type Props = {
-  /** Show only these commodity IDs (e.g. ['gold','silver']) — shows all if omitted */
+  /** Show only these commodity IDs (e.g. ['gold','silver']); shows all if omitted */
   filter?: string[]
   /** Compact 2-column grid vs full layout */
   compact?: boolean
@@ -111,7 +111,7 @@ export default function PriceWidget({ filter, compact }: Props) {
         })}
       </div>
       <p className="price-widget-disclaimer">
-        Prices sourced from futures markets. 15–20 min delay. For reference only — not financial advice.
+        Prices sourced from futures markets. 15–20 min delay. For reference only, not financial advice.
       </p>
     </div>
   )

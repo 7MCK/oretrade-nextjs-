@@ -6,7 +6,7 @@ import ReePriceWidget from '../../../../components/ReePriceWidget'
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Yttrium — Prices, Suppliers and Trading 2026',
+  headline: 'Yttrium: Prices, Suppliers and Trading 2026',
   description: 'Yttrium supply and price guide. Used in LED phosphors, jet engine thermal barrier coatings and laser materials. Under China export controls since April 2025. Source verified yttrium on OreTrade.',
   author: { '@type': 'Organization', name: 'OreTrade', url: 'https://www.oretrade.com' },
   publisher: { '@type': 'Organization', name: 'OreTrade', logo: { '@type': 'ImageObject', url: 'https://www.oretrade.com/logo.png' } },
@@ -69,7 +69,7 @@ const breadcrumbSchema = {
 
 export const metadata: Metadata = {
   alternates: { canonical: 'https://www.oretrade.com/markets/rare-earths/yttrium/' },
-  title: 'Yttrium Oxide — Prices, Suppliers and Trading | OreTrade',
+  title: 'Yttrium Oxide: Prices, Suppliers and Trading',
   description: 'Yttrium supply and price guide for 2026. Critical for LED phosphors, jet engine thermal coatings and lasers. Under China export controls. Source verified yttrium on OreTrade.',
 }
 
@@ -89,7 +89,7 @@ export default function YttriumPage() {
 
       <section className="content-section dark">
         <div className="content-inner">
-          <h2>Yttrium Price — 2026</h2>
+          <h2>Yttrium Price: 2026</h2>
           <p style={{ marginBottom: '24px' }}>OTC reference price for yttrium oxide (Y₂O₃, 99.9%), under China export controls since April 2025.</p>
           <ReePriceWidget filter={['yttrium']} compact />
           <p style={{ marginTop: '16px', fontSize: '13px', color: '#5a4030', fontFamily: 'Arial, sans-serif' }}>
@@ -100,14 +100,14 @@ export default function YttriumPage() {
 
       <section className="content-section dark2">
         <div className="content-inner">
-          <h2>Yttrium Price Overview — 2026</h2>
+          <h2>Yttrium Price Overview: 2026</h2>
           <table className="specs-table">
             <thead>
               <tr><th>Indicator</th><th>Value</th></tr>
             </thead>
             <tbody>
               <tr><td>Y2O3 Reference Price</td><td style={{ color: '#4ade80' }}>~$3.80/kg (99.9% purity, outside China premium applies)</td></tr>
-              <tr><td>Export Control Status</td><td style={{ color: '#f87171' }}>Controlled — China Announcement 18 (April 2025)</td></tr>
+              <tr><td>Export Control Status</td><td style={{ color: '#f87171' }}>Controlled: China Announcement 18 (April 2025)</td></tr>
               <tr><td>Key Applications</td><td>LED and fluorescent phosphors, jet engine thermal coatings (YSZ), YAG lasers, radar (YIG), superconductors</td></tr>
               <tr><td>China Market Share</td><td>Over 80% of global production</td></tr>
               <tr><td>Critical Material Status</td><td>EU Critical Raw Materials Act, US DoD critical material list</td></tr>
@@ -120,9 +120,9 @@ export default function YttriumPage() {
       <section className="content-section dark2">
         <div className="content-inner">
           <h2>What Is Yttrium Used For?</h2>
-          <p>Yttrium&apos;s most significant commercial application is in yttria-stabilised zirconia (YSZ) — the standard thermal barrier coating applied to turbine blades in jet engines and gas turbines. YSZ coatings insulate metal blades from combustion temperatures that exceed the melting point of the underlying superalloy, enabling higher operating temperatures, greater fuel efficiency, and longer component life. Every major commercial aircraft engine and industrial gas turbine uses YSZ coatings.</p>
+          <p>Yttrium&apos;s most significant commercial application is in yttria-stabilised zirconia (YSZ), the standard thermal barrier coating applied to turbine blades in jet engines and gas turbines. YSZ coatings insulate metal blades from combustion temperatures that exceed the melting point of the underlying superalloy, enabling higher operating temperatures, greater fuel efficiency, and longer component life. Every major commercial aircraft engine and industrial gas turbine uses YSZ coatings.</p>
           <p>In electronics, yttrium is a key ingredient in LED and fluorescent lamp phosphors. Yttrium europium oxide (Y2O3:Eu) produces the red emission in many white LED systems. As global LED lighting continues to displace incandescent and fluorescent technologies, yttrium demand in this sector remains substantial.</p>
-          <p>Yttrium aluminium garnet (YAG) is the host material for neodymium-doped YAG lasers (Nd:YAG) — widely used in industrial cutting, welding, marking and medical procedures. Yttrium iron garnet (YIG) is used in microwave and radar devices. Yttrium is also an additive in high temperature superconductors and structural ceramics.</p>
+          <p>Yttrium aluminium garnet (YAG) is the host material for neodymium-doped YAG lasers (Nd:YAG), widely used in industrial cutting, welding, marking and medical procedures. Yttrium iron garnet (YIG) is used in microwave and radar devices. Yttrium is also an additive in high temperature superconductors and structural ceramics.</p>
 
           <h3>Yttrium and China Export Controls</h3>
           <p>Yttrium was included in China&apos;s Announcement 18 (April 2025) alongside dysprosium, terbium and samarium. While yttrium is less well known than the magnet rare earths, its role in jet engine coatings and defence radar systems makes it strategically significant. Western aerospace manufacturers face growing uncertainty over yttrium supply for YSZ coating programmes.</p>
@@ -153,8 +153,8 @@ export default function YttriumPage() {
           <h2>Further Reading</h2>
           <p>Learn more about the rare earth supply chain and China export controls:</p>
           <ul style={{ marginTop: '16px', lineHeight: '2' }}>
-            <li><a href="/blog/china-rare-earth-export-controls">China Rare Earth Export Controls 2025 to 2026 — What Buyers Need to Know</a></li>
-            <li><a href="/blog/rare-earth-shortage-2026">Rare Earth Shortage 2026 — Where to Find Supply Outside China</a></li>
+            <li><a href="/blog/china-rare-earth-export-controls">China Rare Earth Export Controls 2025 to 2026: What Buyers Need to Know</a></li>
+            <li><a href="/blog/rare-earth-shortage-2026">Rare Earth Shortage 2026: Where to Find Supply Outside China</a></li>
             <li><a href="/markets/rare-earths">All Rare Earth Markets on OreTrade</a></li>
             <li><a href="/traceability">How the OreTrade Digital Product Passport Works</a></li>
           </ul>

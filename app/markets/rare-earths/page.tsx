@@ -17,15 +17,15 @@ const serviceSchema = {
 
 export const metadata: Metadata = {
   alternates: { canonical: 'https://www.oretrade.com/markets/rare-earths/' },
-  title: 'Rare Earth Marketplace | Buy and Sell Verified REE — OreTrade',
+  title: 'Rare Earth Marketplace | Buy and Sell Verified REE',
   description: 'Source rare earth elements from verified suppliers on OreTrade. Dysprosium, terbium, neodymium, NdPr, cerium, lanthanum and more. Full traceability, conflict free certified, outside China supply available.',
 }
 
 const ELEMENTS = [
   { href: '/markets/rare-earths/prices', symbol: '📈', name: 'REE Prices', price: 'All elements', change: 'stable', note: 'OTC reference price dashboard', hot: false },
-  { href: '/markets/rare-earths/dysprosium', symbol: 'Dy', name: 'Dysprosium', price: '~$189/kg', change: 'up', note: 'Export controlled — outside China supply available', hot: true },
-  { href: '/markets/rare-earths/terbium', symbol: 'Tb', name: 'Terbium', price: '~$840/kg', change: 'up', note: 'Export controlled — severe shortage', hot: true },
-  { href: '/markets/rare-earths/ndpr', symbol: 'NdPr', name: 'Neodymium / Praseodymium', price: '~$97/kg', change: 'stable', note: 'Core magnet input — EV and wind turbine demand', hot: true },
+  { href: '/markets/rare-earths/dysprosium', symbol: 'Dy', name: 'Dysprosium', price: '~$189/kg', change: 'up', note: 'Export controlled: outside China supply available', hot: true },
+  { href: '/markets/rare-earths/terbium', symbol: 'Tb', name: 'Terbium', price: '~$840/kg', change: 'up', note: 'Export controlled: severe shortage', hot: true },
+  { href: '/markets/rare-earths/ndpr', symbol: 'NdPr', name: 'Neodymium / Praseodymium', price: '~$97/kg', change: 'stable', note: 'Core magnet input: EV and wind turbine demand', hot: true },
   { href: '/markets/rare-earths/neodymium', symbol: 'Nd', name: 'Neodymium', price: '~$97/kg', change: 'stable', note: 'Highest-demand REE globally', hot: false },
   { href: '/markets/rare-earths/samarium', symbol: 'Sm', name: 'Samarium', price: 'Rising', change: 'up', note: 'Export controlled Apr 2025', hot: true },
   { href: '/markets/rare-earths/yttrium', symbol: 'Y', name: 'Yttrium', price: 'Rising', change: 'up', note: 'Export controlled Apr 2025', hot: true },
@@ -40,7 +40,7 @@ export default function RareEarthsPage() {
           <div className="badge-soon">Launching 2026</div>
           <p className="section-label">Rare Earths Market</p>
           <h1>Rare Earth Elements<br /><span>Marketplace</span></h1>
-          <p>Source verified rare earth elements from producers outside China. Full Digital Product Passport on every cargo. Dysprosium, terbium, neodymium, NdPr, cerium, lanthanum and more — traced from mine to delivery.</p>
+          <p>Source verified rare earth elements from producers outside China. Full Digital Product Passport on every cargo. Dysprosium, terbium, neodymium, NdPr, cerium, lanthanum and more, traced from mine to delivery.</p>
           <a href="/#contact" className="btn-primary">Join the Waitlist</a>
         </div>
       </div>
@@ -58,7 +58,7 @@ export default function RareEarthsPage() {
       <section className="content-section dark">
         <div className="content-inner">
           <h2>Rare Earth Reference Prices</h2>
-          <p style={{ marginBottom: '24px' }}>OTC indicative prices sourced from Fastmarkets and Metal Pages. Rare earths are not exchange-traded — see our <a href="/markets/rare-earths/prices/" style={{ color: 'var(--amber)' }}>full price guide</a> for methodology.</p>
+          <p style={{ marginBottom: '24px' }}>OTC indicative prices sourced from Fastmarkets and Metal Pages. Rare earths are not exchange-traded, see our <a href="/markets/rare-earths/prices/" style={{ color: 'var(--amber)' }}>full price guide</a> for methodology.</p>
           <ReePriceWidget noLinks />
         </div>
       </section>
@@ -116,7 +116,7 @@ export default function RareEarthsPage() {
       <section className="content-section dark">
         <div className="content-inner">
           <h2>The Rare Earth Market in 2026</h2>
-          <p>China produces approximately 60% of the world&apos;s rare earth elements and processes over 85% of global supply. In April 2025, China introduced Announcement 18 — export controls on dysprosium, terbium, samarium and yttrium — the four rare earths most critical for defence, EV and clean energy applications.</p>
+          <p>China produces approximately 60% of the world&apos;s rare earth elements and processes over 85% of global supply. In April 2025, China introduced Announcement 18, export controls on dysprosium, terbium, samarium and yttrium, the four rare earths most critical for defence, EV and clean energy applications.</p>
           <p>The result has been a significant price surge, supply disruption for Western manufacturers, and an urgent search for alternative sources. Dysprosium, used as a heat resistance additive in NdFeB permanent magnets for EV motors and wind turbines, has risen over 100% year to date in 2026. Terbium, trading at approximately $840 per kilogram, is in even shorter supply.</p>
           <p>The US Department of Defense has committed $400 million to MP Materials to accelerate domestic REE production. The EU Critical Raw Materials Act designates rare earths as strategic materials and sets binding targets for European supply chain diversification by 2030. The geopolitical case for supply chain diversification has never been stronger.</p>
           <p>OreTrade connects buyers with verified producers of rare earth elements outside China, with the documentation and traceability infrastructure that modern procurement requires.</p>

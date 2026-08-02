@@ -6,7 +6,7 @@ import SchemaMarkup from '../../../components/SchemaMarkup'
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Gold — Complete B2B Buyer and Seller Guide 2026',
+  headline: 'Gold: Complete B2B Buyer and Seller Guide 2026',
   author: { '@type': 'Organization', name: 'OreTrade', url: 'https://www.oretrade.com' },
   publisher: { '@type': 'Organization', name: 'OreTrade', logo: { '@type': 'ImageObject', url: 'https://www.oretrade.com/logo.png' } },
   datePublished: '2026-04-05',
@@ -50,7 +50,7 @@ const breadcrumbSchema = {
 
 export const metadata: Metadata = {
   alternates: { canonical: 'https://www.oretrade.com/guides/gold/' },
-  title: 'How Is Gold Traded? Complete Market Guide , OreTrade',
+  title: 'How Is Gold Traded? Complete Market Guide',
   description: 'How gold is traded globally , spot, futures, LBMA, physical bars, and doré. Purity grades, pricing mechanisms, major producers, and how to source physical gold.',
 }
 

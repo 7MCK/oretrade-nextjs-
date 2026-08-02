@@ -16,7 +16,7 @@ const serviceSchema = {
 
 export const metadata: Metadata = {
   alternates: { canonical: 'https://www.oretrade.com/markets/copper/' },
-  title: 'Copper Ore Marketplace | Sell Copper Concentrate , OreTrade',
+  title: 'Copper Ore Marketplace | Sell Copper Concentrate',
   description: 'Buy and sell copper concentrate and copper ore on OreTrade. Verified producers from Chile, Peru and DRC. Full assay certification and traceability.',
 }
 

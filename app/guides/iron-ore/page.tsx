@@ -6,7 +6,7 @@ import SchemaMarkup from '../../../components/SchemaMarkup'
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Iron Ore — Complete Buyer and Seller Guide 2026',
+  headline: 'Iron Ore: Complete Buyer and Seller Guide 2026',
   author: { '@type': 'Organization', name: 'OreTrade', url: 'https://www.oretrade.com' },
   publisher: { '@type': 'Organization', name: 'OreTrade', logo: { '@type': 'ImageObject', url: 'https://www.oretrade.com/logo.png' } },
   datePublished: '2026-04-05',
@@ -23,7 +23,7 @@ const faqSchema = {
     {
       '@type': 'Question',
       name: 'What are the main grades of iron ore?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Iron ore is traded in three main product forms: fines (under 6.3mm, most common), lump ore (6.3-30mm, commands a premium), and pellets (9-16mm spheres, highest premium). Iron ore is also graded by Fe content — standard export ore is 58-62% Fe, with high-grade ore at 65%+ Fe attracting premiums of several dollars per tonne.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'Iron ore is traded in three main product forms: fines (under 6.3mm, most common), lump ore (6.3-30mm, commands a premium), and pellets (9-16mm spheres, highest premium). Iron ore is also graded by Fe content: standard export ore is 58-62% Fe, with high-grade ore at 65%+ Fe attracting premiums of several dollars per tonne.' },
     },
     {
       '@type': 'Question',
@@ -55,7 +55,7 @@ const breadcrumbSchema = {
 
 export const metadata: Metadata = {
   alternates: { canonical: 'https://www.oretrade.com/guides/iron-ore/' },
-  title: 'What Is Iron Ore? Complete Buyer and Seller Guide , OreTrade',
+  title: 'What Is Iron Ore? Complete Buyer and Seller Guide',
   description: 'Everything you need to know about iron ore: grades, product forms, pricing mechanisms, major producers, and how to buy and sell iron ore internationally.',
 }
 
@@ -127,7 +127,7 @@ export default function IronOreGuide() {
 
           <h2 id="trading">How to Buy and Sell Iron Ore on OreTrade</h2>
           <p>OreTrade is building the first fully verified, digital iron ore marketplace , connecting producers with buyers through a platform that handles listing, verification, negotiation, documentation, and settlement in one place.</p>
-          <p>Producers list their cargo with full specification: grade, product form, moisture content, assay certificate, mine of origin, and available tonnage. Buyers browse verified listings with confidence that the documentation is real and the counterparty has been KYC verified. When a deal is agreed, OreTrade&apos;s platform manages the payment terms and documentation , including the Digital Product Passport that travels with the cargo.</p>
+          <p>Producers list their cargo with full specification: grade, product form, moisture content, assay certificate, mine of origin, and available tonnage. Buyers browse verified listings with confidence that the documentation is real and the counterparty has been KYC verified. When a deal is agreed, OreTrade&apos;s platform manages the payment terms and documentation, including the Digital Product Passport that travels with the cargo.</p>
         </div>
       </section>
 

@@ -6,7 +6,7 @@ import SchemaMarkup from '../../../components/SchemaMarkup'
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Copper — Complete Buyer and Seller Guide 2026',
+  headline: 'Copper: Complete Buyer and Seller Guide 2026',
   author: { '@type': 'Organization', name: 'OreTrade', url: 'https://www.oretrade.com' },
   publisher: { '@type': 'Organization', name: 'OreTrade', logo: { '@type': 'ImageObject', url: 'https://www.oretrade.com/logo.png' } },
   datePublished: '2026-04-05',
@@ -23,7 +23,7 @@ const faqSchema = {
     {
       '@type': 'Question',
       name: 'What is copper concentrate?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Copper concentrate is the primary product of copper mining — a powder containing 20-30% copper along with iron sulfides and by-products including gold and silver. It is produced by crushing and flotation of copper ore and is the feedstock for copper smelters. The alternative is copper cathode (99.99% pure Cu), produced after smelting and electrolytic refining.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'Copper concentrate is the primary product of copper mining: a powder containing 20-30% copper along with iron sulfides and by-products including gold and silver. It is produced by crushing and flotation of copper ore and is the feedstock for copper smelters. The alternative is copper cathode (99.99% pure Cu), produced after smelting and electrolytic refining.' },
     },
     {
       '@type': 'Question',
@@ -33,7 +33,7 @@ const faqSchema = {
     {
       '@type': 'Question',
       name: 'What is TCRC in copper trading?',
-      acceptedAnswer: { '@type': 'Answer', text: 'TCRC stands for Treatment Charge / Refining Charge — the fee smelters charge to process copper concentrate into refined copper. TC is quoted in $/dry metric tonne of concentrate; RC in cents per pound of payable copper. TCRC rates are negotiated annually between miners and smelters and are a key margin driver for both parties.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'TCRC stands for Treatment Charge / Refining Charge: the fee smelters charge to process copper concentrate into refined copper. TC is quoted in $/dry metric tonne of concentrate; RC in cents per pound of payable copper. TCRC rates are negotiated annually between miners and smelters and are a key margin driver for both parties.' },
     },
     {
       '@type': 'Question',
@@ -55,7 +55,7 @@ const breadcrumbSchema = {
 
 export const metadata: Metadata = {
   alternates: { canonical: 'https://www.oretrade.com/guides/copper/' },
-  title: 'Copper Concentrate Grades Explained | Mining, Processing & Trading , OreTrade',
+  title: 'Copper Concentrate Grades Explained | Mining, Processing & Trading',
   description: 'What is copper concentrate? How are grades calculated? What is TCRC? A complete guide to copper concentrate for miners, traders and industrial buyers.',
 }
 

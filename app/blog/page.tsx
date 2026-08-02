@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   alternates: { canonical: 'https://www.oretrade.com/blog/' },
-  title: 'OreTrade Insights | Mining, Metals and Rare Earth Market Analysis',
+  title: 'Insights | Mining, Metals and Rare Earth Market Analysis',
   description: 'Market analysis, regulatory updates and industry intelligence from OreTrade. China rare earth export controls, shortage analysis, and supply chain insights.',
 }
 
@@ -11,42 +11,42 @@ const POSTS = [
   {
     href: '/blog/iron-ore-price-2026',
     label: 'Market Analysis',
-    title: 'Iron Ore Price 2026 — Analysis, Outlook and Key Drivers',
+    title: 'Iron Ore Price 2026: Analysis, Outlook and Key Drivers',
     desc: 'Iron ore has traded between $90 and $120 per tonne this year. What is driving the range, what the China steel picture looks like, and where the price goes from here.',
     urgent: false,
   },
   {
     href: '/blog/eu-critical-raw-materials-act',
     label: 'Regulation',
-    title: 'EU Critical Raw Materials Act — What It Means for Miners, Buyers and Supply Chains',
+    title: 'EU Critical Raw Materials Act: What It Means for Miners, Buyers and Supply Chains',
     desc: 'The CRMA sets binding 2030 targets for domestic extraction, processing and supply chain diversification. Most European industry is not currently close to meeting them. Here is what the law actually requires.',
     urgent: false,
   },
   {
     href: '/blog/us-tariffs-metals-2025',
     label: 'Market Analysis',
-    title: 'US Tariffs and the Metals Market — What Happened and What Comes Next',
+    title: 'US Tariffs and the Metals Market: What Happened and What Comes Next',
     desc: 'How US tariff policy in 2025 reshaped global metals trade flows, drove copper premiums to historic highs, and accelerated the push for supply chain independence. What buyers need to understand.',
     urgent: false,
   },
   {
     href: '/blog/critical-minerals-race',
     label: 'Market Analysis',
-    title: 'The Critical Minerals Race — Why Every Major Economy Is Scrambling for the Same Materials',
+    title: 'The Critical Minerals Race: Why Every Major Economy Is Scrambling for the Same Materials',
     desc: 'Lithium, cobalt, nickel, rare earths, graphite. The energy transition runs on a specific set of materials, and competition for them is intensifying. Where the race stands in 2026.',
     urgent: false,
   },
   {
     href: '/blog/china-rare-earth-export-controls',
     label: 'Market Analysis',
-    title: 'China Rare Earth Export Controls 2025 to 2026 — What Buyers Need to Know',
+    title: 'China Rare Earth Export Controls 2025 to 2026: What Buyers Need to Know',
     desc: "China's Announcement 18 placed dysprosium, terbium, samarium and yttrium under export controls. Prices have doubled. Here is what happened and where to find alternative supply.",
     urgent: true,
   },
   {
     href: '/blog/rare-earth-shortage-2026',
     label: 'Market Analysis',
-    title: 'Rare Earth Shortage 2026 — Where to Find Supply Outside China',
+    title: 'Rare Earth Shortage 2026: Where to Find Supply Outside China',
     desc: 'The most severe rare earth supply shortage in a decade. What is driving it, why it is different from previous episodes, and which verified non-Chinese sources exist.',
     urgent: true,
   },

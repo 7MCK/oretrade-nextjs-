@@ -5,7 +5,7 @@ import SchemaMarkup from '../../../components/SchemaMarkup'
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Iron Ore Price 2026 — What Is Driving the Market and What Comes Next',
+  headline: 'Iron Ore Price 2026: What Is Driving the Market and What Comes Next',
   description: 'Iron ore has traded between $90 and $120 per tonne in 2026. Analysis of what is driving the price, the China steel demand picture, supply from Australia and Brazil, and the outlook for the rest of the year.',
   author: { '@type': 'Organization', name: 'OreTrade', url: 'https://www.oretrade.com' },
   publisher: { '@type': 'Organization', name: 'OreTrade', logo: { '@type': 'ImageObject', url: 'https://www.oretrade.com/logo.png' } },
@@ -59,7 +59,7 @@ const breadcrumbSchema = {
 
 export const metadata: Metadata = {
   alternates: { canonical: 'https://www.oretrade.com/blog/iron-ore-price-2026/' },
-  title: 'Iron Ore Price 2026 — Analysis, Outlook and Key Drivers | OreTrade',
+  title: 'Iron Ore Price 2026: Analysis, Outlook and Key Drivers',
   description: 'Iron ore has traded between $90 and $120 per tonne in 2026. Analysis of what is driving the price, the China steel demand picture, and the outlook for the rest of the year.',
 }
 

@@ -5,7 +5,7 @@ import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 
 export const metadata: Metadata = {
-  title: { default: 'OreTrade — Global Ore Trading Platform | From Mine to Market', template: '%s | OreTrade' },
+  title: { default: 'OreTrade: Global Ore Trading Platform | From Mine to Market', template: '%s | OreTrade' },
   description: 'OreTrade is the global marketplace for mining ores, base metals, precious metals and critical minerals. Verified counterparties, full traceability, ethical sourcing.',
   metadataBase: new URL('https://www.oretrade.com'),
   openGraph: {
@@ -55,7 +55,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         {/* Bing Webmaster Verification */}
         <meta name="msvalidate.01" content="AA472FDD82CB5EFEF13F2D1F5A2B846E" />
-        {/* Organization Schema — AI entity anchor */}
+        {/* Organization Schema: AI entity anchor */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}

@@ -5,7 +5,7 @@ import SchemaMarkup from '../../../../components/SchemaMarkup'
 
 export const metadata: Metadata = {
   alternates: { canonical: 'https://www.oretrade.com/markets/rare-earths/prices/' },
-  title: 'Rare Earth Element Prices 2026 — Dysprosium, Terbium, NdPr, Samarium | OreTrade',
+  title: 'Rare Earth Element Prices 2026: Dysprosium, Terbium, NdPr, Samarium',
   description: 'Rare earth element reference prices for 2026: dysprosium oxide, terbium oxide, NdPr oxide, neodymium, samarium, yttrium. OTC market prices updated from Fastmarkets and Metal Pages.',
 }
 
@@ -67,7 +67,7 @@ const faqSchema = {
       name: 'What is NdPr and why is it important?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'NdPr oxide is a mixed oxide of neodymium and praseodymium (approximately 75% Nd, 25% Pr) used as the primary feedstock for neodymium-iron-boron (NdFeB) permanent magnets — the most powerful type of permanent magnet. NdFeB magnets are the foundational technology in EV motors, wind turbine generators, industrial robots, and defence systems. NdPr is the benchmark pricing product in the rare earth market, traded at approximately $144 per kilogram as of early 2026.',
+        text: 'NdPr oxide is a mixed oxide of neodymium and praseodymium (approximately 75% Nd, 25% Pr) used as the primary feedstock for neodymium-iron-boron (NdFeB) permanent magnets, the most powerful type of permanent magnet. NdFeB magnets are the foundational technology in EV motors, wind turbine generators, industrial robots, and defence systems. NdPr is the benchmark pricing product in the rare earth market, traded at approximately $144 per kilogram as of early 2026.',
       },
     },
   ],
@@ -91,10 +91,10 @@ export default function ReePricesPage() {
         <div className="page-hero-inner">
           <p className="section-label">Rare Earth Prices</p>
           <h1>Rare Earth Element<br /><span>Reference Prices 2026</span></h1>
-          <p>OTC reference prices for dysprosium, terbium, NdPr, neodymium, samarium and yttrium — sourced from Fastmarkets and Metal Pages. Rare earths are not exchange-traded; prices reflect OTC market conditions and vary by purity, volume and origin.</p>
+          <p>OTC reference prices for dysprosium, terbium, NdPr, neodymium, samarium and yttrium, sourced from Fastmarkets and Metal Pages. Rare earths are not exchange-traded; prices reflect OTC market conditions and vary by purity, volume and origin.</p>
           <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', marginTop: '8px' }}>
             <div style={{ background: 'rgba(239,68,68,0.15)', border: '1px solid rgba(239,68,68,0.4)', color: '#f87171', fontSize: '12px', fontFamily: 'Arial, sans-serif', padding: '6px 14px', borderRadius: '3px', fontWeight: 'bold', letterSpacing: '0.5px' }}>
-              ⚠ Dy, Tb, Sm, Y — China export controls in force
+              ⚠ Dy, Tb, Sm, Y: China export controls in force
             </div>
           </div>
         </div>
@@ -109,13 +109,13 @@ export default function ReePricesPage() {
       <section className="content-section cream">
         <div className="content-inner">
           <h2>How Rare Earth Prices Work</h2>
-          <p>Unlike base metals such as copper or aluminium, rare earth elements are not traded on centralised commodity exchanges. There is no LME price for dysprosium, no COMEX settlement for neodymium. Rare earths trade over the counter (OTC) — bilaterally, between producers, traders and buyers, with prices set through negotiation.</p>
-          <p>Reference prices are published by specialist data providers including Fastmarkets (formerly Metal Bulletin) and Metal Pages. These are indicative prices compiled from market surveys and transaction reports — not the binding settlement prices you see on exchange-traded commodities. Actual transaction prices vary depending on purity grade, lot size, origin, payment terms, and whether the buyer can accept Chinese supply.</p>
-          <p>The OTC nature of the rare earth market is one reason why supply chain transparency is so difficult to achieve — and why OreTrade&apos;s verified, documented approach adds particular value for buyers who need to demonstrate compliance with due diligence requirements.</p>
+          <p>Unlike base metals such as copper or aluminium, rare earth elements are not traded on centralised commodity exchanges. There is no LME price for dysprosium, no COMEX settlement for neodymium. Rare earths trade over the counter (OTC), bilaterally, between producers, traders and buyers, with prices set through negotiation.</p>
+          <p>Reference prices are published by specialist data providers including Fastmarkets (formerly Metal Bulletin) and Metal Pages. These are indicative prices compiled from market surveys and transaction reports, not the binding settlement prices you see on exchange-traded commodities. Actual transaction prices vary depending on purity grade, lot size, origin, payment terms, and whether the buyer can accept Chinese supply.</p>
+          <p>The OTC nature of the rare earth market is one reason why supply chain transparency is so difficult to achieve, and why OreTrade&apos;s verified, documented approach adds particular value for buyers who need to demonstrate compliance with due diligence requirements.</p>
 
           <h3>The Impact of China Export Controls</h3>
           <p>In April 2025, China placed dysprosium, terbium, samarium and yttrium under export licensing controls (Announcement 18). The practical effect has been a sharp reduction in Chinese exports to Western buyers, with licences issued slowly and selectively. The result is a two-tier market: Chinese domestic prices (lower) and outside China prices (significantly higher), particularly for dysprosium and terbium where Chinese production dominates globally.</p>
-          <p>For any buyer who cannot or will not source from China — due to geopolitical risk, regulatory compliance, ESG requirements, or supply chain resilience — the relevant price is the outside China OTC price, which reflects genuine scarcity in non-Chinese supply.</p>
+          <p>For any buyer who cannot or will not source from China, due to geopolitical risk, regulatory compliance, ESG requirements, or supply chain resilience, the relevant price is the outside China OTC price, which reflects genuine scarcity in non-Chinese supply.</p>
 
           <div className="prices-meta-grid">
             <div className="prices-meta-card">
@@ -167,7 +167,7 @@ export default function ReePricesPage() {
           <p>Terbium is the most expensive commonly traded rare earth element, at approximately $840 per kilogram for Tb₄O₇ (99.9% purity) as of April 2026. Terbium has very limited global production of around 700 to 800 tonnes per year, almost entirely from China, and is now under export controls.</p>
 
           <h3>What is NdPr and why is it important?</h3>
-          <p>NdPr oxide is a mixed oxide of neodymium and praseodymium used as the primary feedstock for NdFeB permanent magnets — the foundational technology in EV motors, wind turbine generators, and defence systems. NdPr is the benchmark pricing product in the rare earth market, at approximately $144 per kilogram as of early 2026.</p>
+          <p>NdPr oxide is a mixed oxide of neodymium and praseodymium used as the primary feedstock for NdFeB permanent magnets, the foundational technology in EV motors, wind turbine generators, and defence systems. NdPr is the benchmark pricing product in the rare earth market, at approximately $144 per kilogram as of early 2026.</p>
         </div>
       </section>
 

@@ -5,7 +5,7 @@ import SchemaMarkup from '../../../components/SchemaMarkup'
 
 export const metadata: Metadata = {
   alternates: { canonical: 'https://www.oretrade.com/markets/prices/' },
-  title: 'Live Commodity Prices — Iron Ore, Copper, Gold, Nickel | OreTrade',
+  title: 'Live Commodity Prices: Iron Ore, Copper, Gold, Nickel',
   description: 'Live commodity prices for iron ore, copper, gold, silver, platinum, palladium, aluminium and nickel. Real-time reference pricing from global futures markets.',
 }
 
@@ -22,7 +22,7 @@ const breadcrumbSchema = {
 const datasetSchema = {
   '@context': 'https://schema.org',
   '@type': 'Dataset',
-  name: 'Live Commodity Prices — Ores and Metals',
+  name: 'Live Commodity Prices: Ores and Metals',
   description: 'Real-time reference prices for key mined commodities including iron ore, copper, gold, silver, platinum, palladium, aluminium and nickel, sourced from major futures exchanges.',
   url: 'https://www.oretrade.com/markets/prices/',
   creator: { '@type': 'Organization', name: 'OreTrade', url: 'https://www.oretrade.com' },
@@ -36,7 +36,7 @@ const MARKETS = [
   { href: '/markets/copper', icon: '🔩', name: 'Copper', note: 'COMEX Grade A futures' },
   { href: '/markets/gold', icon: '✨', name: 'Gold', note: 'COMEX spot + futures' },
   { href: '/markets/nickel', icon: '⚙️', name: 'Nickel', note: 'LME Grade A reference' },
-  { href: '/markets/rare-earths/prices', icon: '⚛️', name: 'Rare Earth Prices', note: 'Dy, Tb, NdPr, Sm, Y — OTC reference' },
+  { href: '/markets/rare-earths/prices', icon: '⚛️', name: 'Rare Earth Prices', note: 'Dy, Tb, NdPr, Sm, Y: OTC reference' },
   { href: '/markets/critical-minerals', icon: '⚡', name: 'Critical Minerals', note: 'Lithium, cobalt, graphite' },
   { href: '/markets/base-metals', icon: '🔧', name: 'Base Metals', note: 'Aluminium, zinc, lead, tin' },
 ]
@@ -63,11 +63,11 @@ export default function PricesPage() {
       <section className="content-section cream">
         <div className="content-inner">
           <h2>How Commodity Prices Work</h2>
-          <p>The prices shown above are sourced from major futures exchanges — COMEX (CME Group) for gold, silver, copper and palladium; NYMEX for platinum; CME for aluminium; and TSI/CME for iron ore 62% Fe CFR China. These are futures settlement or last-trade prices, typically 15 to 20 minutes delayed.</p>
+          <p>The prices shown above are sourced from major futures exchanges: COMEX (CME Group) for gold, silver, copper and palladium; NYMEX for platinum; CME for aluminium; and TSI/CME for iron ore 62% Fe CFR China. These are futures settlement or last-trade prices, typically 15 to 20 minutes delayed.</p>
           <p>In physical commodity trading, the final transacted price is almost never exactly the exchange price. It is calculated as: <strong>Exchange Benchmark + Premium/Discount ± Quality Adjustments ± Freight</strong>. A high-grade iron ore cargo from Australia trades at a premium to the 62% Fe benchmark; a copper concentrate cargo trades at a discount (the TCRC deduction) from the LME cathode price. OreTrade shows each cargo's full pricing formula on-platform.</p>
 
           <h3>Why Prices Move</h3>
-          <p>Commodity prices are driven by supply and demand fundamentals — mine output, smelter capacity, end-use industry activity — as well as macro factors including the US dollar index, interest rates, geopolitical risk, and energy costs. Gold and silver are particularly sensitive to real interest rates and safe-haven demand. Copper and nickel are closely tied to Chinese industrial activity and the global energy transition. Iron ore prices are dominated by Chinese steel production policy.</p>
+          <p>Commodity prices are driven by supply and demand fundamentals (mine output, smelter capacity, end-use industry activity) as well as macro factors including the US dollar index, interest rates, geopolitical risk, and energy costs. Gold and silver are particularly sensitive to real interest rates and safe-haven demand. Copper and nickel are closely tied to Chinese industrial activity and the global energy transition. Iron ore prices are dominated by Chinese steel production policy.</p>
 
           <div className="prices-meta-grid">
             <div className="prices-meta-card">

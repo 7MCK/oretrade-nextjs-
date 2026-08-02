@@ -6,7 +6,7 @@ import ReePriceWidget from '../../../../components/ReePriceWidget'
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'NdPr Oxide — Neodymium Praseodymium Prices and Supply 2026',
+  headline: 'NdPr Oxide: Neodymium Praseodymium Prices and Supply 2026',
   description: 'NdPr oxide price, supply sources and trading guide. The commercial magnet-grade rare earth at approximately $144/kg. Source verified NdPr from non-Chinese producers on OreTrade.',
   author: { '@type': 'Organization', name: 'OreTrade', url: 'https://www.oretrade.com' },
   publisher: { '@type': 'Organization', name: 'OreTrade', logo: { '@type': 'ImageObject', url: 'https://www.oretrade.com/logo.png' } },
@@ -45,7 +45,7 @@ const faqSchema = {
       name: 'Who are the main outside China NdPr producers?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'The primary outside China NdPr producer is Lynas Rare Earths, which separates NdPr at its LAMP facility in Kuantan, Malaysia using ore from Mount Weld, Australia — producing approximately 6,000 tonnes per year of NdPr oxide. MP Materials (California, USA) is ramping up NdPr separation. Energy Fuels (Utah, USA) is building separation capacity. Arafura Resources (Australia) and others are in development.',
+        text: 'The primary outside China NdPr producer is Lynas Rare Earths, which separates NdPr at its LAMP facility in Kuantan, Malaysia using ore from Mount Weld, Australia, producing approximately 6,000 tonnes per year of NdPr oxide. MP Materials (California, USA) is ramping up NdPr separation. Energy Fuels (Utah, USA) is building separation capacity. Arafura Resources (Australia) and others are in development.',
       },
     },
     {
@@ -62,7 +62,7 @@ const faqSchema = {
 const datasetSchema = {
   '@context': 'https://schema.org',
   '@type': 'Dataset',
-  name: 'NdPr Oxide Price — Reference Data 2026',
+  name: 'NdPr Oxide Price: Reference Data 2026',
   description: 'Reference price data for NdPr mixed oxide (neodymium-praseodymium, magnet grade) in USD/kg. Updated monthly by OreTrade from industrial market data.',
   url: 'https://www.oretrade.com/markets/rare-earths/ndpr/',
   provider: { '@type': 'Organization', name: 'OreTrade', url: 'https://www.oretrade.com' },
@@ -83,7 +83,7 @@ const breadcrumbSchema = {
 
 export const metadata: Metadata = {
   alternates: { canonical: 'https://www.oretrade.com/markets/rare-earths/ndpr/' },
-  title: 'NdPr Oxide — Neodymium Praseodymium Prices and Supply | OreTrade',
+  title: 'NdPr Oxide: Neodymium Praseodymium Prices and Supply',
   description: 'NdPr oxide price, supply and trading guide for 2026. The benchmark magnet rare earth at ~$144/kg. Source verified NdPr from non-Chinese producers on OreTrade.',
 }
 
@@ -94,7 +94,7 @@ export default function NdPrPage() {
       <div className="page-hero">
         <div className="page-hero-inner">
           <p className="section-label">NdPr Oxide Market</p>
-          <h1>NdPr Oxide<br /><span>Neodymium Praseodymium — Price and Supply 2026</span></h1>
+          <h1>NdPr Oxide<br /><span>Neodymium Praseodymium: Price and Supply 2026</span></h1>
           <p>NdPr oxide is the benchmark commercial material for NdFeB permanent magnet production. Approximately 1 to 2 kg goes into every electric vehicle motor. Source verified NdPr from non-Chinese producers on OreTrade with full traceability documentation.</p>
           <a href="/#contact" className="btn-primary">Request Supply</a>
         </div>
@@ -102,7 +102,7 @@ export default function NdPrPage() {
 
       <section className="content-section dark">
         <div className="content-inner">
-          <h2>NdPr Price — 2026</h2>
+          <h2>NdPr Price: 2026</h2>
           <p style={{ marginBottom: '24px' }}>OTC reference price for NdPr mixed oxide (magnet grade), sourced from Fastmarkets and Metal Pages.</p>
           <ReePriceWidget filter={['ndpr', 'neodymium']} compact />
           <p style={{ marginTop: '16px', fontSize: '13px', color: '#5a4030', fontFamily: 'Arial, sans-serif' }}>
@@ -113,7 +113,7 @@ export default function NdPrPage() {
 
       <section className="content-section dark2">
         <div className="content-inner">
-          <h2>NdPr Price Overview — 2026</h2>
+          <h2>NdPr Price Overview: 2026</h2>
           <table className="specs-table">
             <thead>
               <tr><th>Indicator</th><th>Value</th></tr>
@@ -138,10 +138,10 @@ export default function NdPrPage() {
           <p>NdPr is the most commercially important rare earth product by volume. It is the primary material input for NdFeB permanent magnets, which power every electric vehicle traction motor, every direct drive offshore wind turbine, and an enormous range of industrial motors, robotics, medical devices and consumer electronics worldwide.</p>
 
           <h3>NdPr in Electric Vehicles</h3>
-          <p>A typical NdFeB magnet for an EV motor contains approximately 1 to 2 kg of NdPr per vehicle. As global EV production scales from tens of millions of vehicles per year toward targets of 80 to 100 million vehicles per year by 2030, the implied NdPr demand is enormous — potentially 100,000 to 200,000 additional tonnes per year of NdPr demand over current levels. This is the primary driver of interest in diversifying NdPr supply away from China.</p>
+          <p>A typical NdFeB magnet for an EV motor contains approximately 1 to 2 kg of NdPr per vehicle. As global EV production scales from tens of millions of vehicles per year toward targets of 80 to 100 million vehicles per year by 2030, the implied NdPr demand is enormous, potentially 100,000 to 200,000 additional tonnes per year of NdPr demand over current levels. This is the primary driver of interest in diversifying NdPr supply away from China.</p>
 
           <h3>Outside China NdPr Production</h3>
-          <p>Lynas Rare Earths remains the world&apos;s largest non-Chinese producer of NdPr oxide, with approximately 6,000 tonnes per year of production at its LAMP facility in Malaysia using ore from the Mount Weld deposit in Western Australia. MP Materials at Mountain Pass in California is ramping up its NdPr separation capability. Energy Fuels in Utah is processing monazite sand to produce NdPr with US government support. Combined, these sources represent a small fraction of Chinese production — highlighting the urgency of supply chain diversification.</p>
+          <p>Lynas Rare Earths remains the world&apos;s largest non-Chinese producer of NdPr oxide, with approximately 6,000 tonnes per year of production at its LAMP facility in Malaysia using ore from the Mount Weld deposit in Western Australia. MP Materials at Mountain Pass in California is ramping up its NdPr separation capability. Energy Fuels in Utah is processing monazite sand to produce NdPr with US government support. Combined, these sources represent a small fraction of Chinese production, highlighting the urgency of supply chain diversification.</p>
         </div>
       </section>
 
@@ -169,8 +169,8 @@ export default function NdPrPage() {
           <h2>Further Reading</h2>
           <p>Learn more about the rare earth supply chain and China export controls:</p>
           <ul style={{ marginTop: '16px', lineHeight: '2' }}>
-            <li><a href="/blog/china-rare-earth-export-controls">China Rare Earth Export Controls 2025 to 2026 — What Buyers Need to Know</a></li>
-            <li><a href="/blog/rare-earth-shortage-2026">Rare Earth Shortage 2026 — Where to Find Supply Outside China</a></li>
+            <li><a href="/blog/china-rare-earth-export-controls">China Rare Earth Export Controls 2025 to 2026: What Buyers Need to Know</a></li>
+            <li><a href="/blog/rare-earth-shortage-2026">Rare Earth Shortage 2026: Where to Find Supply Outside China</a></li>
             <li><a href="/markets/rare-earths">All Rare Earth Markets on OreTrade</a></li>
             <li><a href="/traceability">How the OreTrade Digital Product Passport Works</a></li>
           </ul>

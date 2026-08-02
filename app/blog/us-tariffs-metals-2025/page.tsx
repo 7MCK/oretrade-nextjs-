@@ -5,7 +5,7 @@ import SchemaMarkup from '../../../components/SchemaMarkup'
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'US Tariffs and the Metals Market — What Happened and What Comes Next',
+  headline: 'US Tariffs and the Metals Market: What Happened and What Comes Next',
   description: 'How US tariff policy in 2025 reshaped global metals trade flows, drove up copper and aluminium prices, and accelerated the search for supply chain alternatives.',
   author: { '@type': 'Organization', name: 'OreTrade', url: 'https://www.oretrade.com' },
   publisher: { '@type': 'Organization', name: 'OreTrade', logo: { '@type': 'ImageObject', url: 'https://www.oretrade.com/logo.png' } },
@@ -62,7 +62,7 @@ const breadcrumbSchema = {
 
 export const metadata: Metadata = {
   alternates: { canonical: 'https://www.oretrade.com/blog/us-tariffs-metals-2025/' },
-  title: 'US Tariffs and the Metals Market 2025 — Impact on Copper, Aluminium and Critical Minerals | OreTrade',
+  title: 'US Tariffs and the Metals Market 2025: Impact on Copper, Aluminium and Critical Minerals',
   description: 'How US tariff policy in 2025 reshaped global metals trade flows, created arbitrage opportunities in copper and aluminium, and accelerated the push for supply chain independence.',
 }
 

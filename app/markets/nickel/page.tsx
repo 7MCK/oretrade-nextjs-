@@ -6,7 +6,7 @@ import PriceWidget from '../../../components/PriceWidget'
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Nickel Ore and Products — Prices, Suppliers and Trading 2026',
+  headline: 'Nickel Ore and Products: Prices, Suppliers and Trading 2026',
   author: { '@type': 'Organization', name: 'OreTrade', url: 'https://www.oretrade.com' },
   publisher: { '@type': 'Organization', name: 'OreTrade', logo: { '@type': 'ImageObject', url: 'https://www.oretrade.com/logo.png' } },
   datePublished: '2026-04-05',
@@ -66,7 +66,7 @@ const breadcrumbSchema = {
 
 export const metadata: Metadata = {
   alternates: { canonical: 'https://www.oretrade.com/markets/nickel/' },
-  title: 'Nickel Ore Suppliers | Nickel Trading Platform , OreTrade',
+  title: 'Nickel Ore Suppliers | Nickel Trading Platform',
   description: 'Source nickel ore and nickel products from verified suppliers on OreTrade. Battery grade and industrial nickel from Indonesia, Philippines and key global origins.',
 }
 

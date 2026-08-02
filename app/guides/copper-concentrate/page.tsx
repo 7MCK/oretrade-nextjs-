@@ -5,7 +5,7 @@ import SchemaMarkup from '../../../components/SchemaMarkup'
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'How to Buy Copper Concentrate — A Complete Guide for Buyers and Smelters',
+  headline: 'How to Buy Copper Concentrate: A Complete Guide for Buyers and Smelters',
   description: 'Everything buyers and smelters need to know about purchasing copper concentrate: grades, assay interpretation, TCRC negotiation, payment terms, shipping and documentation.',
   author: { '@type': 'Organization', name: 'OreTrade', url: 'https://www.oretrade.com' },
   publisher: { '@type': 'Organization', name: 'OreTrade', logo: { '@type': 'ImageObject', url: 'https://www.oretrade.com/logo.png' } },
@@ -67,7 +67,7 @@ const breadcrumbSchema = {
 
 export const metadata: Metadata = {
   alternates: { canonical: 'https://www.oretrade.com/guides/copper-concentrate/' },
-  title: 'How to Buy Copper Concentrate — Complete Buyer and Smelter Guide | OreTrade',
+  title: 'How to Buy Copper Concentrate: Complete Buyer and Smelter Guide',
   description: 'Everything you need to know about buying copper concentrate: grades explained, reading an assay, TCRC negotiation, payment terms, shipping, and what documentation to require.',
 }
 
@@ -102,9 +102,9 @@ export default function CopperConcentrateGuide() {
           </div>
 
           <h2 id="what-is-concentrate">What Copper Concentrate Actually Is</h2>
-          <p>Mining copper ore and trading copper are not the same thing. Copper ore as it comes out of the ground typically contains 0.4 to 1.5% copper by weight. The vast majority of what you are digging up is rock. To make the ore commercially useful, it goes through a process called flotation — the crushed ore is mixed with water and reagents, and air bubbles are used to selectively float the copper sulphide minerals while the waste rock sinks. What you collect from the surface is copper concentrate.</p>
+          <p>Mining copper ore and trading copper are not the same thing. Copper ore as it comes out of the ground typically contains 0.4 to 1.5% copper by weight. The vast majority of what you are digging up is rock. To make the ore commercially useful, it goes through a process called flotation: the crushed ore is mixed with water and reagents, and air bubbles are used to selectively float the copper sulphide minerals while the waste rock sinks. What you collect from the surface is copper concentrate.</p>
           <p>Copper concentrate is a grey or black powder containing typically 20 to 35% copper, along with significant quantities of iron, sulphur and silica, and smaller amounts of precious metals (gold and silver) and trace elements. It is not a finished product. Smelters buy concentrate, process it through a series of pyrometallurgical steps to produce blister copper (98 to 99% Cu), and then refine it to copper cathode (99.99% Cu), which is the form traded on the LME and COMEX.</p>
-          <p>For buyers — which means copper smelters and, in some cases, trading houses with smelter access — purchasing concentrate means purchasing a raw material that requires significant further processing investment. The pricing of concentrate reflects this: smelters charge treatment and refining fees that compensate them for the processing cost, and the miner receives the difference.</p>
+          <p>For buyers (which means copper smelters and, in some cases, trading houses with smelter access), purchasing concentrate means purchasing a raw material that requires significant further processing investment. The pricing of concentrate reflects this: smelters charge treatment and refining fees that compensate them for the processing cost, and the miner receives the difference.</p>
 
           <h2 id="grades">Understanding Concentrate Grades</h2>
           <p>Concentrate grade is expressed as the percentage of copper in the dry concentrate, written as % Cu or % TCu (total copper). When a seller quotes a "28% Cu concentrate," they mean that 280kg of every tonne of concentrate (dry weight) is copper.</p>
@@ -131,7 +131,7 @@ export default function CopperConcentrateGuide() {
           <h2 id="payability">Payability and Penalty Elements</h2>
           <p>Not all the copper in concentrate is paid for. The fraction you are paid for is called the payable copper, and it is determined by the payability formula negotiated between buyer and seller.</p>
           <p>A typical payability formula for copper is: payable copper = (TCu% minus a deduction) multiplied by the weight. The deduction is commonly 1 unit (one percentage point), meaning a 28% Cu concentrate has 27% payable copper. This deduction represents the copper lost to slag, flue dust and other processing losses that the smelter retains.</p>
-          <p>For gold and silver, payability is typically expressed as a fraction: gold at 90% payable means you are paid for 90% of the assayed gold content. The smelter keeps 10% as a processing return. For minor by-products, you may receive nothing — the smelter retains all value below a certain threshold quantity.</p>
+          <p>For gold and silver, payability is typically expressed as a fraction: gold at 90% payable means you are paid for 90% of the assayed gold content. The smelter keeps 10% as a processing return. For minor by-products, you may receive nothing, as the smelter retains all value below a certain threshold quantity.</p>
           <p>Penalty elements work in the opposite direction. If your concentrate contains arsenic above a threshold, the smelter deducts a specified amount per percentage point of excess arsenic from the payable value. Common penalty elements and their typical thresholds:</p>
           <table className="specs-table" style={{ marginTop: '20px' }}>
             <thead>
@@ -157,26 +157,26 @@ export default function CopperConcentrateGuide() {
           <p>Price settlements typically use an average LME/COMEX price over a quotational period around the bill of lading date, commonly the month of shipment (M) or M+1 or M+2, allowing the settlement price to reflect market conditions close to when the material is actually processed.</p>
 
           <h2 id="shipping">Shipping and Logistics</h2>
-          <p>Copper concentrate is typically shipped in bulk in Handysize or Supramax vessels (30,000 to 60,000 DWT), though smaller parcels may ship in containers as bagged concentrate. The concentrate must be kept dry during transit to prevent moisture gain, which increases weight and can cause cargo to liquify if moisture exceeds the transportable moisture limit (TML) — a recognised shipping hazard for fine particulate concentrates.</p>
+          <p>Copper concentrate is typically shipped in bulk in Handysize or Supramax vessels (30,000 to 60,000 DWT), though smaller parcels may ship in containers as bagged concentrate. The concentrate must be kept dry during transit to prevent moisture gain, which increases weight and can cause cargo to liquify if moisture exceeds the transportable moisture limit (TML), a recognised shipping hazard for fine particulate concentrates.</p>
           <p>Typical delivery terms are CIF (cost, insurance, freight) to the smelter port, or FOB at the loading port with the buyer arranging freight. CFR (cost and freight, buyer arranges insurance) is also common. For larger spot transactions, the freight market for concentrate runs from South American ports (Callao, Antofagasta, Ilo) to Asian smelter ports (Fangcheng, Yingkou, Qingdao) or European smelter ports (Hamburg, Rotterdam, Huelva).</p>
-          <p>Port charges, weighing, sampling and assaying at the discharge port are typically split between buyer and seller or borne by the seller up to delivery. The joint sampling protocol — how the cargo is sampled at the port to establish the final assay — is agreed in the contract and is commercially important because the final settlement is based on it.</p>
+          <p>Port charges, weighing, sampling and assaying at the discharge port are typically split between buyer and seller or borne by the seller up to delivery. The joint sampling protocol (how the cargo is sampled at the port to establish the final assay) is agreed in the contract and is commercially important because the final settlement is based on it.</p>
 
           <h2 id="documentation">Documentation Checklist</h2>
           <p>A complete copper concentrate transaction requires:</p>
-          <p><strong>Commercial invoice</strong> — issued by seller, detailing quantity, grade, price basis and total value.</p>
-          <p><strong>Packing list</strong> — relevant for containerised shipments.</p>
-          <p><strong>Bill of lading</strong> — issued by the carrier, serves as title document and proof of shipment.</p>
-          <p><strong>Certificate of origin</strong> — confirming where the ore was mined.</p>
-          <p><strong>Weight certificate</strong> — from an accredited independent weigher at the load port.</p>
-          <p><strong>Sampling and assay certificate</strong> — from an accredited independent assayer (load port), covering TCu, moisture, precious metals and deleterious elements.</p>
-          <p><strong>Discharge port weight and assay certificate</strong> — from an independent assayer at the smelter, used for final settlement.</p>
-          <p><strong>Certificate of insurance</strong> — marine cargo insurance, typically covering 110% of CIF value.</p>
-          <p><strong>OECD due diligence documentation</strong> (if required) — for concentrate from conflict-affected or high risk areas including parts of the DRC, this is mandatory for buyers in EU regulated supply chains.</p>
-          <p><strong>Export and import licences</strong> — required in certain jurisdictions.</p>
+          <p><strong>Commercial invoice:</strong> issued by seller, detailing quantity, grade, price basis and total value.</p>
+          <p><strong>Packing list:</strong> relevant for containerised shipments.</p>
+          <p><strong>Bill of lading:</strong> issued by the carrier, serves as title document and proof of shipment.</p>
+          <p><strong>Certificate of origin:</strong> confirming where the ore was mined.</p>
+          <p><strong>Weight certificate:</strong> from an accredited independent weigher at the load port.</p>
+          <p><strong>Sampling and assay certificate:</strong> from an accredited independent assayer (load port), covering TCu, moisture, precious metals and deleterious elements.</p>
+          <p><strong>Discharge port weight and assay certificate:</strong> from an independent assayer at the smelter, used for final settlement.</p>
+          <p><strong>Certificate of insurance:</strong> marine cargo insurance, typically covering 110% of CIF value.</p>
+          <p><strong>OECD due diligence documentation</strong> (if required): for concentrate from conflict-affected or high risk areas including parts of the DRC, this is mandatory for buyers in EU regulated supply chains.</p>
+          <p><strong>Export and import licences:</strong> required in certain jurisdictions.</p>
 
           <h2 id="finding-suppliers">Finding and Qualifying Suppliers</h2>
           <p>The traditional route to finding copper concentrate is through established trading house relationships or direct producer contacts developed over years in the industry. For buyers without those relationships, the options have historically been limited. Market information is opaque, pricing is entirely bilateral, and entry without introductions is difficult.</p>
-          <p>OreTrade is changing this. The platform lists copper concentrate from verified producers with full documentation requirements built in — assay certificates, origin documentation, and OECD compliance paperwork are required for every listing before it goes live. Buyers can access pricing transparency and documentation standards without needing an established trading house intermediary.</p>
+          <p>OreTrade is changing this. The platform lists copper concentrate from verified producers with full documentation requirements built in: assay certificates, origin documentation, and OECD compliance paperwork are required for every listing before it goes live. Buyers can access pricing transparency and documentation standards without needing an established trading house intermediary.</p>
           <p>When qualifying any new copper concentrate supplier, regardless of how you find them, the minimum requirements are: independent assay of any trial shipment, mine of origin verification (not just country of origin), and confirmation that the producer's operation meets applicable environmental and social governance standards for your supply chain compliance requirements. Documentation that looks complete at first glance sometimes conceals gaps that create compliance problems later. Build the verification process in from the start.</p>
         </div>
       </section>

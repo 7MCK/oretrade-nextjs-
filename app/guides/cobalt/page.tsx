@@ -5,7 +5,7 @@ import SchemaMarkup from '../../../components/SchemaMarkup'
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Cobalt Explained — From the DRC to Your EV Battery',
+  headline: 'Cobalt Explained: From the DRC to Your EV Battery',
   description: 'Complete guide to cobalt: where it is mined, how it gets into EV batteries, why the DRC dominates supply, what responsible sourcing requires, and how to buy cobalt compliantly.',
   author: { '@type': 'Organization', name: 'OreTrade', url: 'https://www.oretrade.com' },
   publisher: { '@type': 'Organization', name: 'OreTrade', logo: { '@type': 'ImageObject', url: 'https://www.oretrade.com/logo.png' } },
@@ -67,7 +67,7 @@ const breadcrumbSchema = {
 
 export const metadata: Metadata = {
   alternates: { canonical: 'https://www.oretrade.com/guides/cobalt/' },
-  title: 'Cobalt Explained — Mining, Battery Supply Chain and Sourcing Guide | OreTrade',
+  title: 'Cobalt Explained: Mining, Battery Supply Chain and Sourcing Guide',
   description: 'Complete guide to cobalt: where it is mined, how it gets into EV batteries, why the DRC dominates supply, what responsible sourcing requires, and how to buy cobalt compliantly.',
 }
 
@@ -100,7 +100,7 @@ export default function CobaltGuide() {
           </div>
 
           <h2 id="what-is-cobalt">What Cobalt Is and Where It Is Found</h2>
-          <p>Cobalt is a hard, lustrous grey metal with atomic number 27. It is named from the German word for goblin — medieval miners called it kobold because the arsenic-bearing cobalt ores were thought to be cursed, releasing toxic fumes when smelted. Today it is anything but cursed commercially. Cobalt is one of the most sought after battery materials on earth, an essential input for the cathode chemistries that power most high-performance electric vehicles and portable electronics.</p>
+          <p>Cobalt is a hard, lustrous grey metal with atomic number 27. It is named from the German word for goblin: medieval miners called it kobold because the arsenic-bearing cobalt ores were thought to be cursed, releasing toxic fumes when smelted. Today it is anything but cursed commercially. Cobalt is one of the most sought after battery materials on earth, an essential input for the cathode chemistries that power most high-performance electric vehicles and portable electronics.</p>
           <p>Cobalt rarely occurs in pure deposits. Almost all of it is mined as a byproduct of copper and nickel extraction. The Katanga copper-cobalt belt in the southeastern Democratic Republic of Congo is the single most important source: the heterogenite ores found there contain copper and cobalt in unusually high concentrations, making them economically extraordinary. Outside the DRC, cobalt is found in nickel sulphide deposits in Canada, Russia and Australia, in laterite nickel deposits in the Philippines, and in seafloor manganese nodules at depths that are not yet commercially exploited.</p>
           <p>Global cobalt mine production is approximately 230,000 to 250,000 tonnes per year. The DRC accounts for roughly 70% of this, with no other country accounting for more than 5 to 7% of production. This level of geographic concentration is unusual even by the standards of critical minerals, most of which have at least some production diversity across multiple continents. For cobalt, the DRC is effectively the market.</p>
           <p>China does not produce significant quantities of cobalt ore, but it dominates the processing step. Roughly 65% of global cobalt refining capacity is in China, meaning that DRC ore frequently travels to China for processing into cobalt sulphate or cobalt metal before being sold to battery makers. For European and American manufacturers trying to reduce their China dependency, cobalt supply chains require attention at both the extraction and processing levels.</p>

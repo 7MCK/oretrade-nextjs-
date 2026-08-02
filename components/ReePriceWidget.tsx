@@ -82,7 +82,7 @@ export default function ReePriceWidget({ filter, compact, noLinks }: Props) {
         ))}
       </div>
       <p className="price-widget-disclaimer">
-        Indicative OTC reference prices only — rare earths are not exchange-traded. Actual prices vary by purity, volume, origin, and contract terms. Not financial advice. Sources: Fastmarkets, Metal Pages, industrial market data.
+        Indicative OTC reference prices only, rare earths are not exchange-traded. Actual prices vary by purity, volume, origin, and contract terms. Not financial advice. Sources: Fastmarkets, Metal Pages, industrial market data.
       </p>
     </div>
   )

@@ -6,7 +6,7 @@ import PriceWidget from '../../../components/PriceWidget'
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Gold, Silver and Precious Metals — Trading Platform 2026',
+  headline: 'Gold, Silver and Precious Metals: Trading Platform 2026',
   author: { '@type': 'Organization', name: 'OreTrade', url: 'https://www.oretrade.com' },
   publisher: { '@type': 'Organization', name: 'OreTrade', logo: { '@type': 'ImageObject', url: 'https://www.oretrade.com/logo.png' } },
   datePublished: '2026-04-05',
@@ -66,7 +66,7 @@ const breadcrumbSchema = {
 
 export const metadata: Metadata = {
   alternates: { canonical: 'https://www.oretrade.com/markets/gold/' },
-  title: 'Precious Metals Trading Platform | Gold, Silver, Platinum , OreTrade',
+  title: 'Precious Metals Trading Platform | Gold, Silver, Platinum',
   description: 'Trade gold, silver, platinum and palladium on OreTrade. LBMA aligned supply chains, full provenance documentation, and conflict free certification on every transaction.',
 }
 
@@ -87,7 +87,7 @@ export default function GoldPage() {
       <section className="content-section dark">
         <div className="content-inner">
           <h2>Live Precious Metals Prices</h2>
-          <p style={{ marginBottom: '24px' }}>COMEX gold and silver futures, NYMEX platinum and palladium — updated every minute.</p>
+          <p style={{ marginBottom: '24px' }}>COMEX gold and silver futures, NYMEX platinum and palladium, updated every minute.</p>
           <PriceWidget filter={['gold', 'silver', 'platinum', 'palladium']} />
           <p style={{ marginTop: '16px', fontSize: '13px', color: '#5a4030', fontFamily: 'Arial, sans-serif' }}>
             Full commodity dashboard including base metals and iron ore:{' '}

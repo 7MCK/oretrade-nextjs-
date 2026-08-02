@@ -16,7 +16,7 @@ const serviceSchema = {
 
 export const metadata: Metadata = {
   alternates: { canonical: 'https://www.oretrade.com/markets/iron-ore/' },
-  title: 'Buy Iron Ore Online | Iron Ore Marketplace , OreTrade',
+  title: 'Buy Iron Ore Online | Iron Ore Marketplace',
   description: 'Buy and sell iron ore on OreTrade , the verified global iron ore marketplace. Fines, lump and pellets from Australia, Brazil and South Africa. Full traceability.',
 }
 

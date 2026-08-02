@@ -1,4 +1,4 @@
-// SchemaMarkup.tsx — Reusable JSON-LD schema injection component
+// SchemaMarkup.tsx: Reusable JSON-LD schema injection component
 // Usage: <SchemaMarkup schema={schemaObject} /> or <SchemaMarkup schemas={[schema1, schema2]} />
 
 interface SchemaMarkupProps {

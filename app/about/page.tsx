@@ -25,7 +25,7 @@ const breadcrumbSchema = {
 
 export const metadata: Metadata = {
   alternates: { canonical: 'https://www.oretrade.com/about/' },
-  title: 'About OreTrade — The World\'s First Traceable Ore Marketplace',
+  title: 'About: The World\'s First Traceable Ore Marketplace',
   description: 'OreTrade is a B2B ore and metals marketplace founded in London in 2026. We issue a Digital Product Passport on every cargo, connecting miners, traders and refiners globally with full traceability.',
 }
 

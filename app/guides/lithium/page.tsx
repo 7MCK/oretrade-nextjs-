@@ -5,7 +5,7 @@ import SchemaMarkup from '../../../components/SchemaMarkup'
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Lithium Mining Explained — From Brine to Battery 2026',
+  headline: 'Lithium Mining Explained: From Brine to Battery 2026',
   author: { '@type': 'Organization', name: 'OreTrade', url: 'https://www.oretrade.com' },
   publisher: { '@type': 'Organization', name: 'OreTrade', logo: { '@type': 'ImageObject', url: 'https://www.oretrade.com/logo.png' } },
   datePublished: '2026-04-05',
@@ -32,7 +32,7 @@ const faqSchema = {
       name: 'What is the difference between brine and hard rock lithium?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Brine lithium is extracted by pumping lithium-rich underground brine into evaporation ponds, primarily in Chile, Argentina and Bolivia (the Lithium Triangle). It is lower cost to produce but slow — 12-18 months per cycle. Hard rock lithium (primarily spodumene, mined in Australia) is faster to produce and has a smaller environmental footprint per tonne, but higher operating costs. Australia is the world\'s largest lithium producer by volume.',
+        text: 'Brine lithium is extracted by pumping lithium-rich underground brine into evaporation ponds, primarily in Chile, Argentina and Bolivia (the Lithium Triangle). It is lower cost to produce but slow, at 12-18 months per cycle. Hard rock lithium (primarily spodumene, mined in Australia) is faster to produce and has a smaller environmental footprint per tonne, but higher operating costs. Australia is the world\'s largest lithium producer by volume.',
       },
     },
     {
@@ -66,7 +66,7 @@ const breadcrumbSchema = {
 
 export const metadata: Metadata = {
   alternates: { canonical: 'https://www.oretrade.com/guides/lithium/' },
-  title: 'Lithium Mining Process Explained | From Brine to Battery , OreTrade',
+  title: 'Lithium Mining Process Explained | From Brine to Battery',
   description: 'How lithium is mined from brine and hard rock, processed into carbonate and hydroxide, graded for battery use, and traded globally. Complete guide to lithium supply chains.',
 }
 

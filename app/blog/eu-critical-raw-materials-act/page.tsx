@@ -5,7 +5,7 @@ import SchemaMarkup from '../../../components/SchemaMarkup'
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'EU Critical Raw Materials Act — What It Means for Miners, Buyers and Supply Chains',
+  headline: 'EU Critical Raw Materials Act: What It Means for Miners, Buyers and Supply Chains',
   description: 'The EU Critical Raw Materials Act sets binding 2030 targets for domestic extraction, processing and supply chain diversification. What it requires, who it affects, and what the deadlines mean in practice.',
   author: { '@type': 'Organization', name: 'OreTrade', url: 'https://www.oretrade.com' },
   publisher: { '@type': 'Organization', name: 'OreTrade', logo: { '@type': 'ImageObject', url: 'https://www.oretrade.com/logo.png' } },
@@ -67,7 +67,7 @@ const breadcrumbSchema = {
 
 export const metadata: Metadata = {
   alternates: { canonical: 'https://www.oretrade.com/blog/eu-critical-raw-materials-act/' },
-  title: 'EU Critical Raw Materials Act — What It Means for Miners and Buyers | OreTrade',
+  title: 'EU Critical Raw Materials Act: What It Means for Miners and Buyers',
   description: 'The EU Critical Raw Materials Act sets binding targets for domestic extraction, processing and supply chain diversification. What it requires, who it affects, and what the deadlines mean in practice.',
 }
 
